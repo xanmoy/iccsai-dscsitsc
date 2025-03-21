@@ -4,6 +4,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { ChevronDown, Menu } from "lucide-react"
 import { ModeToggle } from "@/components/mode-toggle"
 import Link from "next/link"
+import Image from 'next/image'
 export function Header() {
   return (
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -24,7 +25,10 @@ export function Header() {
                       <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                       <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                   </svg> */}
-                  <span className="font-bold sm:inline-block">ICCSAI 2025</span>
+                  <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586052/iccsai_logo1_zhxums.jpg" alt="ICCSAI 2025" width={40} height={40} />
+                  <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587074/Image_0435F73B_2D0F_4BF4_4181_65F86A8DAC19_y62wdr.png" alt="ICCSAI 2025" width={40} height={40} />
+
+                  <span className="hidden font-bold sm:inline-block">ICCSAI 2025</span>
               </Link>
 
               {/* Mobile Menu */}

@@ -13,7 +13,7 @@ export default function CommitteePage() {
       {/* Advisory Committee */}
       <section className="mt-16">
         <h2 className="text-2xl font-bold mb-8">Advisory Committee</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
             { name: "Prof. Robert Williams", affiliation: "Harvard University, USA" },
             { name: "Prof. Elena Rodriguez", affiliation: "University of Cambridge, UK" },
@@ -27,13 +27,13 @@ export default function CommitteePage() {
               <p className="text-sm text-muted-foreground">{member.affiliation}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </section>
 
       {/* Technical Program Committee */}
       <section className="mt-16">
         <h2 className="text-2xl font-bold mb-8">Technical Program Committee</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             { name: "Dr. James Wilson", affiliation: "University of California, Berkeley, USA" },
             { name: "Dr. Aisha Khan", affiliation: "King's College London, UK" },
@@ -53,13 +53,13 @@ export default function CommitteePage() {
               <p className="text-sm text-muted-foreground">{member.affiliation}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </section>
 
       {/* Core Committee */}
       <section className="mt-16">
         <h2 className="text-2xl font-bold mb-8">Core Committee</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
             { name: "Prof. Alexander Lee", role: "General Chair", affiliation: "Stanford University, USA" },
             { name: "Prof. Sophia Chen", role: 'Program  affiliation: "Stanford University, USA' },
@@ -87,7 +87,7 @@ export default function CommitteePage() {
               <p className="text-sm text-muted-foreground">{member.affiliation}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </section>
     </div>
   )

@@ -8,19 +8,19 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const slides = [
   {
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586381/aboutsurtech_lnv0mh.jpg",
     title: "International Conference on Cyber Security and Artificial Intelligence",
     subtitle: "August 28-29, 2025",
     description: "Join leading researchers and practitioners at the intersection of cyber security and AI",
   },
   {
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586537/wallpaperflare.com_wallpaper_mgc1zf.jpg",
     title: "Advancing Security Through AI",
     subtitle: "ICCSAI 2025",
     description: "Explore cutting-edge research and applications in cyber security and artificial intelligence",
   },
   {
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586594/wallpaperflare.com_wallpaper_1_biccde.jpg",
     title: "Call for Papers Now Open",
     subtitle: "Submission Deadline: June 15, 2025",
     description: "Submit your research on AI-driven security solutions and secure AI systems",
@@ -70,6 +70,18 @@ export function HeroSlider() {
                 {slide.title}
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto">{slide.description}</p>
+              
+              <div className="flex items-center gap-3 mt-4 flex-wrap justify-center">
+                <img src="https://www.surtech.edu.in/images/jis-logo.png" alt="JIS Logo" className="w-[40px] md:w-[40px]" />
+                <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/NAAC-surtech.png" alt="NAAC Logo" className="w-[40px] md:w-[40px]" />
+                <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/ugc.png" alt="UGC Logo" className="w-[35px] md:w-[40px]" />
+                <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/iic.png" alt="IIC Logo" className="w-[35px] md:w-[40px]" />
+                <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/nba.png" alt="NBA Logo" className="w-[35px] md:w-[40px]" />
+                <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/wbut.png" alt="WBUT Logo" className="w-[35px] md:w-[35px]" />
+                <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/aicte.png" alt="AICTE Logo" className="w-[35px] md:w-[35px]" />
+              </div>
+
+
               <div className="flex flex-wrap justify-center gap-3 md:gap-4 pt-4 md:pt-6">
                 <Link href="/registration">
                   <Button size="lg" className="bg-primary hover:bg-primary/90 shadow-lg">

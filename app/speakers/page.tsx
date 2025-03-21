@@ -24,7 +24,7 @@ const speakerSections: SpeakerSection[] = [
         designation: "Professor",
         institution: "Indian Statistical Institute, Kolkata, India ",
         bio: "Cryptology & Security Research Unit (CSRU)",
-        image: "/placeholder.svg?height=128&width=128",
+        image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587175/unnamed_ankf5o.jpg",
       },
       {
         id: "keynote-2",
@@ -32,7 +32,7 @@ const speakerSections: SpeakerSection[] = [
         designation: "Professor",
         institution: "Indian Institute of Technology (ISM), Dhanbad, India",
         bio: "Department of Computer Science & Engineering",
-        image: "/placeholder.svg?height=128&width=128",
+        image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587271/unnamed_1_hvvuzg.jpg",
       },
     ],
   },
@@ -58,7 +58,7 @@ const speakerSections: SpeakerSection[] = [
         designation: "Professor",
         institution: "National Sun Yat-sen University (NSYSU), Taiwan",
         bio: "Department of Computer Science & Engineering",
-        image: "/placeholder.svg?height=128&width=128",
+        image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587317/unnamed_2_y8rlyf.jpg",
       },
     ],
   },
@@ -71,7 +71,7 @@ const speakerSections: SpeakerSection[] = [
         designation: "Senior Researcher",
         institution: "Adani AI Lab, India",
         // bio: "Industry leader in AI security and privacy-preserving machine learning techniques.",
-        image: "/placeholder.svg?height=128&width=128",
+        image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587371/unnamed_3_f7emra.jpg",
       },
     ],
   },
@@ -90,11 +90,11 @@ export default function SpeakersPage() {
       </div>
 
       {speakerSections.map((section) => (
-        <section key={section.title} className="mt-16">
+        <section key={section.title} className="mt-16 text-center">
           <h2 className="text-2xl font-bold mb-8">{section.title}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {section.speakers.map((speaker) => (
-              <div key={speaker.id} className="flex flex-col items-center space-y-4 border rounded-lg p-6">
+              <div key={speaker.id} className="flex flex-col items-center space-y-4 border rounded-lg p-6 w-80">
                 <div className="relative w-32 h-32 rounded-full overflow-hidden">
                   <Image
                     src={speaker.image}
@@ -114,6 +114,7 @@ export default function SpeakersPage() {
           </div>
         </section>
       ))}
+
     </div>
   );
 }
