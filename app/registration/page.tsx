@@ -75,7 +75,7 @@ export default function RegistrationPage() {
 
           <h3 className="mt-8">What's Included</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-            <div className="border rounded-lg p-6">
+            <div className="border bg-gradient-to-r from-primary via-primary/90 to-primary/80 rounded-lg p-6">
               <h4 className="text-lg font-semibold mb-4">In-Person Registration</h4>
               <ul className="list-disc pl-5 space-y-2">
                 <li>Access to all conference sessions</li>
@@ -88,7 +88,7 @@ export default function RegistrationPage() {
               </ul>
             </div>
 
-            <div className="border rounded-lg p-6">
+            <div className="border bg-gradient-to-r from-primary via-primary/90 to-primary/80 rounded-lg p-6">
               <h4 className="text-lg font-semibold mb-4">Virtual Registration</h4>
               <ul className="list-disc pl-5 space-y-2">
                 <li>Access to all live-streamed sessions</li>

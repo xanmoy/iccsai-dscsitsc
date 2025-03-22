@@ -194,7 +194,7 @@ export default function ContactPage() {
             </p>
           </div>
 
-          {/* <form className="space-y-4">
+          <form className="space-y-4">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div className="space-y-2">
                 <label
@@ -249,22 +249,24 @@ export default function ContactPage() {
             <Button type="submit" className="w-full">
               Send Message
             </Button>
-          </form> */}
+          </form> 
           
-          <div className="rounded-lg overflow-hidden h-[300px] mt-8 w-full">
-            {/* Map */}
-            <div className="w-full h-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3682.942995052196!2d88.4047502!3d22.6186038!3m2!1i1024!2i768!4f13.1!2m1!1ssurtech!5e0!3m2!1sen!2sin!4v1740766736892!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-              ></iframe>
-            </div>
-            </div>
+          
 
+        </div>
+        
+      </div>
+      <div className="rounded-lg overflow-hidden h-[300px] mt-8 w-full">
+        {/* Map */}
+        <div className="w-full h-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3682.942995052196!2d88.4047502!3d22.6186038!3m2!1i1024!2i768!4f13.1!2m1!1ssurtech!5e0!3m2!1sen!2sin!4v1740766736892!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
     </div>

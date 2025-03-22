@@ -51,11 +51,10 @@ export function HeroSlider() {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
-            index === current ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
+          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out ${index === current ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70 dark:from-black/60 dark:via-black/40 dark:to-black/60 z-10" />
           <Image
             src={slide.image || "/placeholder.svg"}
             alt={slide.title}
@@ -70,18 +69,6 @@ export function HeroSlider() {
                 {slide.title}
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto">{slide.description}</p>
-              
-              <div className="flex items-center gap-3 mt-4 flex-wrap justify-center">
-                <img src="https://www.surtech.edu.in/images/jis-logo.png" alt="JIS Logo" className="w-[40px] md:w-[40px]" />
-                <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/NAAC-surtech.png" alt="NAAC Logo" className="w-[40px] md:w-[40px]" />
-                <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/ugc.png" alt="UGC Logo" className="w-[35px] md:w-[40px]" />
-                <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/iic.png" alt="IIC Logo" className="w-[35px] md:w-[40px]" />
-                <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/nba.png" alt="NBA Logo" className="w-[35px] md:w-[40px]" />
-                <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/wbut.png" alt="WBUT Logo" className="w-[35px] md:w-[35px]" />
-                <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/aicte.png" alt="AICTE Logo" className="w-[35px] md:w-[35px]" />
-              </div>
-
-
               <div className="flex flex-wrap justify-center gap-3 md:gap-4 pt-4 md:pt-6">
                 <Link href="/registration">
                   <Button size="lg" className="bg-primary hover:bg-primary/90 shadow-lg">
@@ -124,9 +111,8 @@ export function HeroSlider() {
           <button
             key={index}
             onClick={() => setCurrent(index)}
-            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-colors ${
-              index === current ? "bg-white" : "bg-white/50"
-            }`}
+            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-colors ${index === current ? "bg-white" : "bg-white/50"
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

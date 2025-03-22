@@ -53,6 +53,17 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Google-inspired dark mode colors
+        google: {
+          dark: {
+            bg: "#202124",
+            surface: "#292a2d",
+            border: "#3c4043",
+            text: "#e8eaed",
+            textSecondary: "#9aa0a6",
+            primary: "#8ab4f8",
+          },
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

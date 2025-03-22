@@ -36,9 +36,9 @@ export function Header() {
 
                 {/* Mobile Menu */}
                 {isMobileMenuOpen && (
-                    <div className="fixed inset-0 bg-black/50 z-50" onClick={() => setIsMobileMenuOpen(false)}>
+                    <div className="fixed inset-0 bg-background z-50" onClick={() => setIsMobileMenuOpen(false)}>
                         {/* Prevent clicking inside the menu from closing it */}
-                        <div className="fixed right-0 top-0 h-full w-4/5 bg-white dark:bg-gray-900 shadow-lg flex flex-col p-5" onClick={(e) => e.stopPropagation()}>
+                        <div className="fixed right-0 top-0 h-full w-4/5 bg-background shadow-lg flex flex-col p-5" onClick={(e) => e.stopPropagation()}>
                             <div className="flex justify-between items-center mb-5">
                                 <span className="text-lg font-bold">Menu</span>
                                 <Button variant="ghost" size="icon" className="h-9 w-9" onClick={() => setIsMobileMenuOpen(false)}>
@@ -96,7 +96,7 @@ export function Header() {
                                 <span className="text-sm font-medium">{item.name}</span>
                                 <ChevronDown className="h-4 w-4" />
                             </Button>
-                            <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-900 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div className="absolute right-0 mt-2 w-48 bg-background shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
                                 {item.links.map((link, index) => (
                                     <Link key={index} href={`/speakers${link}`} className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800">
                                         {link.replace("#", "").replace("-", " ")}

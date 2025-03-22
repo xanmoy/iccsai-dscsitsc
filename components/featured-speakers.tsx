@@ -39,7 +39,7 @@ const featuredSpeakers = [
 
 export function FeaturedSpeakers() {
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20 bg-gradient-to-b from-background to-muted">
+    <section className="w-full py-12 md:py-16 lg:py-20 bg-gradient-to-b from-background to-muted/50">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10 md:mb-16">
           <div className="space-y-2 max-w-3xl">
@@ -60,11 +60,10 @@ export function FeaturedSpeakers() {
                 <h3 className="text-lg md:text-xl font-bold">{speaker.name}</h3>
                 <p className="text-primary font-medium text-sm md:text-base">{speaker.title}</p>
                 <p className="text-xs md:text-sm text-muted-foreground">{speaker.affiliation}</p>
-                {/* <p className="mt-2 font-medium text-sm md:text-base">{speaker.topic}</p> */}
-                {/* <p className="text-xs md:text-sm text-muted-foreground line-clamp-2">{speaker.bio}</p> */}
                 {speaker.topic && (
                   <p className="mt-2 font-medium text-sm md:text-base">{speaker.topic}</p>
                 )}
+                {/* <p className="text-xs md:text-sm text-muted-foreground line-clamp-2">{speaker.bio}</p> */}
               </div>
             </div>
           ))}
