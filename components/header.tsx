@@ -1,193 +1,117 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import { Button } from "@/components/ui/button"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import { ChevronDown, Menu } from "lucide-react"
+import { ChevronDown, Menu, X } from "lucide-react"
 import { ModeToggle } from "@/components/mode-toggle"
 import Link from "next/link"
 import Image from 'next/image'
+
 export function Header() {
-  return (
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-          <div className="container flex h-16 items-center">
-              <Link href="/" className="flex items-center space-x-2">
-                  {/* <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="h-6 w-6 text-primary"
-                  >
-                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                  </svg> */}
-                  <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586052/iccsai_logo1_zhxums.jpg" alt="ICCSAI 2025" width={40} height={40} />
-                  <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587074/Image_0435F73B_2D0F_4BF4_4181_65F86A8DAC19_y62wdr.png" alt="ICCSAI 2025" width={40} height={40} />
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+    const [openDropdown, setOpenDropdown] = useState<string | null>(null)
 
-                  <span className="hidden font-bold sm:inline-block">ICCSAI 2025</span>
-              </Link>
+    const toggleDropdown = (menu: string) => {
+        setOpenDropdown(openDropdown === menu ? null : menu)
+    }
 
-              {/* Mobile Menu */}
-              <div className="md:hidden ml-auto flex items-center">
-                  <DropdownMenu>
-                      <DropdownMenuTrigger asChild>
-                          <ModeToggle />
-                      </DropdownMenuTrigger>
-                      <DropdownMenuTrigger asChild>
-                          <Button variant="ghost" size="icon" className="h-9 w-9">
-                              <Menu className="h-5 w-5" />
-                              <span className="sr-only">Toggle menu</span>
-                          </Button>
-                      </DropdownMenuTrigger>
-                      <DropdownMenuContent align="end" className="w-[200px]">
-                          <DropdownMenuItem asChild>
-                              <Link href="/" className="w-full">
-                                  Home
-                              </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/speakers" className="w-full">
-                                  Speakers
-                              </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/committee" className="w-full">
-                                  Committee
-                              </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/paper-submission" className="w-full">
-                                  Paper Submission
-                              </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/registration" className="w-full">
-                                  Registration
-                              </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/sponsors" className="w-full">
-                                  Sponsors
-                              </Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/contact" className="w-full">
-                                  Contact
-                              </Link>
-                          </DropdownMenuItem>
-                          
-                      </DropdownMenuContent>
-                  </DropdownMenu>
-              </div>
+    return (
+        <header className="sticky top-0 z-50 w-full border-b bg-background">
+            <div className="container flex h-16 items-center">
+                {/* Logo */}
+                <Link href="/" className="flex items-center space-x-2">
+                    <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586052/iccsai_logo1_zhxums.jpg" alt="ICCSAI 2025" width={40} height={40} />
+                    <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587074/Image_0435F73B_2D0F_4BF4_4181_65F86A8DAC19_y62wdr.png" alt="ICCSAI 2025" width={40} height={40} />
+                    <span className="hidden font-bold sm:inline-block">ICCSAI 2025</span>
+                </Link>
 
-              {/* Desktop Menu */}
-              <nav className="ml-auto hidden md:flex items-center gap-1 lg:gap-2">
-                  <Link href="/" className="text-sm font-medium px-3 py-2 hover:text-primary">
-                      Home
-                  </Link>
+                {/* Mobile Menu Button */}
+                <div className="md:hidden ml-auto flex items-center gap-3">
+                    <ModeToggle />
+                    <Button variant="ghost" size="icon" className="h-9 w-9" onClick={() => setIsMobileMenuOpen(true)}>
+                        <Menu className="h-5 w-5" />
+                        <span className="sr-only">Toggle menu</span>
+                    </Button>
+                </div>
 
-                  <DropdownMenu>
-                      <DropdownMenuTrigger asChild>
-                          <Button variant="ghost" className="flex items-center gap-1 h-9 px-3">
-                              <span className="text-sm font-medium">Speakers</span>
-                              <ChevronDown className="h-4 w-4" />
-                          </Button>
-                      </DropdownMenuTrigger>
-                      <DropdownMenuContent align="end">
-                          <DropdownMenuItem asChild>
-                              <Link href="/speakers#keynote">Keynote Speech</Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/speakers#plenary">Plenary Talk</Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/speakers#invited">Invited Talk</Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/speakers#distinguished">Distinguished Talk</Link>
-                          </DropdownMenuItem>
-                      </DropdownMenuContent>
-                  </DropdownMenu>
+                {/* Mobile Menu */}
+                {isMobileMenuOpen && (
+                    <div className="fixed inset-0 bg-black/50 z-50" onClick={() => setIsMobileMenuOpen(false)}>
+                        {/* Prevent clicking inside the menu from closing it */}
+                        <div className="fixed right-0 top-0 h-full w-4/5 bg-white dark:bg-gray-900 shadow-lg flex flex-col p-5" onClick={(e) => e.stopPropagation()}>
+                            <div className="flex justify-between items-center mb-5">
+                                <span className="text-lg font-bold">Menu</span>
+                                <Button variant="ghost" size="icon" className="h-9 w-9" onClick={() => setIsMobileMenuOpen(false)}>
+                                    <X className="h-5 w-5" />
+                                </Button>
+                            </div>
 
-                  <DropdownMenu>
-                      <DropdownMenuTrigger asChild>
-                          <Button variant="ghost" className="flex items-center gap-1 h-9 px-3">
-                              <span className="text-sm font-medium">Committee</span>
-                              <ChevronDown className="h-4 w-4" />
-                          </Button>
-                      </DropdownMenuTrigger>
-                      <DropdownMenuContent align="end">
-                          <DropdownMenuItem asChild>
-                              <Link href="/committee#advisory">Advisory Committee</Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/committee#technical">Technical Program Committee</Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/committee#core">Core Committee</Link>
-                          </DropdownMenuItem>
-                      </DropdownMenuContent>
-                  </DropdownMenu>
+                            <nav className="space-y-4">
+                                <Link href="/" className="block text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
 
-                  <DropdownMenu>
-                      <DropdownMenuTrigger asChild>
-                          <Button variant="ghost" className="flex items-center gap-1 h-9 px-3">
-                              <span className="text-sm font-medium">Paper Submission</span>
-                              <ChevronDown className="h-4 w-4" />
-                          </Button>
-                      </DropdownMenuTrigger>
-                      <DropdownMenuContent align="end">
-                          <DropdownMenuItem asChild>
-                              <Link href="/paper-submission#call">Call for Paper</Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/paper-submission#guidelines">Author Guideline</Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/paper-submission#submission">Paper Submission</Link>
-                          </DropdownMenuItem>
-                      </DropdownMenuContent>
-                  </DropdownMenu>
+                                {/* Dropdowns */}
+                                {[
+                                    { name: "Speakers", prefix: "/speakers", links: ["#keynote", "#plenary", "#invited", "#distinguished"] },
+                                    { name: "Committee", prefix: "/committee", links: ["#advisory", "#technical", "#core"] },
+                                    { name: "Paper Submission", prefix: "/paper-submission", links: ["#call", "#guidelines", "#submission"] },
+                                    { name: "Sponsors", prefix: "/sponsors", links: ["#platinum", "#gold", "#silver", "#bronze"] },
+                                ].map((item) => (
+                                    <div key={item.name} className="border-b">
+                                        <button className="flex justify-between items-center w-full text-base font-medium py-2" onClick={() => toggleDropdown(item.name)}>
+                                            {item.name}
+                                            <ChevronDown className={`h-4 w-4 transition-transform ${openDropdown === item.name ? "rotate-180" : ""}`} />
+                                        </button>
+                                        {openDropdown === item.name && (
+                                            <div className="pl-4 space-y-2">
+                                                {item.links.map((link, index) => (
+                                                    <Link key={index} href={`${item.prefix}${link}`} className="block text-sm" onClick={() => setIsMobileMenuOpen(false)}>
+                                                        {link.replace("#", "").replace("-", " ")}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </div>
+                                ))}
 
-                  <Link href="/registration" className="text-sm font-medium px-3 py-2 hover:text-primary">
-                      Registration
-                  </Link>
+                                <Link href="/registration" className="block text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Registration</Link>
+                                <Link href="/contact" className="block text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
+                            </nav>
+                        </div>
+                    </div>
+                )}
 
-                  <DropdownMenu>
-                      <DropdownMenuTrigger asChild>
-                          <Button variant="ghost" className="flex items-center gap-1 h-9 px-3">
-                              <span className="text-sm font-medium">Sponsors</span>
-                              <ChevronDown className="h-4 w-4" />
-                          </Button>
-                      </DropdownMenuTrigger>
-                      <DropdownMenuContent align="end">
-                          <DropdownMenuItem asChild>
-                              <Link href="/sponsors#platinum">Platinum Sponsor</Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/sponsors#gold">Gold Sponsor</Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/sponsors#silver">Silver Sponsor</Link>
-                          </DropdownMenuItem>
-                          <DropdownMenuItem asChild>
-                              <Link href="/sponsors#bronze">Bronze Sponsor</Link>
-                          </DropdownMenuItem>
-                      </DropdownMenuContent>
-                  </DropdownMenu>
+                {/* Desktop Menu */}
+                <nav className="ml-auto hidden md:flex items-center gap-1 lg:gap-2">
+                    <Link href="/" className="text-sm font-medium px-3 py-2 hover:text-primary">Home</Link>
 
-                  <Link href="/contact" className="text-sm font-medium px-3 py-2 hover:text-primary">
-                      Contact
-                  </Link>
+                    {/* Dropdown Menus */}
+                    {[
+                        { name: "Speakers", prefix: "/speakers", links: ["#keynote", "#plenary", "#invited", "#distinguished"] },
+                        { name: "Committee", prefix: "/committee", links: ["#advisory", "#technical", "#core"] },
+                        { name: "Paper Submission", prefix: "/paper-submission", links: ["#call", "#guidelines", "#submission"] },
+                        { name: "Sponsors", prefix: "/sponsors", links: ["#platinum", "#gold", "#silver", "#bronze"] },
+                    ].map((item) => (
+                        <div key={item.name} className="relative group">
+                            <Button variant="ghost" className="flex items-center gap-1 h-9 px-3">
+                                <span className="text-sm font-medium">{item.name}</span>
+                                <ChevronDown className="h-4 w-4" />
+                            </Button>
+                            <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-900 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                                {item.links.map((link, index) => (
+                                    <Link key={index} href={`/speakers${link}`} className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800">
+                                        {link.replace("#", "").replace("-", " ")}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
 
-                  <ModeToggle />
-              </nav>
-          </div>
-      </header>
-  )
+                    <Link href="/registration" className="text-sm font-medium px-3 py-2 hover:text-primary">Registration</Link>
+                    <Link href="/contact" className="text-sm font-medium px-3 py-2 hover:text-primary">Contact</Link>
+
+                    <ModeToggle />
+                </nav>
+            </div>
+        </header>
+    )
 }
-
