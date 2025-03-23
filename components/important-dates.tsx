@@ -5,7 +5,7 @@ export function ImportantDates() {
     {
       title: "Paper Submission Deadline",
       description: "Full papers, short papers, and posters",
-      date: "June 15, 2025",
+      date: "May 15, 2025",
     },
     {
       title: "Notification of Acceptance",
@@ -15,12 +15,12 @@ export function ImportantDates() {
     {
       title: "Camera-Ready Submission",
       description: "Final version of accepted papers",
-      date: "July 30, 2025",
+      date: "August 10, 2025",
     },
     {
-      title: "Early Bird Registration",
+      title: "Registration Deadline",
       description: "Discounted registration fees",
-      date: "August 1, 2025",
+      date: "August 16, 2025",
     },
     {
       title: "Conference Dates",

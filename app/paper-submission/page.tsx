@@ -15,7 +15,7 @@ export default function PaperSubmissionPage() {
       </div>
 
       {/* Call for Papers */}
-      <section className="mt-16">
+      <section className="mt-16" id="Call">
         <h2 className="text-2xl font-bold mb-8">Call for Papers</h2>
         <div className="prose prose-blue dark:prose-invert max-w-none">
           <p>
@@ -84,7 +84,7 @@ export default function PaperSubmissionPage() {
       </section>
 
       {/* Author Guidelines */}
-      <section className="mt-16">
+      <section className="mt-16" id="Guidelines">
         <h2 className="text-2xl font-bold mb-8">Author Guidelines</h2>
         <div className="prose prose-blue dark:prose-invert max-w-none">
           <h3>Paper Format</h3>
@@ -143,7 +143,7 @@ export default function PaperSubmissionPage() {
 
       {/* Paper Submission */}
       <section className="mt-16">
-        <h2 className="text-2xl font-bold mb-8">Paper Submission</h2>
+        <h2 className="text-2xl font-bold mb-8" id="Submission">Paper Submission</h2>
         <div className="prose prose-blue dark:prose-invert max-w-none">
           <p>
             Papers should be submitted electronically through the Microsoft CMT conference management system. The

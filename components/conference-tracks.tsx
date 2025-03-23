@@ -4,33 +4,18 @@ export function ConferenceTracks() {
   const tracks = [
     {
       icon: <Shield className="h-6 w-6 text-primary" />,
-      title: "Cyber Security",
+      title: "Cyber Security in Infrastructure",
       description: "Network Security, Cryptography, Security Protocols, Intrusion Detection",
     },
     {
       icon: <Brain className="h-6 w-6 text-primary" />,
-      title: "AI for Security",
+      title: "AI driven Cyber Security",
       description: "Threat Intelligence, Anomaly Detection, Security Analytics, Automated Response",
     },
     {
       icon: <Lock className="h-6 w-6 text-primary" />,
-      title: "Secure AI",
+      title: "Cyber Security for Emerging Technologies",
       description: "Adversarial Machine Learning, Privacy-Preserving AI, Robust AI Systems",
-    },
-    {
-      icon: <Cloud className="h-6 w-6 text-primary" />,
-      title: "Cloud Security",
-      description: "Secure Cloud Computing, Virtualization Security, Containerization",
-    },
-    {
-      icon: <CheckSquare className="h-6 w-6 text-primary" />,
-      title: "Ethical AI",
-      description: "Responsible AI, Fairness, Accountability, Transparency, Ethics",
-    },
-    {
-      icon: <Cpu className="h-6 w-6 text-primary" />,
-      title: "IoT Security",
-      description: "Secure IoT Architectures, IoT Threat Modeling, Smart Device Security",
     },
   ]
 

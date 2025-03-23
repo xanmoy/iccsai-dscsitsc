@@ -9,8 +9,8 @@ export function ConferenceStats() {
     },
     {
       icon: <MapPin className="h-10 w-10 text-primary" />,
-      title: "Hybrid",
-      subtitle: "Virtual & In-Person",
+      title: "Collaboration",
+      subtitle: "Academics and industry",
     },
     {
       icon: <Clock className="h-10 w-10 text-primary" />,
@@ -19,18 +19,18 @@ export function ConferenceStats() {
     },
     {
       icon: <Users className="h-10 w-10 text-primary" />,
-      title: "500+",
+      title: "300+",
       subtitle: "Expected Attendees",
     },
     {
       icon: <Award className="h-10 w-10 text-primary" />,
       title: "12+",
-      subtitle: "Keynote Speakers",
+      subtitle: "Eminent Speakers",
     },
     {
       icon: <BookOpen className="h-10 w-10 text-primary" />,
-      title: "6",
-      subtitle: "Research Tracks",
+      title: "25+",
+      subtitle: "Research Domains",
     },
   ];
 

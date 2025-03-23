@@ -51,10 +51,10 @@ export function Header() {
 
                                 {/* Dropdowns */}
                                 {[
-                                    { name: "Speakers", prefix: "/speakers", links: ["#keynote", "#plenary", "#invited", "#distinguished"] },
-                                    { name: "Committee", prefix: "/committee", links: ["#advisory", "#technical", "#core"] },
-                                    { name: "Paper Submission", prefix: "/paper-submission", links: ["#call", "#guidelines", "#submission"] },
-                                    { name: "Sponsors", prefix: "/sponsors", links: ["#platinum", "#gold", "#silver", "#bronze"] },
+                                    { name: "Speakers", prefix: "/speakers", links: ["#Keynote", "#Plenary", "#Invited", "#Distinguished"] },
+                                    { name: "Committee", prefix: "/committee", links: ["#Advisory", "#Technical", "#Core"] },
+                                    { name: "Paper Submission", prefix: "/paper-submission", links: ["#Call", "#Guidelines", "#Submission"] },
+                                    { name: "Sponsors", prefix: "/sponsors", links: ["#Platinum", "#Gold", "#Silver", "#Bronze"] },
                                 ].map((item) => (
                                     <div key={item.name} className="border-b">
                                         <button className="flex justify-between items-center w-full text-base font-medium py-2" onClick={() => toggleDropdown(item.name)}>
@@ -86,10 +86,10 @@ export function Header() {
 
                     {/* Dropdown Menus */}
                     {[
-                        { name: "Speakers", prefix: "/speakers", links: ["#keynote", "#plenary", "#invited", "#distinguished"] },
-                        { name: "Committee", prefix: "/committee", links: ["#advisory", "#technical", "#core"] },
-                        { name: "Paper Submission", prefix: "/paper-submission", links: ["#call", "#guidelines", "#submission"] },
-                        { name: "Sponsors", prefix: "/sponsors", links: ["#platinum", "#gold", "#silver", "#bronze"] },
+                        { name: "Speakers", prefix: "/speakers", links: ["#Keynote", "#Plenary", "#Invited", "#Distinguished"] },
+                        { name: "Committee", prefix: "/committee", links: ["#Advisory", "#Technical", "#Core"] },
+                        { name: "Paper Submission", prefix: "/paper-submission", links: ["#Call", "#Guidelines", "#Submission"] },
+                        { name: "Sponsors", prefix: "/sponsors", links: ["#Platinum", "#Gold", "#Silver", "#Bronze"] },
                     ].map((item) => (
                         <div key={item.name} className="relative group">
                             <Button variant="ghost" className="flex items-center gap-1 h-9 px-3">
@@ -98,7 +98,7 @@ export function Header() {
                             </Button>
                             <div className="absolute right-0 mt-2 w-48 bg-background shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
                                 {item.links.map((link, index) => (
-                                    <Link key={index} href={`/speakers${link}`} className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800">
+                                    <Link key={index} href={`${item.prefix}${link}`} className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800">
                                         {link.replace("#", "").replace("-", " ")}
                                     </Link>
                                 ))}

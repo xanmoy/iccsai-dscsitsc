@@ -16,7 +16,7 @@ interface SpeakerSection {
 
 const speakerSections: SpeakerSection[] = [
   {
-    title: "Keynote Speakers",
+    title: "Keynote Address",
     speakers: [
       {
         id: "keynote-1",
@@ -36,21 +36,21 @@ const speakerSections: SpeakerSection[] = [
       },
     ],
   },
-  // {
-  //   title: "Plenary Speakers",
-  //   speakers: [
-  //     {
-  //       id: "plenary-1",
-  //       name: "Dr. John Doe",
-  //       designation: "Research Scientist",
-  //       institution: "MIT, USA",
-  //       bio: "Expert in cryptographic protocols and secure multi-party computation.",
-  //       image: "/placeholder.svg?height=128&width=128",
-  //     },
-  //   ],
-  // },
   {
-    title: "Invited Speakers",
+    title: "Plenary Speakers",
+    speakers: [
+      {
+        id: "plenary-1",
+        name: "Coming Soon",
+        designation: "Coming Soon",
+        institution: "Coming Soon",
+        bio: "Coming Soon",
+        image: "/placeholder.svg?height=128&width=128",
+      },
+    ],
+  },
+  {
+    title: "Invited Talk",
     speakers: [
       {
         id: "invited-1",
