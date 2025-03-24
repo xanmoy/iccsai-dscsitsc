@@ -25,6 +25,17 @@ export function Header() {
                     <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587074/Image_0435F73B_2D0F_4BF4_4181_65F86A8DAC19_y62wdr.png" alt="ICCSAI 2025" width={40} height={40} />
                 </Link>
 
+                <div className="hidden md:flex items-center gap-3 flex-wrap justify-start w-fit">
+                    <img src="https://www.surtech.edu.in/images/jis-logo.png" alt="JIS Logo" className="w-[40px] md:w-[40px]" />
+                    <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/NAAC-surtech.png" alt="NAAC Logo" className="w-[40px] md:w-[40px]" />
+                    <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/ugc.png" alt="UGC Logo" className="w-[20px] md:w-[20px]" />
+                    <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/iic.png" alt="IIC Logo" className="w-[20px] md:w-[20px]" />
+                    <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/nba.png" alt="NBA Logo" className="w-[25px] md:w-[25px]" />
+                    <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/wbut.png" alt="WBUT Logo" className="w-[20px] md:w-[20px]" />
+                    <img src="https://www.surtech.edu.in/images/Accreditation/logo-front/aicte.png" alt="AICTE Logo" className="w-[25px] md:w-[25px]" />
+                </div>
+
+
                 {/* Mobile Menu Button */}
                 <div className="md:hidden ml-auto flex items-center gap-3">
                     <ModeToggle />
@@ -52,19 +63,19 @@ export function Header() {
                                 {/* Dropdowns */}
                                 {[
                                     { name: "Speakers", prefix: "/speakers", links: ["#Keynote", "#Plenary", "#Invited", "#Distinguished"] },
-                                    { name: "Committee", prefix: "/committee", links: ["#Advisory", "#Technical", "#Core"] },
+                                    { name: "Committee", prefix: "/committee", links: ["Advisory", "Technical", "Core"] },
                                     { name: "Paper Submission", prefix: "/paper-submission", links: ["#Call", "#Guidelines", "#Submission"] },
                                     { name: "Sponsors", prefix: "/sponsors", links: ["#Platinum", "#Gold", "#Silver", "#Bronze"] },
                                 ].map((item) => (
                                     <div key={item.name} className="border-b">
                                         <button className="flex justify-between items-center w-full text-base font-medium py-2" onClick={() => toggleDropdown(item.name)}>
-                                            {item.name}
+                                            <Link href={item.prefix.toLowerCase()} className="text-sm font-medium">{item.name}</Link>
                                             <ChevronDown className={`h-4 w-4 transition-transform ${openDropdown === item.name ? "rotate-180" : ""}`} />
                                         </button>
                                         {openDropdown === item.name && (
                                             <div className="pl-4 space-y-2">
                                                 {item.links.map((link, index) => (
-                                                    <Link key={index} href={`${item.prefix}${link}`} className="block text-sm hover:bg-background/30 hover:text-primary" onClick={() => setIsMobileMenuOpen(false)}>
+                                                    <Link key={index} href={`${item.prefix.toLowerCase().replace(" ", "-")}${link}`} className="block text-sm hover:bg-background/30 hover:text-primary" onClick={() => setIsMobileMenuOpen(false)}>
                                                         {link.replace("#", "").replace("-", " ")}
                                                     </Link>
                                                 ))}
@@ -87,19 +98,19 @@ export function Header() {
                     {/* Dropdown Menus */}
                     {[
                         { name: "Speakers", prefix: "/speakers", links: ["#Keynote", "#Plenary", "#Invited", "#Distinguished"] },
-                        { name: "Committee", prefix: "/committee", links: ["#Technical", "#Finance", "#Registration", "#Management", "#Food", "#Transport", "#Website", "#Publicity"] },
+                        { name: "Committee", prefix: "/committee", links: ["/Advisory", "/Technical", "/Core"] },
                         { name: "Paper Submission", prefix: "/paper-submission", links: ["#Call", "#Guidelines", "#Submission"] },
                         { name: "Sponsors", prefix: "/sponsors", links: ["#Platinum", "#Gold", "#Silver", "#Bronze"] },
                     ].map((item) => (
                         <div key={item.name} className="relative group">
                             <Button variant="ghost" className="flex items-center gap-1 h-9 px-3">
-                                <span className="text-sm font-medium">{item.name}</span>
+                                <Link href={item.prefix.toLowerCase()} className="text-sm font-medium">{item.name}</Link>
                                 <ChevronDown className="h-4 w-4" />
                             </Button>
                             <div className="absolute right-0 mt-2 w-48 bg-background shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                                 {item.links.map((link, index) => (
-                                    <Link key={index} href={`${item.prefix}${link}`} className="block px-4 py-2 text-sm hover:bg-background/30 hover:text-primary">
-                                        {link.replace("#", "").replace("-", " ")}
+                                    <Link key={index} href={`${item.prefix}${link.toLowerCase().replace(" ", "-")}`} className="block px-4 py-2 text-sm hover:bg-background/30 hover:text-primary">
+                                        {link.replace("#", "").replace("-", " ").replace("/", "")}
                                     </Link>
                                 ))}
                             </div>

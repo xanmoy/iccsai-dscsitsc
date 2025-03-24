@@ -75,8 +75,12 @@ export function HeroSlider() {
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
                 {slide.title}
               </h1>
-              <h3 className="text-xl sm:text-2xl md:text-xl text-white/90 max-w-2xl mx-auto">{slide.data}</h3>
-              <h3 className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto">{slide.college}</h3>
+              <h3 className="text-xl sm:text-xl md:text-xl font-semibold text-white/90 max-w-2xl mx-auto">
+                {slide.data}
+              </h3>
+              <h3 className="text-lg sm:text-lg md:text-lg font-semibold text-white/90 max-w-2xl mx-auto">
+                {slide.college}
+              </h3>
               <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto">{slide.description}</p>
               <div className="flex flex-wrap justify-center gap-3 md:gap-4 pt-4 md:pt-6">
                 <Link href="/registration">
