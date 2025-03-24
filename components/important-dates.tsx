@@ -55,7 +55,7 @@ export function ImportantDates() {
         </motion.div>
 
         {/* Timeline */}
-        <div className="relative border-l-4 border-primary ml-6">
+        <div className="relative border-l-4 border-primary ml-6 ">
           {dates.map((item, index) => (
             <motion.div
               key={index}

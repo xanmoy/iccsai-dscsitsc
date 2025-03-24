@@ -6,14 +6,37 @@ import { ChevronDown, Menu, X } from "lucide-react"
 import { ModeToggle } from "@/components/mode-toggle"
 import Link from "next/link"
 import Image from 'next/image'
+import  DropdownMenu  from '@/components/DropdownMenu'
+
+
+
+
 
 export function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
     const [openDropdown, setOpenDropdown] = useState<string | null>(null)
 
-    const toggleDropdown = (menu: string) => {
-        setOpenDropdown(openDropdown === menu ? null : menu)
+    const toggleMobileDropdown = (menu: string, event?: React.MouseEvent<HTMLButtonElement>) => {
+        if (event) event.preventDefault(); // Prevent navigation when clicking the chevron
+        setOpenDropdown(openDropdown === menu ? null : menu);
     }
+
+
+    const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
+
+    interface DropdownEvent extends React.MouseEvent<HTMLButtonElement> {}
+
+    const toggleDropdown = (name: string, event: DropdownEvent): void => {
+        event.preventDefault(); // Prevent navigation when clicking the chevron
+        setOpenMobileDropdown(openDropdown === name ? null : name);
+    };
+
+    const menuItems = [
+        { name: "Speakers", prefix: "/speakers", links: ["#Keynote", "#Plenary", "#Invited", "#Distinguished"] },
+        { name: "Committee", prefix: "/committee", links: ["/Advisory", "/Technical", "/Core"] },
+        { name: "Paper Submission", prefix: "/paper-submission", links: ["#Call", "#Guidelines", "#Submission"] },
+        { name: "Sponsors", prefix: "/sponsors", links: ["#Platinum", "#Gold", "#Silver", "#Bronze"] },
+    ];
 
     return (
         <header className="sticky top-0 z-50 w-full border-b bg-background">
@@ -61,28 +84,7 @@ export function Header() {
                                 <Link href="/" className="block text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
 
                                 {/* Dropdowns */}
-                                {[
-                                    { name: "Speakers", prefix: "/speakers", links: ["#Keynote", "#Plenary", "#Invited", "#Distinguished"] },
-                                    { name: "Committee", prefix: "/committee", links: ["/Advisory", "/Technical", "/Core"] },
-                                    { name: "Paper Submission", prefix: "/paper-submission", links: ["#Call", "#Guidelines", "#Submission"] },
-                                    { name: "Sponsors", prefix: "/sponsors", links: ["#Platinum", "#Gold", "#Silver", "#Bronze"] },
-                                ].map((item) => (
-                                    <div key={item.name} className="border-b">
-                                        <button className="flex justify-between items-center w-full text-base font-medium py-2" onClick={() => toggleDropdown(item.name)}>
-                                            <Link href={item.prefix.toLowerCase()} className="text-sm font-medium">{item.name}</Link>
-                                            <ChevronDown className={`h-4 w-4 transition-transform ${openDropdown === item.name ? "rotate-180" : ""}`} />
-                                        </button>
-                                        {openDropdown === item.name && (
-                                            <div className="pl-4 space-y-2">
-                                                {item.links.map((link, index) => (
-                                                    <Link key={index} href={`${item.prefix.toLowerCase().replace(" ", "-")}${link.toLowerCase()}`} className="block text-sm hover:bg-background/30 hover:text-primary" onClick={() => setIsMobileMenuOpen(false)}>
-                                                        {link.replace("#", "").replace("-", " ").replace("/", "")}
-                                                    </Link>
-                                                ))}
-                                            </div>
-                                        )}
-                                    </div>
-                                ))}
+                                <DropdownMenu closeHeader={() => setIsMobileMenuOpen(false)} />
 
                                 <Link href="/registration" className="block text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Registration</Link>
                                 <Link href="/contact" className="block text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
