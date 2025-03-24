@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Mail } from "lucide-react"
+import { Download } from "lucide-react"
 
 export default function SponsorsPage() {
   return (
@@ -108,11 +108,17 @@ export default function SponsorsPage() {
               </ul>
             </div>
 
-            <div className="mt-8">
-              <Link href="mailto:sponsors@iccsai2025.org">
+            <div className="mt-8 flex flex-row gap-4">
+              <Link href="/">
                 <Button className="flex items-center gap-2">
-                  <Mail className="h-4 w-4" />
-                  Contact for Sponsorship Opportunities
+                  <Download className="h-5 w-5" />
+                  Sponsorship Prospectus (PDF)
+                </Button>
+              </Link>
+              <Link href="/">
+                <Button className="flex items-center gap-2">
+                  <Download className="h-5 w-5" />
+                  Sponsorship Form(PDF)
                 </Button>
               </Link>
             </div>

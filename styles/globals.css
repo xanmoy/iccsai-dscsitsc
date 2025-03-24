@@ -99,3 +99,14 @@
     @apply bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent;
   }
 }
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

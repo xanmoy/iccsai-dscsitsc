@@ -33,11 +33,11 @@ export default function ContactPage() {
                 <h3 className="font-bold">Email</h3>
                 <p className="text-muted-foreground">
                   General Inquiries:{" "}
-                  <a href="mailto:info@iccsai2025.org" className="text-primary hover:underline">
-                    info@iccsai2025.org
+                  <a href="mailto:debashis.das@dsec.ac.in" className="text-primary hover:underline">
+                    debashis.das@dsec.ac.in
                   </a>
                 </p>
-                <p className="text-muted-foreground">
+                {/* <p className="text-muted-foreground">
                   Paper Submissions:{" "}
                   <a href="mailto:papers@iccsai2025.org" className="text-primary hover:underline">
                     papers@iccsai2025.org
@@ -54,7 +54,7 @@ export default function ContactPage() {
                   <a href="mailto:sponsors@iccsai2025.org" className="text-primary hover:underline">
                     sponsors@iccsai2025.org
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
 
@@ -65,7 +65,7 @@ export default function ContactPage() {
                 <p className="text-muted-foreground">
                   Conference Secretariat:{" "}
                   <a href="tel:+11234567890" className="text-primary hover:underline">
-                    +1 (123) 456-7890
+                    +91 8584917446
                   </a>
                 </p>
               </div>

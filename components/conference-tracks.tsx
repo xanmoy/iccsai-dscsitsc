@@ -5,17 +5,17 @@ export function ConferenceTracks() {
     {
       icon: <Shield className="h-6 w-6 text-primary" />,
       title: "Cyber Security in Infrastructure",
-      description: "Integrity, Gamification, Blockchain, Trust, Forensics, Attacks, Smart Grid, Sensors, Cryptography.",
+      description: "Integrity, Trust Management, Attacks, Cryptography, quantum Security, Distributed System, Zero Trust, Embedded System ",
     },
     {
       icon: <Brain className="h-6 w-6 text-primary" />,
       title: "AI driven Cyber Security",
-      description: "Automation, Big Data, Governance, Threat Prediction, Post-Quantum, Explainable AI.",
+      description: "Automation, Gamification, Smart-grid, Big Data, A.I Governance, Threat Prediction, Cyber Warfare,",
     },
     {
       icon: <Lock className="h-6 w-6 text-primary" />,
       title: "Cyber Security for Emerging Technologies",
-      description: "Web, E-health, and Distributed Security, Cyber Warfare, 5G, Zero Trust, IoT & Cloud Forensics, Embedded & Digital Twin Security",
+      description: "Blockchain, Digital Forensics,Sensor Network, E-health, Web Service, 5G, IoT & Cloud Forensics, Embedded & Digital Twin",
     },
   ]
 

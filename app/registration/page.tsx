@@ -26,7 +26,7 @@ export default function RegistrationPage() {
 
           <div className="flex items-center gap-2 mt-4 text-primary">
             <Calendar className="h-5 w-5" />
-            <p className="font-semibold">Early Bird Registration Deadline: August 1, 2025</p>
+            <p className="font-semibold">Registration Deadline: August 20, 2025</p>
           </div>
 
           <h3 className="mt-8">Registration Fees</h3>
@@ -73,7 +73,7 @@ export default function RegistrationPage() {
             </TableBody>
           </Table>
 
-          <h3 className="mt-8">What's Included</h3>
+          <h3 className="mt-8">Registration Process</h3>
           <div className="grid text-white grid-cols-1 md:grid-cols-2 gap-6 mt-4">
             <div className="border bg-gradient-to-r from-primary via-primary/90 to-primary/80 rounded-lg p-6">
               <h4 className="text-lg font-semibold mb-4">In-Person Registration</h4>
@@ -108,8 +108,7 @@ export default function RegistrationPage() {
               rate (academic or industry) to have the paper included in the conference proceedings.
             </li>
             <li>
-              <strong>Cancellation Policy:</strong> Cancellations received before August 15, 2025 will receive a refund
-              minus a $100 processing fee. No refunds will be issued for cancellations after August 15, 2025.
+              <strong>Cancellation Policy:</strong> Cancellations received before August 15, 2025 will receive a refund with 50% of the registration fee. No refunds will be issued for cancellations after August 15, 2025.
             </li>
             <li>
               <strong>Student Registration:</strong> Students must provide proof of student status (student ID or letter
@@ -138,8 +137,8 @@ export default function RegistrationPage() {
 
         <p className="text-sm text-muted-foreground max-w-md text-center">
           For registration assistance, please contact{" "}
-          <a href="mailto:registration@iccsai2025.org" className="underline">
-            registration@iccsai2025.org
+          <a href="mailto:debashis.das@dsec.ac.in" className="underline">
+            debashis.das@dsec.ac.in
           </a>
         </p>
       </section>

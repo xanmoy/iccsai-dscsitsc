@@ -20,9 +20,9 @@ export function Header() {
             <div className="container flex h-16 items-center">
                 {/* Logo */}
                 <Link href="/" className="flex items-center space-x-2">
+                    <span className="hidden font-bold sm:inline-block">ICCSAI 2025</span>
                     <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1742817731/WhatsApp_Image_2025-03-23_at_2.15.13_PM-removebg-preview_srgdrz.png" alt="ICCSAI 2025" width={40} height={40} />
                     <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587074/Image_0435F73B_2D0F_4BF4_4181_65F86A8DAC19_y62wdr.png" alt="ICCSAI 2025" width={40} height={40} />
-                    <span className="hidden font-bold sm:inline-block">ICCSAI 2025</span>
                 </Link>
 
                 {/* Mobile Menu Button */}
@@ -64,7 +64,7 @@ export function Header() {
                                         {openDropdown === item.name && (
                                             <div className="pl-4 space-y-2">
                                                 {item.links.map((link, index) => (
-                                                    <Link key={index} href={`${item.prefix}${link}`} className="block text-sm" onClick={() => setIsMobileMenuOpen(false)}>
+                                                    <Link key={index} href={`${item.prefix}${link}`} className="block text-sm hover:bg-background/30 hover:text-primary" onClick={() => setIsMobileMenuOpen(false)}>
                                                         {link.replace("#", "").replace("-", " ")}
                                                     </Link>
                                                 ))}

@@ -13,7 +13,7 @@ export function ImportantDates() {
   const dates: DateItem[] = [
     {
       title: "Paper Submission Deadline",
-      description: "Full papers, short papers, and posters",
+      description: "Full papers",
       date: "May 15, 2025",
     },
     {
@@ -28,7 +28,7 @@ export function ImportantDates() {
     },
     {
       title: "Registration Deadline",
-      description: "Discounted registration fees",
+      description: "Registration fees",
       date: "August 16, 2025",
     },
     {

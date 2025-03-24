@@ -12,18 +12,25 @@ const slides = [
     title: "International Conference on Cyber Security and Artificial Intelligence",
     subtitle: "August 28-29, 2025",
     description: "Join leading researchers and practitioners at the intersection of cyber security and AI",
+    data: "Organized by the Department of Computer Science & Engineering",
+    college:"Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex"
+
   },
   {
     image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586537/wallpaperflare.com_wallpaper_mgc1zf.jpg",
     title: "Advancing Security Through AI",
     subtitle: "ICCSAI 2025",
     description: "Explore cutting-edge research and applications in cyber security and artificial intelligence",
+    data: "Organized by the Department of Computer Science & Engineering",
+    college: "Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex"
   },
   {
     image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586594/wallpaperflare.com_wallpaper_1_biccde.jpg",
     title: "Call for Papers Now Open",
     subtitle: "Submission Deadline: June 15, 2025",
     description: "Submit your research on AI-driven security solutions and secure AI systems",
+    data: "Organized by the Department of Computer Science & Engineering",
+    college: "Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex"
   },
 ]
 
@@ -68,6 +75,8 @@ export function HeroSlider() {
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
                 {slide.title}
               </h1>
+              <h3 className="text-xl sm:text-2xl md:text-xl text-white/90 max-w-2xl mx-auto">{slide.data}</h3>
+              <h3 className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto">{slide.college}</h3>
               <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto">{slide.description}</p>
               <div className="flex flex-wrap justify-center gap-3 md:gap-4 pt-4 md:pt-6">
                 <Link href="/registration">
