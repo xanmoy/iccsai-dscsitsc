@@ -120,7 +120,7 @@ const committeeData = [
         name: "Ms. Sayani Roy", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering"
       },
       {
-        name: "Mr. Tanmoy Gangully", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering"
+        name: "Mr. Tanmoy Ganguly", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering"
       }
     ],
   },
