@@ -20,7 +20,7 @@ export function Header() {
             <div className="container flex h-16 items-center">
                 {/* Logo */}
                 <Link href="/" className="flex items-center space-x-2">
-                    <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586052/iccsai_logo1_zhxums.jpg" alt="ICCSAI 2025" width={40} height={40} />
+                    <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1742817731/WhatsApp_Image_2025-03-23_at_2.15.13_PM-removebg-preview_srgdrz.png" alt="ICCSAI 2025" width={40} height={40} />
                     <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587074/Image_0435F73B_2D0F_4BF4_4181_65F86A8DAC19_y62wdr.png" alt="ICCSAI 2025" width={40} height={40} />
                     <span className="hidden font-bold sm:inline-block">ICCSAI 2025</span>
                 </Link>
@@ -87,7 +87,7 @@ export function Header() {
                     {/* Dropdown Menus */}
                     {[
                         { name: "Speakers", prefix: "/speakers", links: ["#Keynote", "#Plenary", "#Invited", "#Distinguished"] },
-                        { name: "Committee", prefix: "/committee", links: ["#Advisory", "#Technical", "#Core"] },
+                        { name: "Committee", prefix: "/committee", links: ["#Technical", "#Finance", "#Registration", "#Management", "#Food", "#Transport", "#Website", "#Publicity"] },
                         { name: "Paper Submission", prefix: "/paper-submission", links: ["#Call", "#Guidelines", "#Submission"] },
                         { name: "Sponsors", prefix: "/sponsors", links: ["#Platinum", "#Gold", "#Silver", "#Bronze"] },
                     ].map((item) => (
@@ -96,9 +96,9 @@ export function Header() {
                                 <span className="text-sm font-medium">{item.name}</span>
                                 <ChevronDown className="h-4 w-4" />
                             </Button>
-                            <div className="absolute right-0 mt-2 w-48 bg-background shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div className="absolute right-0 mt-2 w-48 bg-background shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                                 {item.links.map((link, index) => (
-                                    <Link key={index} href={`${item.prefix}${link}`} className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800">
+                                    <Link key={index} href={`${item.prefix}${link}`} className="block px-4 py-2 text-sm hover:bg-background/30 hover:text-primary">
                                         {link.replace("#", "").replace("-", " ")}
                                     </Link>
                                 ))}

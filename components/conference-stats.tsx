@@ -52,13 +52,13 @@ export function ConferenceStats() {
               key={index}
               className="relative flex flex-col items-center justify-center p-6 rounded-xl shadow-xl bg-card border border-border transform transition duration-300 hover:scale-105 hover:shadow-2xl"
             >
-              <div className="absolute top-0 left-0 w-full h-full bg-white/5 dark:bg-white/10 rounded-xl backdrop-blur-md"></div>
+              <div className="absolute top-0 left-0 w-full h-full bg-card shadow-sm card-hover dark:border-border rounded-xl backdrop-blur-md"></div>
               <div className="relative z-10 flex flex-col items-center space-y-3">
-                <div className="p-3 bg-white/20 dark:bg-white/10 rounded-full">
+                <div className="p-3 text-primary rounded-full">
                   {item.icon}
                 </div>
                 <h3 className="text-2xl font-bold">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.subtitle}</p>
+                <p className="text-xs md:text-sm text-muted-foreground text-center">{item.subtitle}</p>
               </div>
             </div>
           ))}

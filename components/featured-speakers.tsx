@@ -39,7 +39,7 @@ const featuredSpeakers = [
 
 export function FeaturedSpeakers() {
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20 bg-gradient-to-b from-background to-muted/50">
+    <section className="w-full py-12 md:py-16 lg:py-20 bg-gradient-to-b from-background to-muted/30 dark:from-background dark:to-card">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10 md:mb-16">
           <div className="space-y-2 max-w-3xl">
@@ -52,7 +52,10 @@ export function FeaturedSpeakers() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {featuredSpeakers.map((speaker, index) => (
-            <div key={index} className="flex flex-col items-center group card-hover bg-card rounded-xl p-6 border">
+            <div
+              key={index}
+              className="flex flex-col items-center group card-hover bg-card rounded-xl p-6 border dark:border-border"
+            >
               <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-4 border-4 border-primary/20 group-hover:border-primary/70 transition-colors shadow-md">
                 <Image src={speaker.image || "/placeholder.svg"} alt={speaker.name} fill className="object-cover" />
               </div>
@@ -60,9 +63,7 @@ export function FeaturedSpeakers() {
                 <h3 className="text-lg md:text-xl font-bold">{speaker.name}</h3>
                 <p className="text-primary font-medium text-sm md:text-base">{speaker.title}</p>
                 <p className="text-xs md:text-sm text-muted-foreground">{speaker.affiliation}</p>
-                {speaker.topic && (
-                  <p className="mt-2 font-medium text-sm md:text-base">{speaker.topic}</p>
-                )}
+                <p className="mt-2 font-medium text-sm md:text-base">{speaker.topic}</p>
                 {/* <p className="text-xs md:text-sm text-muted-foreground line-clamp-2">{speaker.bio}</p> */}
               </div>
             </div>
@@ -71,7 +72,7 @@ export function FeaturedSpeakers() {
 
         <div className="flex justify-center mt-10 md:mt-12">
           <Link href="/speakers">
-            <Button className="shadow-md">View All Speakers</Button>
+            <Button className="shadow-md dark:shadow-none">View All Speakers</Button>
           </Link>
         </div>
       </div>

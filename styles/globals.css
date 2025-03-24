@@ -27,25 +27,44 @@
   }
 
   .dark {
-    --background: 210 7% 14%;
-    --foreground: 210 6% 93%;
-    --card: 210 7% 14%;
-    --card-foreground: 210 6% 93%;
-    --popover: 210 7% 14%;
-    --popover-foreground: 210 6% 93%;
-    --primary: 217 89% 61%;
-    --primary-foreground: 210 6% 93%;
-    --secondary: 215 14% 22%;
-    --secondary-foreground: 210 6% 93%;
-    --muted: 215 14% 22%;
-    --muted-foreground: 217 10% 64%;
-    --accent: 215 14% 22%;
-    --accent-foreground: 210 6% 93%;
+    /* Supabase-inspired dark theme */
+    --background: 0 0% 13%;
+    /* #212121 */
+    --foreground: 0 0% 98%;
+    /* #fafafa */
+    --card: 0 0% 15%;
+    /* #262626 */
+    --card-foreground: 0 0% 98%;
+    /* #fafafa */
+    --popover: 0 0% 13%;
+    /* #212121 */
+    --popover-foreground: 0 0% 98%;
+    /* #fafafa */
+    --primary: 204 94% 48%;
+    /* #1a91ff */
+    --primary-foreground: 0 0% 100%;
+    /* #ffffff */
+    --secondary: 0 0% 18%;
+    /* #2e2e2e */
+    --secondary-foreground: 0 0% 98%;
+    /* #fafafa */
+    --muted: 0 0% 18%;
+    /* #2e2e2e */
+    --muted-foreground: 0 0% 65%;
+    /* #a6a6a6 */
+    --accent: 0 0% 18%;
+    /* #2e2e2e */
+    --accent-foreground: 0 0% 98%;
+    /* #fafafa */
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 6% 93%;
-    --border: 215 14% 22%;
-    --input: 215 14% 22%;
-    --ring: 224 76% 48%;
+    --destructive-foreground: 0 0% 98%;
+    /* #fafafa */
+    --border: 0 0% 20%;
+    /* #333333 */
+    --input: 0 0% 20%;
+    /* #333333 */
+    --ring: 204 94% 48%;
+    /* #1a91ff */
   }
 }
 
@@ -73,7 +92,7 @@
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1 dark:hover:shadow-none dark:hover:bg-secondary/80;
   }
 
   .gradient-heading {

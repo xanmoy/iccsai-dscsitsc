@@ -53,15 +53,16 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Google-inspired dark mode colors
-        google: {
+        // Supabase-inspired dark mode colors
+        supabase: {
           dark: {
-            bg: "#202124",
-            surface: "#292a2d",
-            border: "#3c4043",
-            text: "#e8eaed",
-            textSecondary: "#9aa0a6",
-            primary: "#8ab4f8",
+            bg: "#121212",
+            surface: "#1f1f1f",
+            border: "#2e2e2e",
+            text: "#f8f8f8",
+            textSecondary: "#a0a0a0",
+            primary: "#3ecf8e",
+            secondary: "#1a91ff",
           },
         },
       },
