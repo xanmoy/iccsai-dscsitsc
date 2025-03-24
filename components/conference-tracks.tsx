@@ -5,17 +5,17 @@ export function ConferenceTracks() {
     {
       icon: <Shield className="h-6 w-6 text-primary" />,
       title: "Cyber Security in Infrastructure",
-      description: "Network Security, Cryptography, Security Protocols, Intrusion Detection",
+      description: "Integrity, Gamification, Blockchain, Trust, Forensics, Attacks, Smart Grid, Sensors, Cryptography.",
     },
     {
       icon: <Brain className="h-6 w-6 text-primary" />,
       title: "AI driven Cyber Security",
-      description: "Threat Intelligence, Anomaly Detection, Security Analytics, Automated Response",
+      description: "Automation, Big Data, Governance, Threat Prediction, Post-Quantum, Explainable AI.",
     },
     {
       icon: <Lock className="h-6 w-6 text-primary" />,
       title: "Cyber Security for Emerging Technologies",
-      description: "Adversarial Machine Learning, Privacy-Preserving AI, Robust AI Systems",
+      description: "Web, E-health, and Distributed Security, Cyber Warfare, 5G, Zero Trust, IoT & Cloud Forensics, Embedded & Digital Twin Security",
     },
   ]
 
@@ -39,7 +39,7 @@ export function ConferenceTracks() {
               className="flex flex-col items-center space-y-3 rounded-xl p-6 border bg-card shadow-sm card-hover"
             >
               <div className="rounded-full bg-primary/10 p-3">{track.icon}</div>
-              <h3 className="text-xl font-bold">{track.title}</h3>
+              <h3 className="text-xl text-center font-bold">{track.title}</h3>
               <p className="text-sm text-muted-foreground text-center">{track.description}</p>
             </div>
           ))}

@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Download, ExternalLink } from "lucide-react"
-import "./paper.module.css"
+
 export default function PaperSubmissionPage() {
 
   const callForPapersData = {
