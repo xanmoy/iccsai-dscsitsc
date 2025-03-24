@@ -63,7 +63,7 @@ export function Header() {
                                 {/* Dropdowns */}
                                 {[
                                     { name: "Speakers", prefix: "/speakers", links: ["#Keynote", "#Plenary", "#Invited", "#Distinguished"] },
-                                    { name: "Committee", prefix: "/committee", links: ["Advisory", "Technical", "Core"] },
+                                    { name: "Committee", prefix: "/committee", links: ["/Advisory", "/Technical", "/Core"] },
                                     { name: "Paper Submission", prefix: "/paper-submission", links: ["#Call", "#Guidelines", "#Submission"] },
                                     { name: "Sponsors", prefix: "/sponsors", links: ["#Platinum", "#Gold", "#Silver", "#Bronze"] },
                                 ].map((item) => (
@@ -75,8 +75,8 @@ export function Header() {
                                         {openDropdown === item.name && (
                                             <div className="pl-4 space-y-2">
                                                 {item.links.map((link, index) => (
-                                                    <Link key={index} href={`${item.prefix.toLowerCase().replace(" ", "-")}${link}`} className="block text-sm hover:bg-background/30 hover:text-primary" onClick={() => setIsMobileMenuOpen(false)}>
-                                                        {link.replace("#", "").replace("-", " ")}
+                                                    <Link key={index} href={`${item.prefix.toLowerCase().replace(" ", "-")}${link.toLowerCase()}`} className="block text-sm hover:bg-background/30 hover:text-primary" onClick={() => setIsMobileMenuOpen(false)}>
+                                                        {link.replace("#", "").replace("-", " ").replace("/", "")}
                                                     </Link>
                                                 ))}
                                             </div>

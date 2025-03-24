@@ -1,19 +1,43 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Download } from "lucide-react"
+import { motion } from "framer-motion"
 
 export default function SponsorsPage() {
   return (
+    <div>
+
+      <div className="relative bg-gradient-to-r from-primary to-primary/80 py-20 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="flex flex-col items-center justify-center space-y-4 text-center"
+          >
+            <div className="flex flex-col items-center justify-center text-center">
+              <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">Sponsors</h1>
+              <p className="text-white/90 text-lg md:text-xl max-w-3xl">
+                Our sponsors help make ICCSAI 2025 possible. We are grateful for their support.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+        {/* <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent"></div> */}
+      </div>
+
+
     <div className="container px-4 py-12 md:px-6 md:py-24">
-      <div className="flex flex-col items-center justify-center space-y-4 text-center">
+      {/* <div className="flex flex-col items-center justify-center space-y-4 text-center">
         <div className="space-y-2">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Sponsors</h1>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Our sponsors help make ICCSAI 2025 possible. We are grateful for their support.
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* Platinum Sponsors */}
       <section className="mt-16">
@@ -125,6 +149,7 @@ export default function SponsorsPage() {
           </div>
         </div>
       </section>
+      </div>
     </div>
   )
 }

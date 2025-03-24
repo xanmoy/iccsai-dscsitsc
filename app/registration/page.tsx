@@ -1,19 +1,40 @@
+"use client"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { CreditCard, Calendar } from "lucide-react"
-
+import { motion } from "framer-motion"
 export default function RegistrationPage() {
   return (
+    <div>
+
+      <div className="relative bg-gradient-to-r from-primary to-primary/80 py-20 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="flex flex-col items-center justify-center space-y-4 text-center"
+          >
+            <div className="flex flex-col items-center justify-center text-center">
+              <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">Registration</h1>
+              <p className="text-white/90 text-lg md:text-xl max-w-3xl">
+                Register to attend ICCSAI 2025 and join the global community of cyber security and AI researchers.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+        {/* <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent"></div> */}
+      </div>
     <div className="container px-4 py-12 md:px-6 md:py-24">
-      <div className="flex flex-col items-center justify-center space-y-4 text-center">
+      {/* <div className="flex flex-col items-center justify-center space-y-4 text-center">
         <div className="space-y-2">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Registration</h1>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Register to attend ICCSAI 2025 and join the global community of cyber security and AI researchers.
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* Registration Information */}
       <section className="mt-16">
@@ -142,6 +163,7 @@ export default function RegistrationPage() {
           </a>
         </p>
       </section>
+      </div>
     </div>
   )
 }
