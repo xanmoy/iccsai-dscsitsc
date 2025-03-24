@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Clock, Users, Award, BookOpen } from "lucide-react";
+import { Calendar, HandHelping, Clock, Users, Award, BookOpen } from "lucide-react";
 
 export function ConferenceStats() {
   const highlights = [
@@ -8,7 +8,7 @@ export function ConferenceStats() {
       subtitle: "Conference Dates",
     },
     {
-      icon: <MapPin className="h-10 w-10 text-primary" />,
+      icon: <HandHelping className="h-10 w-10 text-primary" />,
       title: "Collaboration",
       subtitle: "Academics and industry",
     },

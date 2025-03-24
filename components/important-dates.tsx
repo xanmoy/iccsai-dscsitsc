@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { Calendar } from "lucide-react";
 
-
 export function ImportantDates() {
   type DateItem = {
     title: string;
@@ -40,50 +39,42 @@ export function ImportantDates() {
   ];
 
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20 bg-muted/50">
-      <div className="container px-4 md:px-6">
+    <section className="w-full py-16 bg-muted/50">
+      <div className="container max-w-4xl mx-auto px-6">
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col items-center justify-center space-y-4 text-center mb-10 md:mb-16"
+          className="text-center mb-12"
         >
-          <div className="space-y-2 max-w-3xl">
-            <h2 className="section-title gradient-heading">Important Dates</h2>
-            <p className="section-description">
-              Mark your calendar with these key deadlines for ICCSAI 2025.
-            </p>
-          </div>
+          <h2 className="text-3xl font-bold text-primary">Important Dates</h2>
+          <p className="text-muted-foreground text-lg mt-2">
+            Mark your calendar with these key deadlines for ICCSAI 2025.
+          </p>
         </motion.div>
 
-        <div className="relative mx-auto max-w-3xl">
-          <div className="absolute left-1/2 w-1 bg-primary h-full transform -translate-x-1/2"></div>
+        {/* Timeline */}
+        <div className="relative border-l-4 border-primary ml-6">
           {dates.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+              initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              className={`relative flex items-center mb-8 ${index % 2 === 0 ? "justify-start pl-8" : "justify-end pr-8"}`}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              className="relative pl-8 mb-10"
             >
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="w-1/2 p-4 bg-background rounded-lg shadow-md"
-              >
-                <h3 className="text-base md:text-lg font-bold">{item.title}</h3>
-                <p className="text-xs md:text-sm text-muted-foreground">{item.description}</p>
-                <div className="mt-2 font-semibold text-sm md:text-base text-primary">
-                  {item.date}
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.4, delay: index * 0.2 }}
-                className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-primary rounded-full flex items-center justify-center shadow-md"
-              >
-                <Calendar className="h-5 w-5 text-white" />
-              </motion.div>
+              {/* Icon */}
+              <div className="absolute left-[-18px] top-1 bg-primary text-white rounded-full p-2 shadow-lg">
+                <Calendar className="w-5 h-5" />
+              </div>
+
+              {/* Content Box */}
+              <div className="bg-background p-5 rounded-lg shadow-md border">
+                <h3 className="text-lg font-semibold text-primary">{item.title}</h3>
+                <p className="text-sm text-muted-foreground">{item.description}</p>
+                <div className="mt-2 text-base font-semibold text-accent-foreground">{item.date}</div>
+              </div>
             </motion.div>
           ))}
         </div>

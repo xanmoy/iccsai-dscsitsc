@@ -21,11 +21,11 @@ export function ModeToggle() {
   return (
     <div>
       {currentTheme === "light" ? (
-        <Button variant="ghost" onClick={() => setTheme("dark")}>
+        <Button className="bg-transparent hover:bg-transparent text-black" onClick={() => setTheme("dark")}>
           <Moon className="h-5 w-5" />
         </Button>
       ) : (
-        <Button variant="ghost" onClick={() => setTheme("light")}>
+        <Button className="bg-transparent hover:bg-transparent text-white"  onClick={() => setTheme("light")}>
           <Sun className="h-5 w-5" />
         </Button>
       )}
