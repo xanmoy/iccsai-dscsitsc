@@ -14,7 +14,7 @@ export function ConferenceStats() {
     },
     {
       icon: <Clock className="h-10 w-10 text-primary" />,
-      title: "June 15",
+      title: "May 30",
       subtitle: "Submission Deadline",
     },
     {

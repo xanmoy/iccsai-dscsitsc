@@ -21,16 +21,14 @@ const slides = [
     title: "Advancing Security Through AI",
     subtitle: "ICCSAI 2025",
     description: "Explore cutting-edge research and applications in cyber security and artificial intelligence",
-    data: "Organized by the Department of Computer Science & Engineering",
-    college: "Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex"
+
   },
   {
     image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586594/wallpaperflare.com_wallpaper_1_biccde.jpg",
     title: "Call for Papers Now Open",
     subtitle: "Submission Deadline: June 15, 2025",
     description: "Submit your research on AI-driven security solutions and secure AI systems",
-    data: "Organized by the Department of Computer Science & Engineering",
-    college: "Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex"
+
   },
 ]
 
