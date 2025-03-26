@@ -110,13 +110,20 @@ export function Header() {
                             </Button>
                             <div className="absolute right-0 mt-2 w-48 bg-background shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                                 {item.links.map((link, index) => (
-                                    <Link key={index} href={`${item.prefix}${link.toLowerCase().replace(" ", "-")}`} className="block px-4 py-2 text-sm hover:bg-background/30 hover:text-primary">
-                                        {link.replace("#", "").replace("-", " ").replace("/", "")}
+                                    <Link
+                                        key={index}
+                                        href={`${item.prefix}${link.toLowerCase().replaceAll(" ", "-")}`} // Keeps URL formatting
+                                        className="block px-4 py-2 text-sm hover:bg-background/30 hover:text-primary"
+                                    >
+                                        {link.startsWith("#")
+                                            ? link.replace("#", "").replaceAll("-", " ") // Fix display name for hash links
+                                            : (link.split("/").pop() ?? "").replaceAll("-", " ")} {/* Fix display name for path links */}
                                     </Link>
                                 ))}
                             </div>
                         </div>
                     ))}
+
 
                     {/* Paper Submission as a Normal Link */}
                     <Link href="/paper-submission" className="text-sm font-medium px-3 py-2 hover:text-primary">Paper Submission</Link>
