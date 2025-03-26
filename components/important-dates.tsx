@@ -14,7 +14,7 @@ export function ImportantDates() {
     {
       title: "Paper Submission Deadline",
       description: "Full papers",
-      date: "May 15, 2025",
+      date: "May 30, 2025",
     },
     {
       title: "Notification of Acceptance",

@@ -12,7 +12,10 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section with Slider */}
         <HeroSlider />
-
+        <div className="bg-blue-100 dark:bg-blue-300 text-center border-l-4 border-blue-500 text-blue-700 p-4 my-4">
+          <p className="font-semibold">Publication Notice:</p>
+          <p>All accepted papers are intended to be published in SPRINGER proceedings. (Confirmation is currently pending).</p>
+        </div>
         {/* Conference Stats */}
         <ConferenceStats />
 
