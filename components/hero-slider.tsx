@@ -8,29 +8,49 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const slides = [
   {
-    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586381/aboutsurtech_lnv0mh.jpg",
+    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742976569/IMG-20250320-WA0001_-_Mukund_Singh_rnqcpx.jpg",
     title: "International Conference on Cyber Security and Artificial Intelligence",
     subtitle: "August 28-29, 2025",
-    description: "Join leading researchers and practitioners at the intersection of cyber security and AI",
-    data: "Organized by the Department of Computer Science & Engineering",
-    college:"Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex"
+    description: "Engage with leading experts discussing the latest advancements at the intersection of cyber security and artificial intelligence.",
+    data: "Hosted by the Department of Computer Science & Engineering",
+    college: "Dr. Sudhir Chandra Sur Institute of Technology & Sports Complex"
+  },
+  {
+    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586381/aboutsurtech_lnv0mh.jpg",
+    title: "Dr. Sudhir Chandra Sur Institute of Technology & Sports Complex",
+    subtitle: "A Hub for Technological Excellence",
+    description: "Discover the institute's commitment to fostering innovation and research in technology and sports.",
+
+  },
+  {
+    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742976693/IMG_20250320_123406_-_BAIBHAV_DAS_ptrv5n.jpg",
+    title: "Keynote Speakers Announced",
+    subtitle: "Insights from Industry Leaders",
+    description: "Gain valuable perspectives from renowned speakers in the fields of cyber security and artificial intelligence.",
+
+  },
+  {
+    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742976790/IMG_20250320_123406_-_BAIBHAV_DAS_ui1cdt.jpg",
+    title: "Workshops and Tutorials",
+    subtitle: "Hands-on Learning Experiences",
+    description: "Participate in interactive sessions designed to deepen your understanding of emerging technologies.",
 
   },
   {
     image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586537/wallpaperflare.com_wallpaper_mgc1zf.jpg",
     title: "Advancing Security Through AI",
     subtitle: "ICCSAI 2025",
-    description: "Explore cutting-edge research and applications in cyber security and artificial intelligence",
+    description: "Explore cutting-edge research and applications in cyber security and artificial intelligence.",
 
   },
   {
     image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586594/wallpaperflare.com_wallpaper_1_biccde.jpg",
     title: "Call for Papers Now Open",
-    subtitle: "Submission Deadline: June 15, 2025",
-    description: "Submit your research on AI-driven security solutions and secure AI systems",
+    subtitle: "Submission Deadline: May 30, 2025",
+    description: "Submit your research on AI-driven security solutions and secure AI systems.",
+  }
+];
 
-  },
-]
 
 export function HeroSlider() {
   const [current, setCurrent] = useState(0)
