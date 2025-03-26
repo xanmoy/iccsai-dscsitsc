@@ -15,25 +15,18 @@ const slides = [
     data: "Hosted by the Department of Computer Science & Engineering",
     college: "Dr. Sudhir Chandra Sur Institute of Technology & Sports Complex"
   },
-  {
-    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586381/aboutsurtech_lnv0mh.jpg",
-    title: "Dr. Sudhir Chandra Sur Institute of Technology & Sports Complex",
-    subtitle: "A Hub for Technological Excellence",
-    description: "Discover the institute's commitment to fostering innovation and research in technology and sports.",
+  // {
+  //   image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742586381/aboutsurtech_lnv0mh.jpg",
+  //   title: "Dr. Sudhir Chandra Sur Institute of Technology & Sports Complex",
+  //   subtitle: "A Hub for Technological Excellence",
+  //   description: "Discover the institute's commitment to fostering innovation and research in technology and sports.",
 
-  },
+  // },
   {
     image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742976693/IMG_20250320_123406_-_BAIBHAV_DAS_ptrv5n.jpg",
     title: "Keynote Speakers Announced",
     subtitle: "Insights from Industry Leaders",
     description: "Gain valuable perspectives from renowned speakers in the fields of cyber security and artificial intelligence.",
-
-  },
-  {
-    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742976790/IMG_20250320_123406_-_BAIBHAV_DAS_ui1cdt.jpg",
-    title: "Workshops and Tutorials",
-    subtitle: "Hands-on Learning Experiences",
-    description: "Participate in interactive sessions designed to deepen your understanding of emerging technologies.",
 
   },
   {

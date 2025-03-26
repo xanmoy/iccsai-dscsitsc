@@ -32,9 +32,8 @@ export function Header() {
     };
 
     const menuItems = [
-        { name: "Speakers", prefix: "/speakers", links: ["#Keynote", "#Plenary", "#Invited", "#Distinguished"] },
-        { name: "Committee", prefix: "/committee", links: ["/Advisory", "/Technical", "/Core"] },
-        { name: "Paper Submission", prefix: "/paper-submission", links: ["#Call", "#Guidelines", "#Submission"] },
+        { name: "Speakers", prefix: "/speakers", links: ["#Keynote-Address", "#Plenary-Speech", "#Invited-Talk", "#Distinguished-Lecture"] },
+        { name: "Committee", prefix: "/committee", links: ["/Advisory-Committee", "/Technical-Program-Committee", "/Core-Committee"] },
         { name: "Sponsors", prefix: "/sponsors", links: ["#Platinum", "#Gold", "#Silver", "#Bronze"] },
     ];
 
@@ -86,6 +85,7 @@ export function Header() {
                                 {/* Dropdowns */}
                                 <DropdownMenu closeHeader={() => setIsMobileMenuOpen(false)} />
 
+                                <Link href="/paper-submission" className="block text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Paper Submission</Link>
                                 <Link href="/registration" className="block text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Registration</Link>
                                 <Link href="/contact" className="block text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
                             </nav>
@@ -99,9 +99,8 @@ export function Header() {
 
                     {/* Dropdown Menus */}
                     {[
-                        { name: "Speakers", prefix: "/speakers", links: ["#Keynote", "#Plenary", "#Invited", "#Distinguished"] },
-                        { name: "Committee", prefix: "/committee", links: ["/Advisory", "/Technical", "/Core"] },
-                        { name: "Paper Submission", prefix: "/paper-submission", links: ["#Call", "#Guidelines", "#Submission"] },
+                        { name: "Speakers", prefix: "/speakers", links: ["#Keynote-Address", "#Plenary-Speech", "#Invited-Talk", "#Distinguished-Lecture"] },
+                        { name: "Committee", prefix: "/committee", links: ["/Advisory-Committee", "/Technical-Program-Committee", "/Core-Committee"] },
                         { name: "Sponsors", prefix: "/sponsors", links: ["#Platinum", "#Gold", "#Silver", "#Bronze"] },
                     ].map((item) => (
                         <div key={item.name} className="relative group">
@@ -119,11 +118,15 @@ export function Header() {
                         </div>
                     ))}
 
+                    {/* Paper Submission as a Normal Link */}
+                    <Link href="/paper-submission" className="text-sm font-medium px-3 py-2 hover:text-primary">Paper Submission</Link>
+
                     <Link href="/registration" className="text-sm font-medium px-3 py-2 hover:text-primary">Registration</Link>
                     <Link href="/contact" className="text-sm font-medium px-3 py-2 hover:text-primary">Contact</Link>
 
                     <ModeToggle />
                 </nav>
+
             </div>
         </header>
     )

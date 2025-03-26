@@ -40,7 +40,7 @@ export default function SponsorsPage() {
       </div> */}
 
       {/* Platinum Sponsors */}
-      <section className="mt-16">
+      <section className="mt-16" id="platinum">
         <h2 className="text-2xl font-bold mb-8 text-center">Platinum Sponsors</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {[1, 2].map((i) => (
@@ -58,7 +58,7 @@ export default function SponsorsPage() {
       </section>
 
       {/* Gold Sponsors */}
-      <section className="mt-16">
+      <section className="mt-16" id="gold">
         <h2 className="text-2xl font-bold mb-8 text-center">Gold Sponsors</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[1, 2, 3].map((i) => (
@@ -76,7 +76,7 @@ export default function SponsorsPage() {
       </section>
 
       {/* Silver Sponsors */}
-      <section className="mt-16">
+      <section className="mt-16" id="silver">
         <h2 className="text-2xl font-bold mb-8 text-center">Silver Sponsors</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {[1, 2, 3, 4].map((i) => (
@@ -94,7 +94,7 @@ export default function SponsorsPage() {
       </section>
 
       {/* Bronze Sponsors */}
-      <section className="mt-16">
+      <section className="mt-16" id="bronze">
         <h2 className="text-2xl font-bold mb-8 text-center">Bronze Sponsors</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {[1, 2, 3, 4, 5, 6].map((i) => (
@@ -132,7 +132,7 @@ export default function SponsorsPage() {
               </ul>
             </div>
 
-            <div className="mt-8 flex flex-row gap-4">
+            <div className="mt-8 flex lg:flex-row flex-col gap-4">
               <Link href="/">
                 <Button className="flex items-center gap-2">
                   <Download className="h-5 w-5" />

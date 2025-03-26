@@ -13,12 +13,14 @@ interface Speaker {
 
 interface SpeakerSection {
   title: string;
+  id?: string
   speakers: Speaker[];
 }
 
 const speakerSections: SpeakerSection[] = [
   {
     title: "Keynote Address",
+    id: "keynote-address",
     speakers: [
       {
         id: "keynote-1",
@@ -40,6 +42,7 @@ const speakerSections: SpeakerSection[] = [
   },
   {
     title: "Plenary Speech",
+    id: "plenary-speech",
     speakers: [
       {
         id: "plenary-1",
@@ -53,6 +56,7 @@ const speakerSections: SpeakerSection[] = [
   },
   {
     title: "Invited Talk",
+    id: "invited-talk",
     speakers: [
       {
         id: "invited-1",
@@ -66,6 +70,7 @@ const speakerSections: SpeakerSection[] = [
   },
   {
     title: "Distinguished Lecture",
+    id: "distinguished-lecture",
     speakers: [
       {
         id: "distinguished-1",
@@ -111,7 +116,7 @@ export default function SpeakersPage() {
       </div> */}
 
       {speakerSections.map((section) => (
-        <section key={section.title} className="mt-16 text-center">
+        <section key={section.title} className="mt-16 text-center" id={section.id}>
           <h2 className="text-2xl font-bold mb-8">{section.title}</h2>
           <div className="flex flex-wrap justify-center gap-8">
             {section.speakers.map((speaker) => (

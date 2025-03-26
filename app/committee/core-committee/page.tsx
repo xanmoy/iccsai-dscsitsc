@@ -8,7 +8,7 @@ export default function CoreCommitteePage() {
             <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
+                transition={{ duration: 0.5 }}
                 className="flex flex-col items-center justify-center space-y-4 text-center"
             >
                 <div className="space-y-2">
@@ -24,10 +24,10 @@ export default function CoreCommitteePage() {
                 <motion.section
                     key={title}
                     className="mt-16"
-                    initial={{ opacity: 0, y: 40 }}
+                    initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: index * 0.2 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                     <h2 className="text-2xl font-bold text-center mb-8">{title}</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
@@ -36,7 +36,7 @@ export default function CoreCommitteePage() {
                                 key={i}
                                 className="flex flex-col items-center space-y-4 border rounded-lg p-6 w-80"
                                 whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3 }}
+                                transition={{ duration: 0.2 }}
                             >
                                 <div className="relative w-32 h-32 rounded-full overflow-hidden">
                                     <Image src={member.image} alt={member.name} width={128} height={128} className="object-cover" />
@@ -51,6 +51,7 @@ export default function CoreCommitteePage() {
                 </motion.section>
             ))}
         </div>
+
     )
 }
 
