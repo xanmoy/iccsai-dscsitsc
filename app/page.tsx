@@ -12,11 +12,14 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section with Slider */}
         <HeroSlider />
-        <div className="bg-blue-100 dark:bg-blue-300 text-center border-l-4 border-blue-500 text-blue-700 p-4 my-4">
-          <p className="font-semibold">Publication Notice:</p>
-          <p>All accepted papers are intended to be published in SPRINGER proceedings.</p>
-          <p>(Confirmation is currently pending).</p>
+        <div className="bg-gradient-to-r from-blue-500 to-blue-700 dark:from-blue-600 dark:to-blue-800 text-white text-center border-l-8 border-yellow-400 shadow-lg p-6 my-6 rounded-lg">
+          <p className="text-2xl font-extrabold uppercase tracking-wide">📢 Publication Notice</p>
+          <p className="mt-3 text-lg font-semibold">
+            All the accepted papers will be published in SPRINGER proceedings 
+            <span className="block mt-1 text-base text-gray-200 italic">(Confirmation awaited)</span>
+          </p>
         </div>
+
         {/* Conference Stats */}
         <ConferenceStats />
 

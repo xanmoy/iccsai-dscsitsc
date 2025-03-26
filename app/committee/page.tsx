@@ -6,15 +6,15 @@ import { motion } from 'framer-motion'
 export default function CommitteePage() {
   const dates = [
     {
-      slug: "advisory",
+      slug: "advisory-committee",
       title: "Advisory Committee",
     },
     {
-      slug: "technical",
-      title: "Technical Committee",
+      slug: "technical-program-committee",
+      title: "Technical Program Committee",
     },
     {
-      slug: "core",
+      slug: "core-committee",
       title: "Core Committee",
     },
   ]
@@ -39,24 +39,11 @@ export default function CommitteePage() {
             </div>
           </motion.div>
         </div>
-        {/* <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent"></div> */}
       </div>
 
     <div className="container px-4 py-12 md:px-6 md:py-24">
      
-      {/* <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="flex flex-col items-center justify-center space-y-4 text-center"
-      >
-        <div className="space-y-2">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Committee</h1>
-          <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Meet the team behind ICCSAI 2025 who are working to make this conference a success.
-          </p>
-        </div>
-      </motion.div> */}
+      
 
       <div className="mx-auto max-w-3xl space-y-4">
         {dates.map((item, index) => (
@@ -70,7 +57,7 @@ export default function CommitteePage() {
                   <div className="rounded-full bg-primary/10 p-2 hidden sm:block">
                     {/* <Calendar className="h-5 w-5 text-primary" /> */}
                   </div>
-                  <h3 className="text-base md:text-lg font-bold whitespace-nowrap">{item.title}</h3>
+                  <h3 className="text-base md:text-lg font-bold whitespace-rap">{item.title}</h3>
                 </div>
                 <div className="font-semibold text-sm md:text-base text-primary whitespace-nowrap">
                   Meet The Team

@@ -1,4 +1,5 @@
 import { Calendar, HandHelping, Clock, Users, Award, BookOpen } from "lucide-react";
+import  CountdownTimer  from "@/components/countdownTimer";
 
 export function ConferenceStats() {
   const highlights = [
@@ -46,6 +47,11 @@ export function ConferenceStats() {
           </p>
         </div>
 
+        <div className="flex flex-col justify-center mb-12">
+          <h3 className="text-center pb-3 text-xl font-bold tracking-wide uppercase">COUNTDOWN</h3>
+          <CountdownTimer targetDate="2025-08-28T00:00:00" />
+        </div>  
+      
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {highlights.map((item, index) => (
             <div
