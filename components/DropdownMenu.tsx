@@ -52,7 +52,7 @@ export default function DropdownMenu({ closeHeader }: { closeHeader: () => void 
                                     className="block text-sm hover:bg-background/30 hover:text-primary"
                                     onClick={closeHeader} // Close header when clicking a dropdown link
                                 >
-                                    {link.replace("#", "").replace("-", " ").replace("/", "")}
+                                    {link.replaceAll("#", "").replaceAll("-", " ").replace("/", "")}
                                 </Link>
                             ))}
                         </div>

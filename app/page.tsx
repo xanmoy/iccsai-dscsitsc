@@ -13,10 +13,10 @@ export default function Home() {
         {/* Hero Section with Slider */}
         <HeroSlider />
         <div className="bg-gradient-to-r from-blue-500 to-blue-700 dark:from-blue-600 dark:to-blue-800 text-white text-center border-l-8 border-yellow-400 shadow-lg p-6 my-6 rounded-lg">
-          <p className="text-2xl font-extrabold uppercase tracking-wide">📢 Publication Notice</p>
+          <p className="text-2xl font-extrabold uppercase tracking-wide">📢 Publication Note</p>
           <p className="mt-3 text-lg font-semibold">
             All the accepted papers will be published in SPRINGER proceedings 
-            <span className="block mt-1 text-base text-gray-200 italic">(Confirmation awaited)</span>
+            <span className="mt-1 text-base text-gray-200 italic">(Confirmation awaited)</span>
           </p>
         </div>
 
