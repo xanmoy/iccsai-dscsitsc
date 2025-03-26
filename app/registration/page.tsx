@@ -47,7 +47,7 @@ export default function RegistrationPage() {
 
           <div className="flex items-center gap-2 mt-4 text-primary">
             <Calendar className="h-5 w-5" />
-            <p className="font-semibold">Registration Deadline: August 20, 2025</p>
+            <p className="font-semibold">Registration Deadline: August 16, 2025</p>
           </div>
 
           <h3 className="mt-8">Registration Fees</h3>

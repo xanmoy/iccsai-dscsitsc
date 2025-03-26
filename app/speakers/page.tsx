@@ -39,7 +39,7 @@ const speakerSections: SpeakerSection[] = [
     ],
   },
   {
-    title: "Plenary Speakers",
+    title: "Plenary Speech",
     speakers: [
       {
         id: "plenary-1",
@@ -65,7 +65,7 @@ const speakerSections: SpeakerSection[] = [
     ],
   },
   {
-    title: "Distinguished Speakers",
+    title: "Distinguished Lecture",
     speakers: [
       {
         id: "distinguished-1",

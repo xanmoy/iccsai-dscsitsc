@@ -15,7 +15,7 @@ export default function CoreCommitteePage() {
                 className="flex flex-col items-center justify-center space-y-4 text-center"
             >
                 <div className="space-y-2">
-                    <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Technical Committee</h1>
+                    <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Technical Program Committee</h1>
                     <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                         Meet the Technical team behind ICCSAI 2025 who are working to make this conference a success.
                     </p>
@@ -32,7 +32,7 @@ export default function CoreCommitteePage() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: index * 0.2 }}
                 >
-                    <h2 className="text-2xl font-bold text-center mb-8">{title}</h2>
+                    {/* <h2 className="text-2xl font-bold text-center mb-8">{title}</h2> */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
                         {members.map((member, i) => (
                             <motion.div
@@ -41,9 +41,9 @@ export default function CoreCommitteePage() {
                                 whileHover={{ scale: 1.05 }}
                                 transition={{ duration: 0.3 }}
                             >
-                                <div className="relative w-32 h-32 rounded-full overflow-hidden">
+                                {/* <div className="relative w-32 h-32 rounded-full overflow-hidden">
                                     <Image src={member.image} alt={member.name} width={128} height={128} className="object-cover" />
-                                </div>
+                                </div> */}
                                 <div className="text-center">
                                     <h3 className="text-xl font-bold">{member.name}</h3>
                                     <p className="text-sm text-muted-foreground">{member.affiliation}</p>
@@ -63,7 +63,10 @@ const committeeData = [
     {
         title: "Coming Soon",
         members: [
-            { name: "Coming Soon", image: "/placeholder.svg?height=128&width=128", affiliation: "Coming Soon" },
+            { name: "Dr. Daya Sagar Gupta", affiliation: "Indian Institute of Technology, Patna, India" },
+            { name: "Dr. Shyamapada Mukherjee", affiliation: "National Institute of Technology, Rourkela, India" },
+            { name: "Dr. Debashis Das", affiliation: "Indian Institute of Technology, Jodhpur, India" },
+            { name: "Dr. Sanjaya Kumar Panda", affiliation: "National Institute of Technology, Warangle, India" },
         ],
     },
 ]

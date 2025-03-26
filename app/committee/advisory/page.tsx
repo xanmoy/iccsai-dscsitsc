@@ -29,7 +29,7 @@ export default function CoreCommitteePage() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: index * 0.2 }}
                 >
-                    <h2 className="text-2xl font-bold text-center mb-8">{title}</h2>
+                    {/* <h2 className="text-2xl font-bold text-center mb-8">{title}</h2> */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
                         {members.map((member, i) => (
                             <motion.div
@@ -38,9 +38,9 @@ export default function CoreCommitteePage() {
                                 whileHover={{ scale: 1.05 }}
                                 transition={{ duration: 0.3 }}
                             >
-                                <div className="relative w-32 h-32 rounded-full overflow-hidden">
+                                {/* <div className="relative w-32 h-32 rounded-full overflow-hidden">
                                     <Image src={member.image} alt={member.name} width={128} height={128} className="object-cover" />
-                                </div>
+                                </div> */}
                                 <div className="text-center">
                                     <h3 className="text-xl font-bold">{member.name}</h3>
                                     <p className="text-sm text-muted-foreground">{member.affiliation}</p>
@@ -57,9 +57,9 @@ export default function CoreCommitteePage() {
 // Committee Data
 const committeeData = [
     {
-        title: "Technical Committee",
+        title: "Advisory Committee",
         members: [
-            { name: "Coming Soon", image: "/placeholder.svg?height=128&width=128", affiliation: "Coming Soon" },
+            { name: "Prof. (Dr.) Jyotsna Kumar Mandal", affiliation: "Department of Computer Science and Engineering, Kalyani University, India" },
         ],
     },
 ]

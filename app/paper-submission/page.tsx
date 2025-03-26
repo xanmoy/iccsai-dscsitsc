@@ -40,10 +40,10 @@ export default function PaperSubmissionPage() {
       ],
     },
     importantDates: [
-      { label: "Paper Submission Deadline", date: "May 15, 2025" },
+      { label: "Paper Submission Deadline", date: "May 30, 2025" },
       { label: "Notification of Acceptance", date: "July 15, 2025" },
-      { label: "Camera-Ready Submission", date: "August 16, 2025" },
-      { label: "Registration Deadline", date: "August 20, 2025" },
+      { label: "Camera-Ready Submission", date: "August 10, 2025" },
+      { label: "Registration Deadline", date: "August 16, 2025" },
       { label: "Conference Dates", date: "August 28-29, 2025" },
     ],
   }

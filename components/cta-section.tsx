@@ -11,7 +11,7 @@ export function CTASection() {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">Join Us at ICCSAI 2025</h2>
             <p className="text-white/90 max-w-2xl text-base md:text-lg">
               Be part of the premier conference at the intersection of cyber security and artificial intelligence.
-              Register today to secure your spot and take advantage of early bird rates.
+              Register today to secure your spot.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/registration">
