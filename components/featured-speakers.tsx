@@ -30,9 +30,9 @@ const featuredSpeakers = [
   {
     name: "Dr. Tanushyam Chattopadhyay",
     title: "Distinguished Speaker",
-    affiliation: "Adani AI Lab, India",
+    affiliation: "AI Lab, Adani Enterprise Ltd, India",
     image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587371/unnamed_3_f7emra.jpg",
-    // topic: "Securing AI Systems at Scale",
+    topic: "Principal Scientist",
     // bio: "Industry leader in AI security and privacy-preserving machine learning techniques.",
   },
 ]
@@ -62,8 +62,9 @@ export function FeaturedSpeakers() {
               <div className="text-center space-y-2">
                 <h3 className="text-lg md:text-xl font-bold">{speaker.name}</h3>
                 <p className="text-primary font-medium text-sm md:text-base">{speaker.title}</p>
-                <p className="text-xs md:text-sm text-muted-foreground">{speaker.affiliation}</p>
-                <p className="mt-2 font-medium text-sm md:text-base">{speaker.topic}</p>
+                <p className="mt-2 text-muted-foreground font-medium text-sm md:text-base">{speaker.topic}</p>
+                <p className="text-xs md:text-sm">{speaker.affiliation}</p>
+                
                 {/* <p className="text-xs md:text-sm text-muted-foreground line-clamp-2">{speaker.bio}</p> */}
               </div>
             </div>

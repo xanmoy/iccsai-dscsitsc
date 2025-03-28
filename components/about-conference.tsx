@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { Download } from "lucide-react";
+
 export function AboutConference() {
   return (
     <section className="w-full py-12 md:py-16 lg:py-20">
@@ -31,9 +34,20 @@ export function AboutConference() {
           </div>
           <div className="relative h-[300px] sm:h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-xl">
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent z-10"></div>
-            <img src="/placeholder.svg?height=500&width=800" alt="Conference" className="w-full h-full object-cover" />
+            <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1743180407/129788_meirxk.jpg"
+              alt="Conference"
+              className="w-full h-full object-cover"
+              height={500}
+              width={500}
+            />
           </div>
         </div>
+      </div>
+      <div className="flex lg:pt-36 pt-10 justify-center">
+        <a href="https://drive.google.com/file/d/1HflzftHimNeUiWCFjBB_DAJI6TlByd-t/view?usp=sharing" className="bg-primary rounded-md flex items-center gap-2 px-6 py-2.5 text-base">
+          <Download className="h-5 w-5" />
+          Download Call for Papers (PDF)
+        </a>
       </div>
     </section>
   )
