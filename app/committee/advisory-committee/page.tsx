@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export default function CoreCommitteePage() {
     return (
-        <div className="container px-4 py-12 md:px-6 md:py-24">
+        <div className="container px-4 py-12 h-max md:h-screen md:px-6 md:py-24">
             <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -60,6 +60,11 @@ const committeeData = [
         title: "Advisory Committee",
         members: [
             { name: "Prof. (Dr.) Jyotsna Kumar Mandal", affiliation: "Department of Computer Science and Engineering, Kalyani University, India" },
+            { name: "Prof. (Dr.) Debdeep Mukhopadhyay", affiliation: "Jadavpur University, India" },
+            { name: "Prof. (Dr.) Rajat Subhra Chakraborty", affiliation: "Indian Institute of Technology, Kharagpur, India" },
+            { name: "Prof. (Dr.) Sudeep Tanwar", affiliation: "Nirma University, India" },
+            { name: "Prof. (Dr.) Rick S. Blum", affiliation: "Lehigh University, Pennsylvania, United States" },
+            { name: "Prof. (Dr.) Sundararaja Sitharama Iyengar", affiliation: "Florida International University, Miami, USA" },
         ],
     },
 ]

@@ -65,8 +65,10 @@ const committeeData = [
         members: [
             { name: "Dr. Daya Sagar Gupta", affiliation: "Indian Institute of Technology, Patna, India" },
             { name: "Dr. Shyamapada Mukherjee", affiliation: "National Institute of Technology, Rourkela, India" },
-            { name: "Dr. Debashis Das", affiliation: "Indian Institute of Technology, Jodhpur, India" },
+            { name: "Dr. Debasis Das", affiliation: "Indian Institute of Technology, Jodhpur, India" },
             { name: "Dr. Sanjaya Kumar Panda", affiliation: "National Institute of Technology, Warangle, India" },
+            { name: "Dr. Sangram Ray", affiliation: "National Institute of Technology, Sikkim, India" },
+            { name: "Dr. Sk. Hafizul Islam", affiliation: "Indian Institute of Information Technology, Kalyani, India" },
         ],
     },
 ]

@@ -89,7 +89,7 @@ const committeeData = [
             { name: "Ms. Debopriya Biswas", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
             { name: "Ms. Deepta Debnath", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
             { name: "Mrs. Debasmita Roy Chowdhury", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Basic Science & Humanities" },
-            { name: "Mrs. Nibedita Biswas", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Basic Science & Humanities" },
+            { name: "Ms. Nibedita Biswas", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Basic Science & Humanities" },
         ],
     },
     {
