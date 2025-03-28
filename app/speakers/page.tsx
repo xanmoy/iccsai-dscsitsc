@@ -76,8 +76,8 @@ const speakerSections: SpeakerSection[] = [
         id: "distinguished-1",
         name: "Dr. Tanushyam Chattopadhyay",
         designation: "Senior Researcher",
-        institution: "Adani AI Lab, India",
-        // bio: "Industry leader in AI security and privacy-preserving machine learning techniques.",
+        institution: "AI Lab, Adani Enterprise Ltd, India",
+        bio: "Principal Scientist",
         image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587371/unnamed_3_f7emra.jpg",
       },
     ],
@@ -132,8 +132,8 @@ export default function SpeakersPage() {
                 </div>
                 <div className="text-center">
                   <h3 className="text-xl font-bold">{speaker.name}</h3>
-                  <p className="text-sm text-muted-foreground">{speaker.institution}</p>
-                  <p className="mt-2 text-sm">{speaker.bio}</p>
+                  <p className="mt-2 text-sm text-muted-foreground">{speaker.bio}</p>
+                  <p className="text-sm">{speaker.institution}</p>
                 </div>
               </div>
             ))}

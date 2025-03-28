@@ -43,8 +43,8 @@ export function Header() {
                 {/* Logo */}
                 <Link href="/" className="flex items-center space-x-2">
                     <span className="hidden font-bold sm:inline-block">ICCSAI 2025</span>
-                    <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1742817731/WhatsApp_Image_2025-03-23_at_2.15.13_PM-removebg-preview_srgdrz.png" alt="ICCSAI 2025" width={40} height={40} />
-                    <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587074/Image_0435F73B_2D0F_4BF4_4181_65F86A8DAC19_y62wdr.png" alt="ICCSAI 2025" width={40} height={40} />
+                    <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1743176971/ICCSAI_final_pqjqxw.png" alt="ICCSAI 2025" width={40} height={40} />
+                    <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1743178517/Sur_Logos-04_pkljtx.png" alt="Surtech" width={50} height={50} />
                 </Link>
 
                 <div className="hidden md:flex items-center gap-3 flex-wrap justify-start w-fit">
