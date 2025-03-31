@@ -46,11 +46,11 @@ const speakerSections: SpeakerSection[] = [
     speakers: [
       {
         id: "plenary-1",
-        name: "Coming Soon",
-        designation: "Coming Soon",
-        institution: "Coming Soon",
-        bio: "Coming Soon",
-        image: "/placeholder.svg?height=128&width=128",
+        name: "Prof. (Dr.) Anand Nayyar",
+        designation: "Professor",
+        institution: "Duy Tan University, Da Nang, Viet Nam",
+        bio: "School of Computer Science",
+        image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743448839/Dr.AnandNayyar_qvyepp.png",
       },
     ],
   },

@@ -65,6 +65,8 @@ const committeeData = [
             { name: "Prof. (Dr.) Sudeep Tanwar", affiliation: "Nirma University, India" },
             { name: "Prof. (Dr.) Rick S. Blum", affiliation: "Lehigh University, Pennsylvania, United States" },
             { name: "Prof. (Dr.) Sundararaja Sitharama Iyengar", affiliation: "Florida International University, Miami, USA" },
+            { name: "Prof. (Dr.) Anand Nayyar", affiliation: "Duy Tan University, Da Nang, Viet Nam" },
+            { name: " Dr. Arup Kumar Pal", affiliation: "Indian Institute of Technology (Indian School of Mines), Dhanbad, India" },
         ],
     },
 ]

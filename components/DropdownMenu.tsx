@@ -19,7 +19,7 @@ export default function DropdownMenu({ closeHeader }: { closeHeader: () => void 
     const menuItems = [
         { name: "Speakers", prefix: "/speakers", links: ["#Keynote-Address", "#Plenary-Speech", "#Invited-Talk", "#Distinguished-Lecture"] },
         { name: "Committee", prefix: "/committee", links: ["/Advisory-Committee", "/Technical-Program-Committee", "/Core-Committee"] },
-        { name: "Sponsors", prefix: "/sponsors", links: ["#Platinum", "#Gold", "#Silver", "#Bronze"] },
+       
     ];
 
     return (

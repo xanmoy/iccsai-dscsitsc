@@ -133,9 +133,12 @@ export default function PaperSubmissionPage() {
             ))}
           </div>
 
-          <div className="flex justify-center">
-            <a href="https://drive.google.com/file/d/1HflzftHimNeUiWCFjBB_DAJI6TlByd-t/view?usp=sharing" className="bg-primary rounded-md flex items-center gap-2 px-6 py-2.5 text-base">
-              <Download className="h-5 w-5" />
+          <div className="flex justify-center text-white">
+            <a href="https://drive.google.com/file/d/1KCg083D6lQrdzbhaNslUhV48DAv4kQ8r/view?usp=sharing" className="bg-primary rounded-md flex items-center gap-2 px-6 py-2.5 text-base"
+            
+              target="_blank">
+              
+              <Download className="h-5 w-5 text-white" />
               Download Call for Papers (PDF)
             </a>
           </div>
@@ -234,8 +237,8 @@ export default function PaperSubmissionPage() {
             <p className="text-lg mb-2">
               For any questions regarding paper submission, please contact the Program Chairs at:
             </p>
-            <a href="mailto:debashis.das@dsec.ac.in" className="text-primary text-xl font-medium hover:underline">
-              debashis.das@dsec.ac.in
+            <a href="mailto:conference.surtech@dsec.ac.in" className="text-primary text-xl font-medium hover:underline">
+              conference.surtech@dsec.ac.in
             </a>
           </div>
         </section>

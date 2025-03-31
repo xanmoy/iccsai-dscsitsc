@@ -69,6 +69,12 @@ const committeeData = [
             { name: "Dr. Sanjaya Kumar Panda", affiliation: "National Institute of Technology, Warangle, India" },
             { name: "Dr. Sangram Ray", affiliation: "National Institute of Technology, Sikkim, India" },
             { name: "Dr. Sk. Hafizul Islam", affiliation: "Indian Institute of Information Technology, Kalyani, India" },
+            { name: "Dr. Soumya Das", affiliation: "Eindhoven University of Technology, Netherlands" },
+            { name: "Dr. Md. Azharuddin", affiliation: "Aliah University, Kolkata , India" },
+            { name: "Dr. Pratyay Kuila", affiliation: "National Institute of Technology, Sikkim, India" },
+            { name: "Dr. Sumanta Ray", affiliation: "The West Bengal National University of Juridical Science, Kolkata, India" },
+            { name: "Dr. Mantosh Biswas", affiliation: "University of Delhi, India" },
+            { name: "Dr. Ruhul Amin", affiliation: "International Institute of Information Technology, Naya Raipur, India" },
         ],
     },
 ]
