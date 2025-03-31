@@ -60,69 +60,72 @@ const committeeData = [
     {
         title: "Technical Committee",
         members: [
-            { name: "Mr. Sohom Mukherjee", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
-            { name: "Mrs. Chandrima Sinha Roy", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
-            { name: "Mr. Arnab Hazra", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
+            { name: "Mr. Sohom Mukherjee", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450449/SohomMukherjee_kjvs7e.png", affiliation: "Department of Computer Science & Engineering" },
+            { name: "Mrs. Chandrima Sinha Roy", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449751/ChandrimaSinhaRoy_qc4faz.jpg", affiliation: "Department of Computer Science & Engineering" },
+            { name: "Mr. Arnab Hazra", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449689/ArnabHazra_zdxjoc.jpg", affiliation: "Department of Computer Science & Engineering" },
         ],
     },
     {
         title: "Finance Committee",
         members: [
-            { name: "Mr. Sanjoy Bhattacharjee", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
-            { name: "Mr. Amal Kumar Saha", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
+            { name: "Mr. Sanjoy Bhattacharjee", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450383/SanjoyBhattacharjee_rc9lwy.jpg", affiliation: "Department of Computer Science & Engineering" },
+            { name: "Mr. Amal Kumar Saha", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449396/AmalKumarSaha_uzvo7d.jpg", affiliation: "Department of Computer Science & Engineering" },
         ],
     },
     {
         title: "Registration Committee",
         members: [
-            { name: "Mrs. Mousumi Ojha", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
-            { name: "Mrs. Rebeka Sultana", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
-            { name: "Ms. Sayani Roy", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
+            { name: "Mrs. Mousumi Ojha", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450247/Mousumi_Ojha_nyrzqn.jpg", affiliation: "Department of Computer Science & Engineering" },
+            { name: "Mrs. Rebeka Sultana", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450347/Rebeka_Sultana_pfmlhy.jpg", affiliation: "Department of Computer Science & Engineering" },
+            { name: "Ms. Sayani Roy", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450501/SayaniRoy_d1ggpw.jpg", affiliation: "Department of Computer Science & Engineering" },
         ],
     },
     {
         title: "Event Management Committee",
         members: [
-            { name: "Mr. Anoy Chowdhury", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
-            { name: "Mr. Abhishek Bysack", image: "/placeholder.svg?height=128&width=128", affiliation: "System Administration" },
+            { name: "Mr. Anoy Chowdhury", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449601/Anoy_Chowdhury_pwhxrj.jpg", affiliation: "Department of Computer Science & Engineering" },
+            { name: "Mr. Abhishek Bysack", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449332/AbhishekBysack_ug9dq0.jpg", affiliation: "System Administration" },
             { name: "Ms. Chandrika Panja", image: "/placeholder.svg?height=128&width=128", affiliation: "Admin Department" },
-            { name: "Ms. Debopriya Biswas", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
-            { name: "Ms. Deepta Debnath", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
-            { name: "Mrs. Debasmita Roy Chowdhury", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Basic Science & Humanities" },
-            { name: "Ms. Nibedita Biswas", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Basic Science & Humanities" },
+            { name: "Ms. Debopriya Biswas", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449785/DebapriyaBiswas_pzk6lp.jpg", affiliation: "Department of Computer Science & Engineering" },
+            { name: "Ms. Deepta Debnath", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450146/DeeptaDebnath_uwrnte.png", affiliation: "Department of Computer Science & Engineering" },
+            { name: "Mrs. Debasmita Roy Chowdhury", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450065/DebasmitaRoyChowdhury_dxapmb.jpg", affiliation: "Department of Basic Science & Humanities" },
+            { name: "Ms. Nibedita Biswas", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450314/NibeditaBiswas_nkjkg0.jpg", affiliation: "Department of Basic Science & Humanities" },
         ],
     },
     {
         title: "Food Committee",
         members: [
-            { name: "Mr. Sanjoy Bhattacharjee", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
+            { name: "Mr. Sanjoy Bhattacharjee", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450383/SanjoyBhattacharjee_rc9lwy.jpg", affiliation: "Department of Computer Science & Engineering" },
             {
-                name: "Mr. Manoj Pandey", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering"
+                name: "Mr. Manoj Pandey", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450271/ManojPandey_xelmmj.jpg", affiliation: "Department of Computer Science & Engineering"
             }
         ],
     },
     {
         title: "Transport Committee",
         members: [
-            { name: "Dr. Amitava Halder", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
+            { name: "Dr. Amitava Halder", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449545/AmitavaHalder_evziah.jpg", affiliation: "Department of Computer Science & Engineering" },
             {
                 name: "Mrs. Sayani Ghosh Saha", image: "/placeholder.svg?height=128&width=128", affiliation: "Admin Department"
             },
             {
-                name: "Mr. Maheswar Das", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering"
+                name: "Mr. Maheswar Das", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450203/MaheshwarDas_fztqyb.jpg", affiliation: "Department of Computer Science & Engineering"
             }
         ],
     },
     {
-        title: "Website Committee",
+        title: "Website & Design Committee",
         members: [
             { name: "Mr. Sourav Singha", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering" },
             {
-                name: "Ms. Sayani Roy", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering"
+                name: "Ms. Sayani Roy", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450501/SayaniRoy_d1ggpw.jpg", affiliation: "Department of Computer Science & Engineering"
             },
             {
                 name: "Mr. Tanmoy Ganguly", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering"
-            }
+            },
+            {
+                name: "Mrs. Chandrima Sinha Roy", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449751/ChandrimaSinhaRoy_qc4faz.jpg", affiliation: "Department of Computer Science & Engineering"
+            },
         ],
     },
     {

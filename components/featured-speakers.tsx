@@ -35,6 +35,14 @@ const featuredSpeakers = [
     topic: "Principal Scientist",
     // bio: "Industry leader in AI security and privacy-preserving machine learning techniques.",
   },
+  {
+    name: "Prof. (Dr.) Anand Nayyar",
+    title: "Plenary Speaker",
+    affiliation: "Duy Tan University, Da Nang, Viet Nam",
+    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743448839/Dr.AnandNayyar_qvyepp.png",
+    topic: "School of Computer Science",
+    // bio: "Industry leader in AI security and privacy-preserving machine learning techniques.",
+  },
 ]
 
 export function FeaturedSpeakers() {

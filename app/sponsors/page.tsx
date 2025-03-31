@@ -97,7 +97,24 @@ export default function SponsorsPage() {
       <section className="mt-16" id="bronze">
         <h2 className="text-2xl font-bold mb-8 text-center">Bronze Sponsors</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
+          {[1, 2, 3, 4].map((i) => (
+            <div key={`bronze-${i}`} className="flex flex-col items-center justify-center border rounded-lg p-4">
+              <Image
+                src="/placeholder.svg?height=80&width=160"
+                alt={`Bronze Sponsor ${i}`}
+                width={160}
+                height={80}
+                className="object-contain"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+      {/* Other Sponsors */}
+      <section className="mt-16" id="bronze">
+        <h2 className="text-2xl font-bold mb-8 text-center">Other Sponsors</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {[1, 2, 3, 4].map((i) => (
             <div key={`bronze-${i}`} className="flex flex-col items-center justify-center border rounded-lg p-4">
               <Image
                 src="/placeholder.svg?height=80&width=160"
@@ -133,13 +150,15 @@ export default function SponsorsPage() {
             </div>
 
             <div className="mt-8 flex lg:flex-row flex-col gap-4">
-              <Link href="/">
+                <Link href="https://drive.google.com/file/d/1uw0WPnak7RhsdpiTmSurK2W1Jzc1XGWf/view?usp=sharing"
+                target="_blank">
                 <Button className="flex items-center gap-2">
                   <Download className="h-5 w-5" />
                   Sponsorship Prospectus (PDF)
                 </Button>
               </Link>
-              <Link href="/">
+                <Link href="https://drive.google.com/file/d/1keqMzTgNI9JDflcb1heLTdlSlgoj3hEP/view?usp=sharing"
+                target="_blank">
                 <Button className="flex items-center gap-2">
                   <Download className="h-5 w-5" />
                   Sponsorship Form(PDF)

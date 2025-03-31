@@ -34,7 +34,6 @@ export function Header() {
     const menuItems = [
         { name: "Speakers", prefix: "/speakers", links: ["#Keynote-Address", "#Plenary-Speech", "#Invited-Talk", "#Distinguished-Lecture"] },
         { name: "Committee", prefix: "/committee", links: ["/Advisory-Committee", "/Technical-Program-Committee", "/Core-Committee"] },
-        { name: "Sponsors", prefix: "/sponsors", links: ["#Platinum", "#Gold", "#Silver", "#Bronze"] },
     ];
 
     return (
@@ -85,6 +84,7 @@ export function Header() {
                                 {/* Dropdowns */}
                                 <DropdownMenu closeHeader={() => setIsMobileMenuOpen(false)} />
 
+                                <Link href="/sponsors" className="block text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Sponsors</Link>
                                 <Link href="/paper-submission" className="block text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Paper Submission</Link>
                                 <Link href="/registration" className="block text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Registration</Link>
                                 <Link href="/contact" className="block text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
@@ -101,7 +101,7 @@ export function Header() {
                     {[
                         { name: "Speakers", prefix: "/speakers", links: ["#Keynote-Address", "#Plenary-Speech", "#Invited-Talk", "#Distinguished-Lecture"] },
                         { name: "Committee", prefix: "/committee", links: ["/Advisory-Committee", "/Technical-Program-Committee", "/Core-Committee"] },
-                        { name: "Sponsors", prefix: "/sponsors", links: ["#Platinum", "#Gold", "#Silver", "#Bronze"] },
+                        
                     ].map((item) => (
                         <div key={item.name} className="relative group">
                             <Button variant="ghost" className="flex items-center gap-1 h-9 px-3">
@@ -125,9 +125,9 @@ export function Header() {
                     ))}
 
 
-                    {/* Paper Submission as a Normal Link */}
+     
+                    <Link href="/sponsors" className="text-sm font-medium px-3 py-2 hover:text-primary">Sponsors</Link>
                     <Link href="/paper-submission" className="text-sm font-medium px-3 py-2 hover:text-primary">Paper Submission</Link>
-
                     <Link href="/registration" className="text-sm font-medium px-3 py-2 hover:text-primary">Registration</Link>
                     <Link href="/contact" className="text-sm font-medium px-3 py-2 hover:text-primary">Contact</Link>
 
