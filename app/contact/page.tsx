@@ -55,8 +55,8 @@ export default function ContactPage() {
                 <h3 className="font-bold">Email</h3>
                 <p className="text-muted-foreground">
                   General Inquiries:{" "}
-                  <a href="mailto:debashis.das@dsec.ac.in" className="text-primary hover:underline">
-                    debashis.das@dsec.ac.in
+                    <a href="mailto:conference.surtech@dsec.ac.in" className="text-primary hover:underline">
+                      conference.surtech@dsec.ac.in
                   </a>
                 </p>
                 {/* <p className="text-muted-foreground">

@@ -144,6 +144,11 @@ export default function RegistrationPage() {
                   <TableCell>$300</TableCell>
                 </TableRow>
                 <TableRow className="hover:bg-muted/30">
+                  <TableCell className="font-medium">Delegates (Academia/ Industry)</TableCell>
+                  <TableCell>₹5000</TableCell>
+                  <TableCell>$150</TableCell>
+                </TableRow>
+                <TableRow className="hover:bg-muted/30">
                   <TableCell className="font-medium">Attendees (Author but not Presenter) - One Day</TableCell>
                   <TableCell>₹2500</TableCell>
                   <TableCell>$100</TableCell>
