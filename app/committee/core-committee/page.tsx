@@ -22,7 +22,7 @@ export default function CoreCommitteePage() {
             
             {/* Render HeadData Sections */}
             <motion.section
-                className="mt-16 flex flex-col sm:flex-row sm:justify-center sm:gap-12"
+                className="mt-16 flex flex-col sm:flex-row gap-6 sm:justify-center sm:gap-12"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
