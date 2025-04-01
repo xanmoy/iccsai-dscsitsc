@@ -19,6 +19,40 @@ export default function CoreCommitteePage() {
                 </div>
             </motion.div>
 
+            
+            {/* Render HeadData Sections */}
+            <motion.section
+                className="mt-16 flex flex-col sm:flex-row sm:justify-center sm:gap-12"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+            >
+                {headData.map(({ title, member }, index) => (
+                    <motion.div
+                        key={title}
+                        className="flex flex-col items-center space-y-6 border rounded-lg p-6 w-full sm:w-96"
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.2, delay: index * 0.1 }}
+                    >
+                        <h2 className="text-2xl font-bold text-center">{title}</h2>
+                        {member.map((member, i) => (
+                            <div key={i} className="flex flex-col items-center">
+                                <div className="relative w-32 h-32 rounded-full overflow-hidden">
+                                    <Image src={member.image} alt={member.name} width={128} height={128} className="object-cover" />
+                                </div>
+                                <div className="text-center mt-2">
+                                    <h3 className="text-xl font-bold">{member.name}</h3>
+                                    <p className="text-sm text-muted-foreground">{member.affiliation}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </motion.div>
+                ))}
+            </motion.section>
+
+
+
             {/* Render Committee Sections */}
             {committeeData.map(({ title, members }, index) => (
                 <motion.section
@@ -56,7 +90,52 @@ export default function CoreCommitteePage() {
 }
 
 // Committee Data
+type Member = {
+    name: string;
+    image: string;
+    affiliation: string;
+};
+
+type HeadData = {
+    title: string;
+    member: Member[];
+};
+type CommitteeData = {
+    title: string;
+    members: Member[];
+};
+
+const headData: HeadData[] = [
+    {
+        title: "Convenor",
+        member: [
+            {
+                name: "Dr. Debashis Das",
+                image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449860/DebashisDas_wvkkfd.jpg",
+                affiliation: "Department of Computer Science & Engineering"
+            }
+        ]
+    },
+    {
+        title: "Co-Convenor",
+        member: [
+            {
+                name: "Prof. (Dr.) Soumitra Roy",
+                image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450529/SoumitraRoy_rsto7k.jpg",
+                affiliation: "Department of Computer Science & Engineering"
+            }
+        ]
+    }
+];
 const committeeData = [
+    {
+        title: "Organizing Committee",
+        members: [
+            { name: "Dr. Amrut Ranjan Jena", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449434/AmrutRanjanJena_jm8f3s.jpg", affiliation: "Department of Computer Science & Engineering" },
+            { name: "Mrs. Madhusmita Mishra", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450183/MadhusmitaMishra_nkpyun.jpg", affiliation: "Department of Computer Science & Engineering (AI & ML)" },
+            { name: "Dr. Amitava Halder", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449545/AmitavaHalder_evziah.jpg", affiliation: "Department of Computer Science & Engineering" },
+        ],
+    },
     {
         title: "Technical Committee",
         members: [
@@ -121,7 +200,7 @@ const committeeData = [
                 name: "Ms. Sayani Roy", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450501/SayaniRoy_d1ggpw.jpg", affiliation: "Department of Computer Science & Engineering"
             },
             {
-                name: "Mr. Tanmoy Ganguly", image: "/placeholder.svg?height=128&width=128", affiliation: "Department of Computer Science & Engineering"
+                name: "Mr. Tanmoy Ganguly", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743506029/WhatsApp_Image_2025-03-22_at_14.55.44_wuv7h1.jpg", affiliation: "Department of Computer Science & Engineering"
             },
             {
                 name: "Mrs. Chandrima Sinha Roy", image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449751/ChandrimaSinhaRoy_qc4faz.jpg", affiliation: "Department of Computer Science & Engineering"
