@@ -134,7 +134,7 @@ export default function PaperSubmissionPage() {
           </div>
 
           <div className="flex justify-center text-white">
-            <a href="https://drive.google.com/file/d/1KCg083D6lQrdzbhaNslUhV48DAv4kQ8r/view?usp=sharing" className="bg-primary rounded-md flex items-center gap-2 px-6 py-2.5 text-base"
+            <a href="https://drive.google.com/file/d/1BNHrdCgF5ruTTKyQBj9v7tgAzK1xOD2a/view?usp=sharing" className="bg-primary rounded-md flex items-center gap-2 px-6 py-2.5 text-base"
             
               target="_blank">
               
@@ -215,7 +215,7 @@ export default function PaperSubmissionPage() {
           </div>
 
           <div className="flex justify-center mb-10">
-            <Link href="https://cmt3.research.microsoft.com/" target="_blank">
+            <Link href="https://cmt3.research.microsoft.com/ICCSAIconf2025" target="_blank">
               <Button className="flex items-center gap-2 px-4 py-2 text-sm md:px-6 md:py-2.5 md:text-base">
                 <ExternalLink className="h-4 w-4 md:h-5 md:w-5" />
                 <span className="whitespace-nowrap">Go to Microsoft CMT Submission System</span>
