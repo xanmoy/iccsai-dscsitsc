@@ -75,6 +75,11 @@ const committeeData = [
             { name: "Dr. Sumanta Ray", affiliation: "The West Bengal National University of Juridical Science, Kolkata, India" },
             { name: "Dr. Mantosh Biswas", affiliation: "University of Delhi, India" },
             { name: "Dr. Ruhul Amin", affiliation: "International Institute of Information Technology, Naya Raipur, India" },
+            { name: "Prof. (Dr.) Abid Yahya", affiliation: "Botswana International University of Science & Technology" },
+            { name: "Mr. Bodhisattwa Mukherjee", affiliation: "Principal Software Engineer, Oracle" },
+            { name: "Mrs. Moumi Mukherjee", affiliation: "Business & Integration Architect Associate Manager, Accenture" },
+            { name: "Dr. Shamik Palit", affiliation: "University of Stirling RAK Campus, United Arab Emirates" },
+            { name: "Dr. Mahdin Mahboob", affiliation: "Stony Brook University, New York, USA" },
         ],
     },
 ]

@@ -275,7 +275,7 @@ export default function RegistrationPage() {
               registration page.
             </p>
 
-            <Link href="https://cmt3.research.microsoft.com/" target="_blank" className="flex justify-center">
+            <Link href="https://cmt3.research.microsoft.com/ICCSAIconf2025" target="_blank" className="flex justify-center">
               <Button size="lg" className="flex items-center gap-2 px-8 py-6 text-lg">
                 <CreditCard className="h-5 w-5" />
                 Register Now

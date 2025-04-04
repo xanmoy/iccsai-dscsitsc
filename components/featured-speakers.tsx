@@ -43,6 +43,14 @@ const featuredSpeakers = [
     topic: "School of Computer Science",
     // bio: "Industry leader in AI security and privacy-preserving machine learning techniques.",
   },
+  {
+    name: "Mrs. Atreyee Dey",
+    title: "Distinguished Speaker",
+    affiliation: "Leading Google Search India",
+    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743753472/Atreyee_Dey_zvlgzp.jpg",
+    topic: "Senior Staff Software Engineer",
+    // bio: "Industry leader in AI security and privacy-preserving machine learning techniques.",
+  },
 ]
 
 export function FeaturedSpeakers() {

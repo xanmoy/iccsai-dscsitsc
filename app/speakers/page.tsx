@@ -80,6 +80,14 @@ const speakerSections: SpeakerSection[] = [
         bio: "Principal Scientist",
         image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587371/unnamed_3_f7emra.jpg",
       },
+      {
+        id: "distinguished-2",
+        name: "Mrs. Atreyee Dey",
+        designation: "Senior Staff Software Engineer",
+        institution: "Leading Google Search India",
+        bio: "Senior Staff Software Engineer",
+        image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743753472/Atreyee_Dey_zvlgzp.jpg",
+      },
     ],
   },
 ];
