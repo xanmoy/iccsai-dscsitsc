@@ -163,7 +163,7 @@ const headData: HeadData[] = [
     id: 3,
     member: [
       {
-        name: "Prof. (Dr.) Soumitra Roy",
+        name: "Dr. Soumitra Roy",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450529/SoumitraRoy_rsto7k.jpg",
         affiliation:
