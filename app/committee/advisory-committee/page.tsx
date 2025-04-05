@@ -67,7 +67,7 @@ const committeeData = [
       {
         name: "Prof. (Dr.) Jyotsna Kumar Mandal",
         affiliation:
-          "Department of Computer Science and Engineering, Kalyani University, India",
+          "Kalyani University, India",
       },
       {
         name: "Prof. (Dr.) Debdeep Mukhopadhyay",
@@ -108,7 +108,7 @@ const committeeData = [
       },
       {
         name: "Prof. (Dr.) Chun-I Fan",
-        affiliation: "National Taiwan University, Taiwan",
+        affiliation: "National Sun Yat-Sen University, Taiwan",
       },
       {
         name: "Mrs. Atreyee Dey",
