@@ -80,6 +80,7 @@ const committeeData = [
             { name: "Mrs. Moumi Mukherjee", affiliation: "Business & Integration Architect Associate Manager, Accenture" },
             { name: "Dr. Shamik Palit", affiliation: "University of Stirling RAK Campus, United Arab Emirates" },
             { name: "Dr. Mahdin Mahboob", affiliation: "Stony Brook University, New York, USA" },
+            { name: "Dr. Megha Quamara", affiliation: "King's College London, United Kingdom" },
         ],
     },
 ]

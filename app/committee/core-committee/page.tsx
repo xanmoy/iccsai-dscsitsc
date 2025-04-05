@@ -174,7 +174,7 @@ const headData: HeadData[] = [
 ];
 const committeeData = [
   {
-    title: "Organizing Committee",
+    title: "Organizing Chair",
     members: [
       {
         name: "Dr. Amrut Ranjan Jena",
@@ -348,17 +348,6 @@ const committeeData = [
     title: "Website & Design Committee",
     members: [
       {
-        name: "Mr. Sourav Singha",
-        image: "/placeholder.svg?height=128&width=128",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-      },
-      {
-        name: "Ms. Sayani Roy",
-        image:
-          "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450501/SayaniRoy_d1ggpw.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-      },
-      {
         name: "Mr. Tanmoy Ganguly",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743506029/WhatsApp_Image_2025-03-22_at_14.55.44_wuv7h1.jpg",
@@ -370,16 +359,22 @@ const committeeData = [
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449751/ChandrimaSinhaRoy_qc4faz.jpg",
         affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
+      {
+        name: "Ms. Sayani Roy",
+        image:
+          "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450501/SayaniRoy_d1ggpw.jpg",
+        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+      },
+      {
+        name: "Mr. Sourav Singha",
+        image: "/placeholder.svg?height=128&width=128",
+        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+      },
     ],
   },
   {
     title: "Publicity Committee",
     members: [
-      {
-        name: "Mr. Aviroop Dewan",
-        image: "/placeholder.svg?height=128&width=128",
-        affiliation: "Admin Department, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-      },
       {
         name: "Mrs. Sayani Ghosh Saha",
         image: "/placeholder.svg?height=128&width=128",

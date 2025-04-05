@@ -13,6 +13,10 @@ export default function CommitteePage() {
       slug: "technical-program-committee",
       title: "Technical Program Committee",
     },
+    // {
+    //   slug: "patrons-chairs",
+    //   title: "Patrons & Chairs",
+    // },
     {
       slug: "core-committee",
       title: "Core Committee",
