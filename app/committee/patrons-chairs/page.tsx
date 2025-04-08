@@ -13,11 +13,12 @@ export default function CoreCommitteePage() {
             >
                 <div className="space-y-2">
                     <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                        Core Committee
+                        Patrons & Chairs
                     </h1>
                     <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                        Meet the Core team behind ICCSAI 2025 who are working to make this
-                        conference a success.
+                        The conference is organized by the Department of Computer Science and
+                        Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports
+                        Complex, Kolkata, India. The event is supported by JIS Group.
                     </p>
                 </div>
             </motion.div>
@@ -32,7 +33,7 @@ export default function CoreCommitteePage() {
             >
                 {" "}
                 <h2 className="text-2xl font-bold pt-20 text-center mb-8">
-                    Program Chair
+                    Chief Patron
                 </h2>
                 <div className="mt-16 flex flex-col sm:flex-row gap-6 sm:justify-center sm:gap-12">
                     {headData.map(({ title, member }, index) => (
@@ -48,7 +49,7 @@ export default function CoreCommitteePage() {
                                     key={`${member.name}-${i}`}
                                     className="flex flex-col items-center"
                                 >
-                                    <div className="relative w-32 h-32 rounded-full overflow-hidden">
+                                    {/* <div className="relative w-32 h-32 rounded-full overflow-hidden">
                                         <Image
                                             src={member.image}
                                             alt={member.name}
@@ -56,7 +57,7 @@ export default function CoreCommitteePage() {
                                             height={128}
                                             className="object-cover"
                                         />
-                                    </div>
+                                    </div> */}
                                     <div className="text-center mt-2">
                                         <h3 className="text-xl font-bold">{member.name}</h3>
                                         <p className="text-sm text-muted-foreground">
@@ -89,7 +90,7 @@ export default function CoreCommitteePage() {
                                 whileHover={{ scale: 1.05 }}
                                 transition={{ duration: 0.2 }}
                             >
-                                <div className="relative w-32 h-32 rounded-full overflow-hidden">
+                                {/* <div className="relative w-32 h-32 rounded-full overflow-hidden">
                                     <Image
                                         src={member.image}
                                         alt={member.name}
@@ -97,7 +98,7 @@ export default function CoreCommitteePage() {
                                         height={128}
                                         className="object-cover"
                                     />
-                                </div>
+                                </div> */}
                                 <div className="text-center">
                                     <h3 className="text-xl font-bold">{member.name}</h3>
                                     <p className="text-sm text-muted-foreground">
@@ -137,50 +138,25 @@ const headData: HeadData[] = [
         id: 1,
         member: [
             {
-                name: "Dr. Debasis Giri",
+                name: "Sardar Taranjit Singh",
                 image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743751888/DebasisGiri_nj2uev.jpg",
+                    "/placeholder.svg?height=128&width=128",
                 affiliation:
-                    "Department of Information Technology, Maulana Abul Kalam Azad University of Technology, West Bengal, India",
+                    "Mangaing Director, JIS Group",
             },
         ],
     },
-    {
-        // title: "Convenor",
-        id: 2,
-        member: [
-            {
-                name: "Dr. Debashis Das",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449860/DebashisDas_wvkkfd.jpg",
-                affiliation:
-                    "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-        ],
-    },
-    {
-        // title: "Co-Convenor",
-        id: 3,
-        member: [
-            {
-                name: "Dr. Soumitra Roy",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450529/SoumitraRoy_rsto7k.jpg",
-                affiliation:
-                    "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-        ],
-    },
+    
 ];
 const committeeData = [
     {
-        title: "Organizing Chair",
+        title: "Patron(s)",
         members: [
             {
-                name: "Dr. Amrut Ranjan Jena",
+                name: "Sardar Haranjit Singh",
                 image:
                     "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449434/AmrutRanjanJena_jm8f3s.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                affiliation: "Joint MD, JIS Group ",
             },
             {
                 name: "Mrs. Madhusmita Mishra",

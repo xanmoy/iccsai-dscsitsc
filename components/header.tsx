@@ -6,7 +6,7 @@ import { ChevronDown, Menu, X } from "lucide-react"
 import { ModeToggle } from "@/components/mode-toggle"
 import Link from "next/link"
 import Image from 'next/image'
-import  DropdownMenu  from '@/components/DropdownMenu'
+import DropdownMenu from '@/components/DropdownMenu'
 
 
 
@@ -24,7 +24,7 @@ export function Header() {
 
     const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
 
-    interface DropdownEvent extends React.MouseEvent<HTMLButtonElement> {}
+    interface DropdownEvent extends React.MouseEvent<HTMLButtonElement> { }
 
     const toggleDropdown = (name: string, event: DropdownEvent): void => {
         event.preventDefault(); // Prevent navigation when clicking the chevron
@@ -33,7 +33,7 @@ export function Header() {
 
     const menuItems = [
         { name: "Speakers", prefix: "/speakers", links: ["#Keynote-Address", "#Plenary-Speech", "#Invited-Talk", "#Distinguished-Lecture"] },
-        { name: "Committee", prefix: "/committee", links: ["/Advisory-Committee", "/Technical-Program-Committee", "/Core-Committee"] },
+        { name: "Committee", prefix: "/committee", links: ["/Advisory-Committee", "/Technical-Program-Committee", "/patrons-chairs", "/Core-Committee"] },
     ];
 
     return (
@@ -100,8 +100,8 @@ export function Header() {
                     {/* Dropdown Menus */}
                     {[
                         { name: "Speakers", prefix: "/speakers", links: ["#Keynote-Address", "#Plenary-Speech", "#Invited-Talk", "#Distinguished-Lecture"] },
-                        { name: "Committee", prefix: "/committee", links: ["/Advisory-Committee", "/Technical-Program-Committee", "/Core-Committee"] },
-                        
+                        { name: "Committee", prefix: "/committee", links: ["/Advisory-Committee", "/Technical-Program-Committee", "/patrons-chairs", "/Core-Committee"] },
+
                     ].map((item) => (
                         <div key={item.name} className="relative group">
                             <Button variant="ghost" className="flex items-center gap-1 h-9 px-3">
@@ -125,7 +125,7 @@ export function Header() {
                     ))}
 
 
-     
+
                     <Link href="/sponsors" className="text-sm font-medium px-3 py-2 hover:text-primary">Sponsors</Link>
                     <Link href="/paper-submission" className="text-sm font-medium px-3 py-2 hover:text-primary">Paper Submission</Link>
                     <Link href="/registration" className="text-sm font-medium px-3 py-2 hover:text-primary">Registration</Link>
