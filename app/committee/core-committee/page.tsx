@@ -137,7 +137,7 @@ const headData: HeadData[] = [
     id: 1,
     member: [
       {
-        name: "Dr. Debasis Giri",
+        name: "  Debasis Giri",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743751888/DebasisGiri_nj2uev.jpg",
         affiliation:
@@ -146,28 +146,41 @@ const headData: HeadData[] = [
     ],
   },
   {
-    // title: "Convenor",
+    // title: "Co-Convenor",
     id: 2,
     member: [
       {
-        name: "Dr. Debashis Das",
+        name: "   Chun-I Fan",
+        image:
+          "https://res.cloudinary.com/dg6vdv82c/image/upload/v1744136713/Chun-I-Fan_xh5lmj.jpg",
+        affiliation:
+          "National Sun Yat-Sen University, Taiwan",
+      },
+    ],
+  },
+  {
+    // title: "Convenor",
+    id: 3,
+    member: [
+      {
+        name: "  Debashis Das",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449860/DebashisDas_wvkkfd.jpg",
         affiliation:
-          "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+          "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
     ],
   },
   {
     // title: "Co-Convenor",
-    id: 3,
+    id: 4,
     member: [
       {
-        name: "Dr. Soumitra Roy",
+        name: "  Soumitra Roy",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450529/SoumitraRoy_rsto7k.jpg",
         affiliation:
-          "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+          "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
     ],
   },
@@ -177,22 +190,22 @@ const committeeData = [
     title: "Organizing Chair",
     members: [
       {
-        name: "Dr. Amrut Ranjan Jena",
+        name: "  Amrut Ranjan Jena",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449434/AmrutRanjanJena_jm8f3s.jpg",
-            affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+            affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Mrs. Madhusmita Mishra",
+        name: " Madhusmita Mishra",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450183/MadhusmitaMishra_nkpyun.jpg",
-        affiliation: "Department of Computer Science & Engineering (AI & ML), Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering (AI & ML),   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Dr. Amitava Halder",
+        name: "  Amitava Halder",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449545/AmitavaHalder_evziah.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
     ],
   },
@@ -200,22 +213,22 @@ const committeeData = [
     title: "Technical Committee",
     members: [
       {
-        name: "Mr. Sohom Mukherjee",
+        name: "  Soham Mukherjee",
         image:
-          "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450449/SohomMukherjee_kjvs7e.png",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+          "https://res.cloudinary.com/dg6vdv82c/image/upload/v1744136948/Soham_Mukherjee_ccfc24.png",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Mrs. Chandrima Sinha Roy",
+        name: " Chandrima Sinha Roy",
         image:
-          "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449751/ChandrimaSinhaRoy_qc4faz.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+          "https://res.cloudinary.com/dg6vdv82c/image/upload/v1744136846/Chandrima_Sinha_Roy_r8tre3.jpg",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Mr. Arnab Hazra",
+        name: "  Arnab Hazra",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449689/ArnabHazra_zdxjoc.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
     ],
   },
@@ -223,16 +236,16 @@ const committeeData = [
     title: "Finance Committee",
     members: [
       {
-        name: "Mr. Sanjoy Bhattacharjee",
+        name: "  Sanjoy Bhattacharjee",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450383/SanjoyBhattacharjee_rc9lwy.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Mr. Amal Kumar Saha",
+        name: "  Amal Kumar Saha",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449396/AmalKumarSaha_uzvo7d.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
     ],
   },
@@ -240,22 +253,22 @@ const committeeData = [
     title: "Registration Committee",
     members: [
       {
-        name: "Mrs. Mousumi Ojha",
+        name: " Mousumi Ojha",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450247/Mousumi_Ojha_nyrzqn.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Mrs. Rebeka Sultana",
+        name: " Rebeka Sultana",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450347/Rebeka_Sultana_pfmlhy.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Ms. Sayani Roy",
+        name: " Sayani Roy",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450501/SayaniRoy_d1ggpw.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
     ],
   },
@@ -263,45 +276,45 @@ const committeeData = [
     title: "Event Management Committee",
     members: [
       {
-        name: "Mr. Anoy Chowdhury",
+        name: "  Anoy Chowdhury",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449601/Anoy_Chowdhury_pwhxrj.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Mr. Abhishek Bysack",
+        name: "  Abhishek Bysack",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449332/AbhishekBysack_ug9dq0.jpg",
-        affiliation: "System Administration, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "System Administration,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Ms. Chandrika Panja",
+        name: " Chandrika Panja",
         image: "/placeholder.svg?height=128&width=128",
-        affiliation: "Admin Department, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Admin Department,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Ms. Debopriya Biswas",
+        name: " Debapriya Biswas",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449785/DebapriyaBiswas_pzk6lp.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Ms. Deepta Debnath",
+        name: " Deepta Debnath",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450146/DeeptaDebnath_uwrnte.png",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Mrs. Debasmita Roy Chowdhury",
+        name: " Debasmita Roy Chowdhury",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450065/DebasmitaRoyChowdhury_dxapmb.jpg",
-        affiliation: "Department of Basic Science & Humanities, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Basic Science & Humanities,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Ms. Nibedita Biswas",
+        name: " Nibedita Biswas",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450314/NibeditaBiswas_nkjkg0.jpg",
-        affiliation: "Department of Basic Science & Humanities, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Basic Science & Humanities,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
     ],
   },
@@ -309,16 +322,16 @@ const committeeData = [
     title: "Food Committee",
     members: [
       {
-        name: "Mr. Sanjoy Bhattacharjee",
+        name: "  Sanjoy Bhattacharjee",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450383/SanjoyBhattacharjee_rc9lwy.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Mr. Manoj Pandey",
+        name: "  Manoj Pandey",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450271/ManojPandey_xelmmj.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
     ],
   },
@@ -326,21 +339,21 @@ const committeeData = [
     title: "Transport Committee",
     members: [
       {
-        name: "Dr. Amitava Halder",
+        name: "  Amitava Halder",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449545/AmitavaHalder_evziah.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Mrs. Sayani Ghosh Saha",
+        name: " Sayani Ghosh Saha",
         image: "/placeholder.svg?height=128&width=128",
-        affiliation: "Admin Department, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Admin Department,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Mr. Maheswar Das",
+        name: "  Maheswar Das",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450203/MaheshwarDas_fztqyb.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
     ],
   },
@@ -348,27 +361,27 @@ const committeeData = [
     title: "Website & Design Committee",
     members: [
       {
-        name: "Mr. Tanmoy Ganguly",
+        name: "  Tanmoy Ganguly",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743506029/WhatsApp_Image_2025-03-22_at_14.55.44_wuv7h1.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Mrs. Chandrima Sinha Roy",
+        name: " Chandrima Sinha Roy",
         image:
-          "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449751/ChandrimaSinhaRoy_qc4faz.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+          "https://res.cloudinary.com/dg6vdv82c/image/upload/v1744136846/Chandrima_Sinha_Roy_r8tre3.jpg",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Ms. Sayani Roy",
+        name: " Sayani Roy",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450501/SayaniRoy_d1ggpw.jpg",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Mr. Sourav Singha",
+        name: "  Sourav Singha",
         image: "/placeholder.svg?height=128&width=128",
-        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
     ],
   },
@@ -376,19 +389,19 @@ const committeeData = [
     title: "Publicity Committee",
     members: [
       {
-        name: "Mrs. Sayani Ghosh Saha",
+        name: " Sayani Ghosh Saha",
         image: "/placeholder.svg?height=128&width=128",
-        affiliation: "Admin Department, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Admin Department,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Ms. Suparna Rej",
+        name: " Suparna Rej",
         image: "/placeholder.svg?height=128&width=128",
-        affiliation: "Admin Department, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Admin Department,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
-        name: "Mr. Kripa Shankar Tiwary",
+        name: "  Kripa Shankar Tiwary",
         image: "/placeholder.svg?height=128&width=128",
-        affiliation: "Admin Department, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Admin Department,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
     ],
   },
