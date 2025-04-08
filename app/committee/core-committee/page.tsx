@@ -285,12 +285,12 @@ const committeeData = [
         name: "  Abhishek Bysack",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449332/AbhishekBysack_ug9dq0.jpg",
-        affiliation: "System Administration,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "System Administration,Dr.  Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
         name: " Chandrika Panja",
         image: "/placeholder.svg?height=128&width=128",
-        affiliation: "Admin Department,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Admin Department,Dr.  Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
         name: " Debapriya Biswas",
@@ -308,13 +308,13 @@ const committeeData = [
         name: " Debasmita Roy Chowdhury",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450065/DebasmitaRoyChowdhury_dxapmb.jpg",
-        affiliation: "Department of Basic Science & Humanities,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Basic Science & Humanities,Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
         name: " Nibedita Biswas",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450314/NibeditaBiswas_nkjkg0.jpg",
-        affiliation: "Department of Basic Science & Humanities,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Basic Science & Humanities,Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
     ],
   },
@@ -347,7 +347,7 @@ const committeeData = [
       {
         name: " Sayani Ghosh Saha",
         image: "/placeholder.svg?height=128&width=128",
-        affiliation: "Admin Department,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Admin Department,Dr.  Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
         name: "  Maheswar Das",
@@ -391,17 +391,17 @@ const committeeData = [
       {
         name: " Sayani Ghosh Saha",
         image: "/placeholder.svg?height=128&width=128",
-        affiliation: "Admin Department,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Admin Department,Dr.  Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
         name: " Suparna Rej",
         image: "/placeholder.svg?height=128&width=128",
-        affiliation: "Admin Department,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Admin Department,Dr.  Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
         name: "  Kripa Shankar Tiwary",
         image: "/placeholder.svg?height=128&width=128",
-        affiliation: "Admin Department,   Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Admin Department,Dr.  Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
     ],
   },
