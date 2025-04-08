@@ -243,6 +243,10 @@ const committeeData = [
                 affiliation: "Department of Information Technology, MAKAUT, India",
             },
             {
+                name: "Prof. (Dr.) Chun-I Fan",
+                affiliation: "Department of Computer Science & Engineering, National Sun Yat-Sen University, Taiwan",
+            },
+            {
                 name: "Dr. Soumitra Roy",
                 affiliation: "Department of Computer Science & Engineering, SurTech, Kolkata, India",
             },
@@ -250,6 +254,7 @@ const committeeData = [
                 name: "Dr. Debashis Das",
                 affiliation: "Department of Computer Science & Engineering, SurTech, Kolkata, India",
             },
+
         ],
     },
     {
