@@ -33,7 +33,7 @@ export function Header() {
 
     const menuItems = [
         { name: "Speakers", prefix: "/speakers", links: ["#Keynote-Address", "#Plenary-Speech", "#Invited-Talk", "#Distinguished-Lecture"] },
-        { name: "Committee", prefix: "/committee", links: ["/Advisory-Committee", "/Technical-Program-Committee", "/patrons-chairs", "/Core-Committee"] },
+        { name: "Committee", prefix: "/committee", links: ["/Advisory-Committee", "/Technical-Program-Committee", "/Patrons-Chairs", "/Core-Committee"] },
     ];
 
     return (
@@ -100,7 +100,7 @@ export function Header() {
                     {/* Dropdown Menus */}
                     {[
                         { name: "Speakers", prefix: "/speakers", links: ["#Keynote-Address", "#Plenary-Speech", "#Invited-Talk", "#Distinguished-Lecture"] },
-                        { name: "Committee", prefix: "/committee", links: ["/Advisory-Committee", "/Technical-Program-Committee", "/patrons-chairs", "/Core-Committee"] },
+                        { name: "Committee", prefix: "/committee", links: ["/Advisory-Committee", "/Technical-Program-Committee", "/Patrons-Chairs", "/Core-Committee"] },
 
                     ].map((item) => (
                         <div key={item.name} className="relative group">

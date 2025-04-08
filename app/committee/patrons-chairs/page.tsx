@@ -82,7 +82,9 @@ export default function CoreCommitteePage() {
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                     <h2 className="text-2xl font-bold text-center mb-8">{title}</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
+                    {/* <div className="grid grid-cols-1 sm:grid-cols-2 text-center lg:grid-cols-3 gap-6 place-items-center"> */}
+                    <div className={`grid ${members.length === 1 ? "place-content-center" : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+                        } text-center gap-6 place-items-center`}>
                         {members.map((member, i) => (
                             <motion.div
                                 key={i}
@@ -154,218 +156,140 @@ const committeeData = [
         members: [
             {
                 name: "Sardar Haranjit Singh",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449434/AmrutRanjanJena_jm8f3s.jpg",
+                
                 affiliation: "Joint MD, JIS Group ",
             },
             {
-                name: "Mrs. Madhusmita Mishra",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450183/MadhusmitaMishra_nkpyun.jpg",
-                affiliation: "Department of Computer Science & Engineering (AI & ML), Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                name: "Sardar Amrik Singh",
+               
+                affiliation: "Deputy MD, JIS Group",
             },
             {
-                name: "Dr. Amitava Halder",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449545/AmitavaHalder_evziah.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-        ],
-    },
-    {
-        title: "Technical Committee",
-        members: [
-            {
-                name: "Mr. Sohom Mukherjee",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450449/SohomMukherjee_kjvs7e.png",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                name: "Ms. Manpreet Kaur",
+                
+                affiliation: " CEO, JIS Group",
             },
             {
-                name: "Mrs. Chandrima Sinha Roy",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449751/ChandrimaSinhaRoy_qc4faz.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                name: "Sardar Simarpreet Singh",
+                
+                affiliation: "Director, JIS Group",
             },
             {
-                name: "Mr. Arnab Hazra",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449689/ArnabHazra_zdxjoc.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-        ],
-    },
-    {
-        title: "Finance Committee",
-        members: [
-            {
-                name: "Mr. Sanjoy Bhattacharjee",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450383/SanjoyBhattacharjee_rc9lwy.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                name: "Ms. Jaspreet Kaur",
+                
+                affiliation: "Director, JIS Group",
             },
             {
-                name: "Mr. Amal Kumar Saha",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449396/AmalKumarSaha_uzvo7d.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                name: "Sardar Harjot Singh",
+                
+                affiliation: "Director, JIS Group",
+            },
+            {
+                name: "Sardar Amanjot Singh",
+                
+                affiliation: "Director, JIS Group",
+            },
+            {
+                name: "Sardar Anmol Singh Narula",
+                
+                affiliation: "Director, JIS Group",
             },
         ],
     },
     {
-        title: "Registration Committee",
+        title: "Honorary Chair",
         members: [
             {
-                name: "Mrs. Mousumi Ojha",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450247/Mousumi_Ojha_nyrzqn.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-            {
-                name: "Mrs. Rebeka Sultana",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450347/Rebeka_Sultana_pfmlhy.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-            {
-                name: "Ms. Sayani Roy",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450501/SayaniRoy_d1ggpw.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                name: "Prof. (Dr.) Jyotsna Kumar Mandal",
+                affiliation: "Professor, Department of Computer Science & Engineering, Kalyani University, India",
             },
         ],
     },
     {
-        title: "Event Management Committee",
+        title: "General Chair(s)",
         members: [
             {
-                name: "Mr. Anoy Chowdhury",
+                name: "Prof. (Dr.) Ajay Kumar Ray",
+                affiliation: "Director, JISIASR, Kolkata, India",
+            },
+            {
+                name: "Prof. (Dr.) Neeraj Saxena",
+                affiliation: "Pro-Chancellor, JIS University, Kolkata, India",
+            },
+            {
+                name: "Prof. (Dr.) Bhabes Bhattacharya ",
+                affiliation: "Vice Chancellor, JIS University, Kolkata, India",
+            },
+        ],
+    },
+    {
+        title: "Conference Chair",
+        members: [
+            {
+                name: "Prof. (Dr.) Saradindu Panda",
+
+                affiliation: "Principal, SurTech, Kolkata, India",
+            },
+            
+        ],
+    },
+    {
+        title: "Program Chair(s)",
+        members: [
+            {
+                name: "Dr. Debasis Giri",
                 image:
                     "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449601/Anoy_Chowdhury_pwhxrj.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                affiliation: "Department of Information Technology, MAKAUT, India",
             },
             {
-                name: "Mr. Abhishek Bysack",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449332/AbhishekBysack_ug9dq0.jpg",
-                affiliation: "System Administration, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                name: "Dr. Soumitra Roy",
+                affiliation: "Department of Computer Science & Engineering, SurTech, Kolkata, India",
             },
             {
-                name: "Ms. Chandrika Panja",
-                image: "/placeholder.svg?height=128&width=128",
-                affiliation: "Admin Department, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-            {
-                name: "Ms. Debopriya Biswas",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449785/DebapriyaBiswas_pzk6lp.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-            {
-                name: "Ms. Deepta Debnath",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450146/DeeptaDebnath_uwrnte.png",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-            {
-                name: "Mrs. Debasmita Roy Chowdhury",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450065/DebasmitaRoyChowdhury_dxapmb.jpg",
-                affiliation: "Department of Basic Science & Humanities, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-            {
-                name: "Ms. Nibedita Biswas",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450314/NibeditaBiswas_nkjkg0.jpg",
-                affiliation: "Department of Basic Science & Humanities, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                name: "Dr. Debashis Das",
+                affiliation: "Department of Computer Science & Engineering, SurTech, Kolkata, India",
             },
         ],
     },
     {
-        title: "Food Committee",
+        title: "Organizing Chair(s)",
         members: [
             {
-                name: "Mr. Sanjoy Bhattacharjee",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450383/SanjoyBhattacharjee_rc9lwy.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                name: "Dr. Amrut Ranjan Jena",
+                affiliation: "Head of the Department, Computer Science & Engineering, SurTech, Kolkata India",
             },
             {
-                name: "Mr. Manoj Pandey",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450271/ManojPandey_xelmmj.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                name: "Mrs. Madhusmita Mishra",
+                affiliation: "Teacher-in charge, Departmet of Computer Science & Engineering (AIML), SurTech, Kolkata, India",
             },
-        ],
-    },
-    {
-        title: "Transport Committee",
-        members: [
             {
                 name: "Dr. Amitava Halder",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449545/AmitavaHalder_evziah.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-            {
-                name: "Mrs. Sayani Ghosh Saha",
-                image: "/placeholder.svg?height=128&width=128",
-                affiliation: "Admin Department, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-            {
-                name: "Mr. Maheswar Das",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450203/MaheshwarDas_fztqyb.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                affiliation: "Department of Computer Science & Engineering, SurTech, Kolkata, India",
             },
         ],
     },
     {
-        title: "Website & Design Committee",
+        title: "Industry Chair(s)",
         members: [
             {
-                name: "Mr. Tanmoy Ganguly",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743506029/WhatsApp_Image_2025-03-22_at_14.55.44_wuv7h1.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                name: "Dr. Tanushyam Chattopadhyay",
+                affiliation: "Principal Scientist at AI Lab, Adani Enterprise Ltd.",
             },
             {
-                name: "Mrs. Chandrima Sinha Roy",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449751/ChandrimaSinhaRoy_qc4faz.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-            {
-                name: "Ms. Sayani Roy",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450501/SayaniRoy_d1ggpw.jpg",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-            {
-                name: "Mr. Sourav Singha",
-                image: "/placeholder.svg?height=128&width=128",
-                affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                name: "Dr. Piyush Kanti Bhunre",
+                affiliation: "Data Scientist, Ericsson India Global Services Pvt. Ltd",
             },
         ],
     },
     {
-        title: "Publicity Committee",
+        title: "Executive Chair",
         members: [
             {
-                name: "Mrs. Sayani Ghosh Saha",
-                image: "/placeholder.svg?height=128&width=128",
-                affiliation: "Admin Department, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-            {
-                name: "Ms. Suparna Rej",
-                image: "/placeholder.svg?height=128&width=128",
-                affiliation: "Admin Department, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
-            },
-            {
-                name: "Mr. Kripa Shankar Tiwary",
-                image: "/placeholder.svg?height=128&width=128",
-                affiliation: "Admin Department, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+                name: "Mr. Soumik Jash",
+                affiliation: "Account Officer, SurTech, India",
             },
         ],
     },
+    
 ];
