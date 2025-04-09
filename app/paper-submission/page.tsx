@@ -1,6 +1,13 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Download, ExternalLink, FileText, Calendar, Send, Mail } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  Download,
+  ExternalLink,
+  FileText,
+  Calendar,
+  Send,
+  Mail,
+} from "lucide-react";
 
 export default function PaperSubmissionPage() {
   const callForPapersData = {
@@ -46,7 +53,7 @@ export default function PaperSubmissionPage() {
       { label: "Registration Deadline", date: "August 16, 2025" },
       { label: "Conference Dates", date: "August 28-29, 2025" },
     ],
-  }
+  };
 
   return (
     <div className="min-h-screen">
@@ -54,9 +61,12 @@ export default function PaperSubmissionPage() {
       <div className="relative bg-gradient-to-r from-primary to-primary/80 py-20 px-4">
         <div className="container mx-auto max-w-5xl">
           <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">Paper Submission</h1>
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+              Paper Submission
+            </h1>
             <p className="text-white/90 text-lg md:text-xl max-w-3xl">
-              Guidelines and information for submitting your research to ICCSAI 2025
+              Guidelines and information for submitting your research to ICCSAI
+              2025
             </p>
           </div>
         </div>
@@ -108,36 +118,43 @@ export default function PaperSubmissionPage() {
             <div className="bg-primary/10 p-3 rounded-full mr-4">
               <FileText className="h-6 w-6 text-primary" />
             </div>
-            <h2 className="text-3xl font-bold text-primary">{callForPapersData.title}</h2>
+            <h2 className="text-3xl font-bold text-primary">
+              {callForPapersData.title}
+            </h2>
           </div>
 
-          <p className="text-foreground text-lg mb-12 leading-relaxed">{callForPapersData.description}</p>
+          <p className="text-foreground text-lg mb-12 leading-relaxed">
+            {callForPapersData.description}
+          </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            {Object.entries(callForPapersData.tracks).map(([track, topics], index) => (
-              <div key={track} className="rounded-xl overflow-hidden">
-                <div className="bg-primary p-4">
-                  <h3 className="text-xl font-bold text-white">{track}</h3>
+            {Object.entries(callForPapersData.tracks).map(
+              ([track, topics], index) => (
+                <div key={track} className="rounded-xl overflow-hidden">
+                  <div className="bg-primary p-4">
+                    <h3 className="text-xl font-bold text-white">{track}</h3>
+                  </div>
+                  <div className="border border-t-0 rounded-b-xl p-5">
+                    <ul className="space-y-2">
+                      {topics.map((topic, i) => (
+                        <li key={i} className="flex items-start">
+                          <span className="inline-block h-2 w-2 rounded-full bg-primary mt-2 mr-2"></span>
+                          <span>{topic}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-                <div className="border border-t-0 rounded-b-xl p-5">
-                  <ul className="space-y-2">
-                    {topics.map((topic, i) => (
-                      <li key={i} className="flex items-start">
-                        <span className="inline-block h-2 w-2 rounded-full bg-primary mt-2 mr-2"></span>
-                        <span>{topic}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
 
           <div className="flex justify-center text-white">
-            <a href="https://drive.google.com/file/d/1BNHrdCgF5ruTTKyQBj9v7tgAzK1xOD2a/view?usp=sharing" className="bg-primary rounded-md flex items-center gap-2 px-6 py-2.5 text-base"
-            
-              target="_blank">
-              
+            <a
+              href="https://drive.google.com/file/d/1BNHrdCgF5ruTTKyQBj9v7tgAzK1xOD2a/view?usp=sharing"
+              className="bg-primary rounded-md flex items-center gap-2 px-6 py-2.5 text-base"
+              target="_blank"
+            >
               <Download className="h-5 w-5 text-white" />
               Download Call for Papers (PDF)
             </a>
@@ -160,7 +177,9 @@ export default function PaperSubmissionPage() {
                 className="border rounded-xl p-5 flex flex-col items-center text-center hover:border-primary transition-colors"
               >
                 <h3 className="font-semibold text-lg mb-2">{dateItem.label}</h3>
-                <p className="text-primary font-bold text-xl">{dateItem.date}</p>
+                <p className="text-primary font-bold text-xl">
+                  {dateItem.date}
+                </p>
               </div>
             ))}
           </div>
@@ -175,11 +194,62 @@ export default function PaperSubmissionPage() {
             <h2 className="text-3xl font-bold text-primary">Author Guidelines</h2>
           </div>
 
-          <div className="flex flex-col items-center justify-center py-16 border rounded-xl">
-            <h3 className="text-2xl font-bold mb-4">Coming Soon</h3>
-            <p className="text-muted-foreground">Author guidelines will be available shortly.</p>
+          <div className="border rounded-xl overflow-hidden">
+            <div className="bg-muted/30 p-6 border-b">
+              <h3 className="text-xl font-semibold">Manuscript Preparation Guidelines</h3>
+            </div>
+
+            <div className="p-6 md:p-8">
+              <p className="mb-6 text-lg">
+                Authors must strictly adhere to the conference proceeding template when preparing their manuscripts.
+              </p>
+
+              <div className="bg-card border rounded-lg p-6 mb-6">
+                <ul className="space-y-4">
+                  {[
+                    "The abstract word limit is 150 to 250 words.",
+                    "Include 4 to 6 keywords.",
+                    "Submit the manuscript without author affiliation for the blind review process.",
+                    "The article must not exceed 8 pages, including the references section."
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/10 text-primary text-sm font-medium mr-3 flex-shrink-0">
+                        {index + 1}
+                      </span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+             
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="https://drive.google.com/file/d/1OLOLSuG0_QZsHck1CWRZ9FIpC9S-IR01/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="default" className="w-full sm:w-auto flex items-center gap-2 px-6 py-2.5">
+                    <Download className="h-5 w-5" />
+                    Word Template
+                  </Button>
+                </Link>
+                <Link
+                  href="https://drive.google.com/file/d/1QstoF2-K7k7bUKect6P8qLZ1dVjMZXoD/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="default" className="w-full sm:w-auto flex items-center gap-2 px-6 py-2.5">
+                    <Download className="h-5 w-5" />
+                    LaTeX Template
+                  </Button>
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
+
 
         {/* Submission Instructions Section */}
         <section id="submission-instructions" className="mb-20">
@@ -187,38 +257,52 @@ export default function PaperSubmissionPage() {
             <div className="bg-primary/10 p-3 rounded-full mr-4">
               <Send className="h-6 w-6 text-primary" />
             </div>
-            <h2 className="text-3xl font-bold text-primary">Paper Submission</h2>
+            <h2 className="text-3xl font-bold text-primary">
+              Paper Submission
+            </h2>
           </div>
 
           <div className="bg-muted/30 rounded-xl p-8 mb-10">
             <p className="text-lg mb-8">
-              Papers should be submitted electronically through the Microsoft CMT conference management system. The
-              submission site will be open from <strong>April 1, 2025</strong>.
+              Papers should be submitted electronically through the Microsoft
+              CMT conference management system. The submission site will be open
+              from <strong>April 1, 2025</strong>.
             </p>
 
             <h3 className="text-xl font-bold mb-4">Submission Instructions</h3>
             <ol className="list-decimal pl-5 space-y-3">
-              <li>Create an account on the Microsoft CMT system (if you don't already have one).</li>
+              <li>
+                Create an account on the Microsoft CMT system (if you don't
+                already have one).
+              </li>
               <li>
                 Log in to the system and select <strong>"ICCSAI 2025"</strong>.
               </li>
               <li>
-                Click on <strong>"Create a New Submission"</strong> and follow the instructions.
+                Click on <strong>"Create a New Submission"</strong> and follow
+                the instructions.
               </li>
               <li>
                 Upload your paper as a <strong>PDF file</strong>.
               </li>
-              <li>Enter all required metadata (title, abstract, keywords, topics).</li>
+              <li>
+                Enter all required metadata (title, abstract, keywords, topics).
+              </li>
               <li>Add all authors and their affiliations.</li>
               <li>Review your submission and submit.</li>
             </ol>
           </div>
 
           <div className="flex justify-center mb-10">
-            <Link href="https://cmt3.research.microsoft.com/ICCSAIconf2025" target="_blank">
+            <Link
+              href="https://cmt3.research.microsoft.com/ICCSAIconf2025"
+              target="_blank"
+            >
               <Button className="flex items-center gap-2 px-4 py-2 text-sm md:px-6 md:py-2.5 md:text-base">
                 <ExternalLink className="h-4 w-4 md:h-5 md:w-5" />
-                <span className="whitespace-nowrap">Go to Microsoft CMT Submission System</span>
+                <span className="whitespace-nowrap">
+                  Go to Microsoft CMT Submission System
+                </span>
               </Button>
             </Link>
           </div>
@@ -235,15 +319,18 @@ export default function PaperSubmissionPage() {
 
           <div className="text-center p-8 border rounded-xl">
             <p className="text-lg mb-2">
-              For any questions regarding paper submission, please contact the Program Chairs at:
+              For any questions regarding paper submission, please contact the
+              Program Chairs at:
             </p>
-            <a href="mailto:conference.surtech@dsec.ac.in" className="text-primary text-xl font-medium hover:underline">
+            <a
+              href="mailto:conference.surtech@dsec.ac.in"
+              className="text-primary text-xl font-medium hover:underline"
+            >
               conference.surtech@dsec.ac.in
             </a>
           </div>
         </section>
       </div>
     </div>
-  )
+  );
 }
-
