@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function CoreCommitteePage() {
   return (
-    <div className="container px-4 py-12 h-max md:h-screen md:px-6 md:py-24">
+    <div className="container px-4 py-12 h-max md:min-h-screen md:px-6 md:py-24">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -26,26 +26,23 @@ export default function CoreCommitteePage() {
       {committeeData.map(({ title, members }, index) => (
         <motion.section
           key={title}
-          className="mt-16"
+          className="mt-20"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: index * 0.2 }}
         >
-          {/* <h2 className="text-2xl font-bold text-center mb-8">{title}</h2> */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
+          <h2 className="text-2xl font-bold text-center mb-10">{title}</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
             {members.map((member, i) => (
               <motion.div
                 key={i}
-                className="flex flex-col items-center space-y-4 border rounded-lg p-6 w-80"
+                className="flex flex-col items-center space-y-4 border rounded-xl p-6 w-full max-w-xs shadow-sm"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               >
-                {/* <div className="relative w-32 h-32 rounded-full overflow-hidden">
-                                    <Image src={member.image} alt={member.name} width={128} height={128} className="object-cover" />
-                                </div> */}
                 <div className="text-center">
-                  <h3 className="text-xl font-bold">{member.name}</h3>
+                  <h3 className="text-lg font-semibold">{member.name}</h3>
                   <p className="text-sm text-muted-foreground">
                     {member.affiliation}
                   </p>
@@ -115,6 +112,37 @@ const committeeData = [
         affiliation:
           "Senior Staff Software Engineer Leading Google Search India",
       },
+    ],
+  },
+  {
+    title: "International Advisory committee",
+    members: [
+      {
+        name: "Prof. Gautam Srivastava",
+        affiliation:
+          "Brandon University, Brandon, Manitoba, Canada",
+      },
+      {
+        name: "Prof. Mohammad Obaidet",
+        affiliation: "The University of Jordan, Jordan",
+      },
+      {
+        name: "Prof. Rajkumar Buyya",
+        affiliation: "The University of Melbourne, Australia",
+      },
+      {
+        name: "Prof. Kouichi Sakurai,",
+        affiliation: "Kyushu University, Japan",
+      },
+      {
+        name: "Prof. YoungHo Park",
+        affiliation: "Kyungpook National University, Korea",
+      },
+      {
+        name: "Prof. Sherali Zeadally",
+        affiliation: "University of Kentucky, USA",
+      },
+      
     ],
   },
 ];
