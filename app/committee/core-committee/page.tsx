@@ -285,7 +285,7 @@ const committeeData = [
         name: "Manisha Das ",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1745172655/ManishaDas_o6znsq.jpg",
-        affiliation: "Department of Basic Science & Humanities,Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
         name: "  Abhishek Bysack",
