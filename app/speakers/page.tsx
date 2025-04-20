@@ -38,6 +38,14 @@ const speakerSections: SpeakerSection[] = [
         bio: "Department of Computer Science & Engineering",
         image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587271/unnamed_1_hvvuzg.jpg",
       },
+      {
+        id: "keynote-3",
+        name: "Prof. (Dr.) Danda B. Rawat",
+        designation: "Professor",
+        institution: "Howard University, Washinton DC, USA",
+        bio: "Professor of ECE & CS",
+        image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1745172411/Danda_B._Rawat_lz290i.png",
+      },
     ],
   },
   {

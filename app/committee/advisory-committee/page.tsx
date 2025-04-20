@@ -59,68 +59,11 @@ export default function CoreCommitteePage() {
 // Committee Data
 const committeeData = [
   {
-    title: "Advisory Committee",
-    members: [
-      {
-        name: "Prof. (Dr.) Jyotsna Kumar Mandal",
-        affiliation:
-          "Kalyani University, India",
-      },
-      {
-        name: "Prof. (Dr.) Debdeep Mukhopadhyay",
-        affiliation: "Jadavpur University, India",
-      },
-      {
-        name: "Prof. (Dr.) Rajat Subhra Chakraborty",
-        affiliation: "Indian Institute of Technology, Kharagpur, India",
-      },
-      {
-        name: "Prof. (Dr.) Sudeep Tanwar",
-        affiliation: "Nirma University, India",
-      },
-      {
-        name: "Prof. (Dr.) Rick S. Blum",
-        affiliation: "Lehigh University, Pennsylvania, United States",
-      },
-      {
-        name: "Prof. (Dr.) Sundararaja Sitharama Iyengar",
-        affiliation: "Florida International University, Miami, USA",
-      },
-      {
-        name: "Prof. (Dr.) Anand Nayyar",
-        affiliation: "Duy Tan University, Da Nang, Viet Nam",
-      },
-      {
-        name: "Dr. Arup Kumar Pal",
-        affiliation:
-          "Indian Institute of Technology (Indian School of Mines), Dhanbad, India",
-      },
-      {
-        name: "Prof. (Dr.) Farrukh A. Khan",
-        affiliation: "King Saud University",
-      },
-      {
-        name: "Dr. Goutam Paul",
-        affiliation: "Professor, Indian Statistical Institute, Kolkata, India",
-      },
-      {
-        name: "Prof. (Dr.) Chun-I Fan",
-        affiliation: "National Sun Yat-Sen University, Taiwan",
-      },
-      {
-        name: "Mrs. Atreyee Dey",
-        affiliation:
-          "Senior Staff Software Engineer Leading Google Search India",
-      },
-    ],
-  },
-  {
     title: "International Advisory committee",
     members: [
       {
         name: "Prof. Gautam Srivastava",
-        affiliation:
-          "Brandon University, Brandon, Manitoba, Canada",
+        affiliation: "Brandon University, Brandon, Manitoba, Canada",
       },
       {
         name: "Prof. Mohammad Obaidet",
@@ -142,7 +85,87 @@ const committeeData = [
         name: "Prof. Sherali Zeadally",
         affiliation: "University of Kentucky, USA",
       },
-      
+      {
+        name: "Prof. (Dr.) Rick S. Blum",
+        affiliation: "Lehigh University, Pennsylvania, United States",
+      },
+      {
+        name: "Prof. (Dr.) Sundararaja Sitharama Iyengar",
+        affiliation: "Florida International University, Miami, USA",
+      },
+      {
+        name: "Prof. (Dr.) Anand Nayyar",
+        affiliation: "Duy Tan University, Da Nang, Viet Nam",
+      },
+      {
+        name: "Prof. (Dr.) Farrukh A. Khan",
+        affiliation: "King Saud University",
+      },
+      {
+        name: "Prof. (Dr.) Chun-I Fan",
+        affiliation: "National Sun Yat-Sen University, Taiwan",
+      },
+      {
+        name: "Prof. (Dr.) Danda B. Rawat",
+        affiliation: "Howard University, Washington DC, USA",
+      },
+      {
+        name: "Dr. Sachin Kumar",
+        affiliation:
+          "Akian College of Science and Engineering, American University of Armenia, Yerevan, The Republic of Armenia",
+      },
+      {
+        name: "Prof. (Dr.) Sivaram Murugan",
+        affiliation:
+          "Sivas University of Science and Technology, Sivas, Turkey",
+      },
+    ],
+  },
+  {
+    title: "National Advisory Committee",
+    members: [
+      {
+        name: "Prof. (Dr.) Jyotsna Kumar Mandal",
+        affiliation: "Kalyani University, India",
+      },
+      {
+        name: "Prof. (Dr.) Debdeep Mukhopadhyay",
+        affiliation: "Jadavpur University, India",
+      },
+      {
+        name: "Prof. (Dr.) Rajat Subhra Chakraborty",
+        affiliation: "Indian Institute of Technology, Kharagpur, India",
+      },
+      {
+        name: "Prof. (Dr.) Sudeep Tanwar",
+        affiliation: "Nirma University, India",
+      },
+
+      {
+        name: "Dr. Arup Kumar Pal",
+        affiliation:
+          "Indian Institute of Technology (Indian School of Mines), Dhanbad, India",
+      },
+
+      {
+        name: "Dr. Goutam Paul",
+        affiliation: "Professor, Indian Statistical Institute, Kolkata, India",
+      },
+
+      {
+        name: "Mrs. Atreyee Dey",
+        affiliation:
+          "Senior Staff Software Engineer Leading Google Search India",
+      },
+      {
+        name: "Dr. Rama Subbanna Somarpu",
+        affiliation:
+          "Chaitanya Bharathi Institute of Technology, Proddatur, India",
+      },
+      {
+        name: "Dr. Aaisha Makkar",
+        affiliation: "Chandigarh University, Punjab, India",
+      },
     ],
   },
 ];

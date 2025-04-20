@@ -51,6 +51,14 @@ const featuredSpeakers = [
     topic: "Senior Staff Software Engineer",
     // bio: "Industry leader in AI security and privacy-preserving machine learning techniques.",
   },
+  {
+    name: "Prof. (Dr.) Danda B. Rawat",
+    title: "Keynote Speaker",
+    affiliation: "Howard University, Washinton DC, USA",
+    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1745172411/Danda_B._Rawat_lz290i.png",
+    topic: "Professor of ECE & CS",
+    // bio: "Industry leader in AI security and privacy-preserving machine learning techniques.",
+  },
 ]
 
 export function FeaturedSpeakers() {
