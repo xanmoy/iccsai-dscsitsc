@@ -119,6 +119,10 @@ const committeeData = [
         affiliation:
           "Sivas University of Science and Technology, Sivas, Turkey",
       },
+      {
+        name: "Dr. Aaisha Makkar",
+        affiliation: "University of Derby, UK",
+      },
     ],
   },
   {
@@ -162,10 +166,7 @@ const committeeData = [
         affiliation:
           "Chaitanya Bharathi Institute of Technology, Proddatur, India",
       },
-      {
-        name: "Dr. Aaisha Makkar",
-        affiliation: "Chandigarh University, Punjab, India",
-      },
+    
     ],
   },
 ];
