@@ -20,19 +20,11 @@ const featuredSpeakers = [
     // bio: "Department of Computer Science & Engineering",
   },
   {
-    name: "Dr. Arijit Karati",
-    title: "Invited Talk",
-    affiliation: "National Sun Yat-sen University (NSYSU), Taiwan",
-    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587317/unnamed_2_y8rlyf.jpg",
-    topic: "Department of Computer Science & Engineering",
-    // bio: "Pioneering researcher in adversarial machine learning and AI robustness.",
-  },
-  {
-    name: "Dr. Tanushyam Chattopadhyay",
-    title: "Distinguished Speaker",
-    affiliation: "AI Lab, Adani Enterprise Ltd, India",
-    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587371/unnamed_3_f7emra.jpg",
-    topic: "Principal Scientist",
+    name: "Prof. (Dr.) Danda B. Rawat",
+    title: "Keynote Speaker",
+    affiliation: "Howard University, Washinton DC, USA",
+    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1745172411/Danda_B._Rawat_lz290i.png",
+    topic: "Professor of ECE & CS",
     // bio: "Industry leader in AI security and privacy-preserving machine learning techniques.",
   },
   {
@@ -44,6 +36,15 @@ const featuredSpeakers = [
     // bio: "Industry leader in AI security and privacy-preserving machine learning techniques.",
   },
   {
+    name: "Dr. Tanushyam Chattopadhyay",
+    title: "Distinguished Speaker",
+    affiliation: "AI Lab, Adani Enterprise Ltd, India",
+    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587371/unnamed_3_f7emra.jpg",
+    topic: "Principal Scientist",
+    // bio: "Industry leader in AI security and privacy-preserving machine learning techniques.",
+  },
+  
+  {
     name: "Mrs. Atreyee Dey",
     title: "Distinguished Speaker",
     affiliation: "Leading Google Search India",
@@ -52,13 +53,22 @@ const featuredSpeakers = [
     // bio: "Industry leader in AI security and privacy-preserving machine learning techniques.",
   },
   {
-    name: "Prof. (Dr.) Danda B. Rawat",
-    title: "Keynote Speaker",
-    affiliation: "Howard University, Washinton DC, USA",
-    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1745172411/Danda_B._Rawat_lz290i.png",
-    topic: "Professor of ECE & CS",
-    // bio: "Industry leader in AI security and privacy-preserving machine learning techniques.",
+    name: "Dr. Arijit Karati",
+    title: "Invited Talk",
+    affiliation: "National Sun Yat-sen University (NSYSU), Taiwan",
+    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587317/unnamed_2_y8rlyf.jpg",
+    topic: "Department of Computer Science & Engineering",
+    // bio: "Pioneering researcher in adversarial machine learning and AI robustness.",
   },
+  {
+    name: "Dr. Aaisha Makkar",
+    title: "Invited Talk",
+    affiliation: "University of Derby, UK",
+    image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1745409755/Aaisha_Makkar_qsdxkh.png",
+    topic: "School of Computing and Engineering",
+    // bio: "Pioneering researcher in adversarial machine learning and AI robustness.",
+  },
+  
 ]
 
 export function FeaturedSpeakers() {

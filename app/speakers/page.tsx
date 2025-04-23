@@ -74,6 +74,14 @@ const speakerSections: SpeakerSection[] = [
         bio: "Department of Computer Science & Engineering",
         image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1742587317/unnamed_2_y8rlyf.jpg",
       },
+      {
+        id: "invited-2",
+        name: "Dr. Aaisha Makkar",
+        designation: "Professor",
+        institution: "University of Derby, UK",
+        bio: "School of Computing and Engineering",
+        image: "https://res.cloudinary.com/dg6vdv82c/image/upload/v1745409755/Aaisha_Makkar_qsdxkh.png",
+      },
     ],
   },
   {

@@ -151,7 +151,7 @@ export default function PaperSubmissionPage() {
 
           <div className="flex justify-center text-white">
             <a
-              href="https://drive.google.com/file/d/1BNHrdCgF5ruTTKyQBj9v7tgAzK1xOD2a/view?usp=sharing"
+              href="https://drive.google.com/file/d/1w4sTzNbJNm0A5Ku9xe1ZpyDswGPzAM4e/view?usp=sharing"
               className="bg-primary rounded-md flex items-center gap-2 px-6 py-2.5 text-base"
               target="_blank"
             >
