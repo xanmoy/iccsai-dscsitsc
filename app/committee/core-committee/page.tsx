@@ -159,6 +159,7 @@ const committeeData = [
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1744136713/Chun-I-Fan_xh5lmj.jpg",
         affiliation:
           "National Sun Yat-Sen University, Taiwan",
+        link: "https://scholar.google.com.tw/citations?user=H38E7usAAAAJ&hl=zh-TW",
       },
       {
         name: "  Debasis Giri",
