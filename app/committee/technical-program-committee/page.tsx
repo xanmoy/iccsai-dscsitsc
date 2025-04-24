@@ -71,7 +71,7 @@ const committeeData = [
             { name: "Abhishek Hazra", affiliation: "Indian Institute of Information Technology, Sri City, India" },
             { name: "Ajay Kumar Mallick", affiliation: "National Institute of Technology, Hamirpur, India" },
             { name: "Amar Kaswan", affiliation: "Hexagon Geosystems" },
-            { name: "Ambedkar", affiliation: "Geethanjali College of Engineering and Technology, India" },
+            { name: "K. Ambedkar", affiliation: "Geethanjali College of Engineering and Technology, India" },
             { name: "Amit Kumar", affiliation: "Galgotias University, India" },
             { name: "Amjad Osmani", affiliation: "Qazvin branch Azad university, Iran" },
             { name: "Anuja Dixit", affiliation: "Motilal Nehru National Institute of Technology Allahabad, Prayagraj, India" },
@@ -164,9 +164,20 @@ const committeeData = [
             { name: "Kirti Kumari", affiliation: "Indian Institute of Information Technology, Ranchi, India" },
             { name: "Dilip Singh Sisodia", affiliation: "National Institute of Technology, Raipur, India" },
             { name: "Sunita Dhavale", affiliation: "Defence Institute of Advanced Technology, India" },
-            { name: "Pramit Mazumdar", affiliation: "Indian Institute of Information Technology, Vadodara, India" }
-
-
+            { name: "Pramit Mazumdar", affiliation: "Indian Institute of Information Technology, Vadodara, India" },
+            { name: "Jayakrushna Sahoo", affiliation: "Indian Institute of Information Technology, Kottayam, India" },
+            { name: "Sweta Jain", affiliation: "Maulana Azad National Institute of Technology, Bhopal, India" },
+            { name: "Bhupendra Singh", affiliation: "Indian Institute of Information Technology, Pune, India" },
+            { name: "Tandra Pal", affiliation: "National Institute of Technology, Durgapur, India" },
+            { name: "Mueen Uddin", affiliation: "University of Doha for Science and Technology, Qatar" },
+            { name: "Akber Khan", affiliation: "Jamia Milia Islamia, India" },
+            { name: "Prema Kumar Veerapaneni", affiliation: "JP Morgan Chase & Co., USA" },
+            { name: "Rituraj Soni", affiliation: "Engineering College Bikaner, India" },
+            { name: "Satnam Kaur", affiliation: "Punjab Engineering College, India" },
+            { name: "Santhi Thilagam", affiliation: "National Institute of Technology, Kurukshetra, India" },
+            { name: "Biswapati Jana", affiliation: "Vidyasagar University, India" },
+        
+            
         ]
 
     },

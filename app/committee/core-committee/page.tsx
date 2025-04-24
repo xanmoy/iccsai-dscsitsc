@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { link } from "fs";
+import Link from "next/link";
 
 export default function CoreCommitteePage() {
   return (
@@ -24,7 +26,7 @@ export default function CoreCommitteePage() {
 
       {/* Render HeadData Sections */}
 
-      <motion.section
+      {/* <motion.section
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -68,7 +70,7 @@ export default function CoreCommitteePage() {
             </motion.div>
           ))}
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* Render Committee Sections */}
       {committeeData.map(({ title, members }, index) => (
@@ -103,6 +105,16 @@ export default function CoreCommitteePage() {
                   <p className="text-sm text-muted-foreground">
                     {member.affiliation}
                   </p>
+                {member.link && (
+                  <Link
+                    href={member.link}
+                    className="text-sm text-blue-500 hover:underline p-3"
+                    target="_blank"
+                  >
+                    Visit Profile
+                  </Link>
+                )}
+
                 </div>
               </motion.div>
             ))}
@@ -119,36 +131,28 @@ type Member = {
   name: string;
   image: string;
   affiliation: string;
+  link?: string;
 };
 
-type HeadData = {
-  title?: string;
-  member: Member[];
-  id: number;
-};
+
 type CommitteeData = {
   title: string;
   members: Member[];
 };
 
-const headData: HeadData[] = [
+// 
+const committeeData = [
   {
-    // title: "Co-Convenor",
-    id: 1,
-    member: [
+    title: "Program Chair",
+    members: [
       {
-        name: "  Debasis Giri",
+        name: "Valentina Emilia Balas",
         image:
-          "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743751888/DebasisGiri_nj2uev.jpg",
+          "https://res.cloudinary.com/dg6vdv82c/image/upload/v1745490342/ValentinaEmiliaBalas_ey5grd.jpg",
         affiliation:
-          "Department of Information Technology, Maulana Abul Kalam Azad University of Technology, West Bengal, India",
+          "Aurel Vlaicu University of Arad, Romania",
+        link: "https://scholar.google.com/citations?user=XaktX0wAAAAJ&hl=en",
       },
-    ],
-  },
-  {
-    // title: "Co-Convenor",
-    id: 2,
-    member: [
       {
         name: "   Chun-I Fan",
         image:
@@ -156,12 +160,14 @@ const headData: HeadData[] = [
         affiliation:
           "National Sun Yat-Sen University, Taiwan",
       },
-    ],
-  },
-  {
-    // title: "Convenor",
-    id: 3,
-    member: [
+      {
+        name: "  Debasis Giri",
+        image:
+          "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743751888/DebasisGiri_nj2uev.jpg",
+        affiliation:
+          "Department of Information Technology, Maulana Abul Kalam Azad University of Technology, West Bengal, India",
+      },
+      
       {
         name: "  Debashis Das",
         image:
@@ -169,12 +175,6 @@ const headData: HeadData[] = [
         affiliation:
           " Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
-    ],
-  },
-  {
-    // title: "Co-Convenor",
-    id: 4,
-    member: [
       {
         name: "  Soumitra Roy",
         image:
@@ -182,10 +182,9 @@ const headData: HeadData[] = [
         affiliation:
           " Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
+      
     ],
   },
-];
-const committeeData = [
   {
     title: "Organizing Chair",
     members: [
@@ -193,7 +192,7 @@ const committeeData = [
         name: "  Amrut Ranjan Jena",
         image:
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449434/AmrutRanjanJena_jm8f3s.jpg",
-            affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
+        affiliation: "Department of Computer Science & Engineering, Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
       {
         name: " Madhusmita Mishra",
@@ -322,7 +321,7 @@ const committeeData = [
           "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743450314/NibeditaBiswas_nkjkg0.jpg",
         affiliation: "Department of Basic Science & Humanities,Dr. Sudhir Chandra Sur Institute of Technology and Sports Complex, Kolkata, India",
       },
-      
+
     ],
   },
   {
