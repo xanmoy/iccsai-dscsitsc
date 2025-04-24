@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { Toaster } from "react-hot-toast"; 
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +38,7 @@ export default function RootLayout({
             {children}
             <Footer />
           </div>
+          <Toaster position="top-right" /> 
         </ThemeProvider>
       </body>
     </html>

@@ -244,21 +244,21 @@ const committeeData = [
                
             },
             {
-                name: "Prof. (Dr.) Chun-I Fan",
+                name: "Chun-I Fan",
                 affiliation: "Department of Computer Science & Engineering, National Sun Yat-Sen University, Taiwan",
             },
             {
-                name: "Dr. Debasis Giri",
+                name: "Debasis Giri",
                 image:
                     "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449601/Anoy_Chowdhury_pwhxrj.jpg",
                 affiliation: "Department of Information Technology, MAKAUT, India",
             },
             {
-                name: "Dr. Soumitra Roy",
+                name: "Soumitra Roy",
                 affiliation: "Department of Computer Science & Engineering, SurTech, Kolkata, India",
             },
             {
-                name: "Dr. Debashis Das",
+                name: "Debashis Das",
                 affiliation: "Department of Computer Science & Engineering, SurTech, Kolkata, India",
             },
 
@@ -268,15 +268,15 @@ const committeeData = [
         title: "Organizing Chair(s)",
         members: [
             {
-                name: "Dr. Amrut Ranjan Jena",
+                name: "Amrut Ranjan Jena",
                 affiliation: "Head of the Department, Computer Science & Engineering, SurTech, Kolkata India",
             },
             {
-                name: "Mrs. Madhusmita Mishra",
+                name: "Madhusmita Mishra",
                 affiliation: "Teacher-in charge, Departmet of Computer Science & Engineering (AIML), SurTech, Kolkata, India",
             },
             {
-                name: "Dr. Amitava Halder",
+                name: "Amitava Halder",
                 affiliation: "Department of Computer Science & Engineering, SurTech, Kolkata, India",
             },
         ],
@@ -298,7 +298,7 @@ const committeeData = [
         title: "Executive Chair",
         members: [
             {
-                name: "Mr. Soumik Jash",
+                name: "Soumik Jash",
                 affiliation: "Account Officer, SurTech, India",
             },
         ],
