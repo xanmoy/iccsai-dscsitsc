@@ -176,6 +176,10 @@ const committeeData = [
             { name: "Satnam Kaur", affiliation: "Punjab Engineering College, India" },
             { name: "Santhi Thilagam", affiliation: "National Institute of Technology, Kurukshetra, India" },
             { name: "Biswapati Jana", affiliation: "Vidyasagar University, India" },
+            { name: "Wajdi Alhakami", affiliation: "Taif University, Saudi Arabia " },
+            { name: "Weisheng Si", affiliation: "Western Sydney University, Australia" },
+            { name: "Yossi Oren", affiliation: "Ben-Gurion University, Israel" },
+
         
             
         ]
