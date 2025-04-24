@@ -237,14 +237,21 @@ const committeeData = [
         title: "Program Chair(s)",
         members: [
             {
-                name: "Dr. Debasis Giri",
-                image:
-                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449601/Anoy_Chowdhury_pwhxrj.jpg",
-                affiliation: "Department of Information Technology, MAKAUT, India",
+                name: "Valentina Emilia Balas",
+                
+                affiliation:
+                    "Aurel Vlaicu University of Arad, Romania",
+               
             },
             {
                 name: "Prof. (Dr.) Chun-I Fan",
                 affiliation: "Department of Computer Science & Engineering, National Sun Yat-Sen University, Taiwan",
+            },
+            {
+                name: "Dr. Debasis Giri",
+                image:
+                    "https://res.cloudinary.com/dg6vdv82c/image/upload/v1743449601/Anoy_Chowdhury_pwhxrj.jpg",
+                affiliation: "Department of Information Technology, MAKAUT, India",
             },
             {
                 name: "Dr. Soumitra Roy",
