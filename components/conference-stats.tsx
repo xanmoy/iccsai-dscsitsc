@@ -20,12 +20,12 @@ export function ConferenceStats() {
     },
     {
       icon: <Users className="h-10 w-10 text-primary" />,
-      title: "300+",
+      title: "100+",
       subtitle: "Expected Attendees",
     },
     {
       icon: <Award className="h-10 w-10 text-primary" />,
-      title: "12+",
+      title: "8+",
       subtitle: "Eminent Speakers",
     },
     {

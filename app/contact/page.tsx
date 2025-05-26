@@ -237,7 +237,7 @@ export default function ContactPage() {
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div className="space-y-2">
                   <label htmlFor="firstName">First Name</label>
-                  <Input id="firstName" value={formData.firstName} onChange={handleChange} required />
+                  <Input id="firstName" value={formData.firstName} onChange={handleChange} placeholder="" required />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="lastName">Last Name</label>

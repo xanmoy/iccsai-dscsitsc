@@ -123,6 +123,86 @@ const committeeData = [
         name: "Dr. Aaisha Makkar",
         affiliation: "University of Derby, UK",
       },
+      {
+        name: "Guoliang Xue",
+        affiliation: "Arizona State University, Arizona, USA",
+      },
+      {
+        name: "Kim-Kwang Raymond Choo",
+        affiliation: "University of Texas at San Antonio, USA",
+      },
+      {
+        name: "Adam Joinson",
+        affiliation: "University of Bath, UK",
+      },
+      {
+        name: "Michael Waidner",
+        affiliation: "TU Darmstadt, ATHENE, Fraunhofer SIT, Germany",
+      },
+      {
+        name: "Wanlei Zhou",
+        affiliation: "City University of Macau, Macao",
+      },
+      {
+        name: "Wei Zhao",
+        affiliation: "Shenzhen University of Advanced Technology, China",
+      },
+      {
+        name: "Dr Nour Moustafa",
+        affiliation: "University of New South Wales (UNSW Canberra)",
+      },
+      {
+        name: "Steven Furnell",
+        affiliation: "University of Nottingham, UK",
+      },
+      {
+        name: "Christopher Leckie",
+        affiliation: "The University of Melbourne, Australia",
+      },
+      {
+        name: "John Yen",
+        affiliation: "The Pennsylvania State University, USA",
+      },
+      {
+        name: "Sherman SM Chow",
+        affiliation: "The Chinese University of Hong Kong, China",
+      },
+      {
+        name: "Joseph K. Liu",
+        affiliation: "Monash University, Australia",
+      },
+      {
+        name: "Teng Joon Lim",
+        affiliation: "University of Sydney, Australia",
+      },
+      {
+        name: "Ruilong Deng",
+        affiliation: "Zhejiang University, China",
+      },
+      {
+        name: "Weizhi Meng",
+        affiliation: "Lancaster University, United Kingdom",
+      },
+      {
+        name: "Tianqing Zhu",
+        affiliation: "City University of Macau, Macao",
+      },
+      {
+        name: "Ron Vetter",
+        affiliation: "University of North Carolina Wilmington, USA",
+      },
+      {
+        name: "Jordan Shropshire",
+        affiliation: "University of South Alabama, USA",
+      },
+      {
+        name: "Bowei Xi",
+        affiliation: "Purdue University, Indiana, USA",
+      },
+      {
+        name: "Mass Soldal Lund",
+        affiliation: "Norwegian Defence University College, Norway",
+      }
     ],
   },
   {
