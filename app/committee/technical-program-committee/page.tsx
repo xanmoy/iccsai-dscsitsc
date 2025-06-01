@@ -465,7 +465,10 @@ const committeeData = [
         name: "Weisheng Si",
         affiliation: "Western Sydney University, Australia",
       },
-      { name: "Yossi Oren", affiliation: "Ben-Gurion University, Israel" },
+      {
+        name: "Yossi Oren",
+        affiliation: "Ben-Gurion University, Israel",
+      },
       {
         name: "Christophe Doche",
         affiliation: "Sydney Institute, Australia",
@@ -542,10 +545,6 @@ const committeeData = [
       {
         name: "Yannan Li",
         affiliation: "University of Wollongong, Australia",
-      },
-      {
-        name: "Yossi Oren",
-        affiliation: "Ben-Gurion University, Israel",
       },
       {
         name: "Shuqiang Wang",
