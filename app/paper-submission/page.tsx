@@ -47,7 +47,7 @@ export default function PaperSubmissionPage() {
       ],
     },
     importantDates: [
-      { label: "Paper Submission Deadline", date: "June 15, 2025" },
+      { label: "Paper Submission Deadline", date: "June 15, 2025", oldDate: "May 30, 2025" },
       { label: "Notification of Acceptance", date: "July 15, 2025" },
       { label: "Camera-Ready Submission", date: "August 10, 2025" },
       { label: "Registration Deadline", date: "August 16, 2025" },
@@ -177,6 +177,13 @@ export default function PaperSubmissionPage() {
                 className="border rounded-xl p-5 flex flex-col items-center text-center hover:border-primary transition-colors"
               >
                 <h3 className="font-semibold text-lg mb-2">{dateItem.label}</h3>
+                <p className="text-muted-foreground mb-4">
+                  {dateItem.oldDate ? (
+                    <span className="line-through text-red-500">
+                      {dateItem.oldDate}
+                    </span>
+                  ) : null}
+                  </p>
                 <p className="text-primary font-bold text-xl">
                   {dateItem.date}
                 </p>

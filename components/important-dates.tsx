@@ -8,13 +8,17 @@ export function ImportantDates() {
     title: string;
     description: string;
     date: string;
-  };
+    cssClass?: string;
+    oldDate?: string;
+  }
 
   const dates: DateItem[] = [
     {
       title: "Paper Submission Deadline",
       description: "Full papers",
-      date: "May 30, 2025",
+      date: "June 15, 2025",
+      oldDate: "May 30, 2025",
+      cssClass: "line-through text-red-500 mr-2", // Example of a special class
     },
     {
       title: "Notification of Acceptance",
@@ -73,7 +77,10 @@ export function ImportantDates() {
               <div className="bg-background p-5 rounded-lg shadow-md border">
                 <h3 className="text-lg font-semibold text-primary">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">{item.description}</p>
-                <div className="mt-2 text-base font-semibold text-accent-foreground">{item.date}</div>
+                <div className="flex items-center mt-2">
+                <div className="mt-2 text-base font-semibold text-accent-foreground line-through text-red-500 mr-2">{item.oldDate}</div>
+                  <div className="mt-2 text-base font-semibold text-accent-foreground">{item.date}</div>
+                </div>
               </div>
             </motion.div>
           ))}
