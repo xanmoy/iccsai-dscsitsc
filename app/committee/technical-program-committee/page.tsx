@@ -502,10 +502,6 @@ const committeeData = [
         affiliation: "Peking University, China",
       },
       {
-        name: "Ibrahim Ghafir",
-        affiliation: "University of Bradford, UK",
-      },
-      {
         name: "Jairo Giraldo",
         affiliation: "University of Utah, USA",
       },
@@ -539,10 +535,6 @@ const committeeData = [
         affiliation: "University of Calicut, Dubai, United Arab Emirates",
       },
       {
-        name: "Wajdi Alhakami",
-        affiliation: "Taif University, Saudi Arabia",
-      },
-      {
         name: "Yannan Li",
         affiliation: "University of Wollongong, Australia",
       },
@@ -571,6 +563,14 @@ const committeeData = [
       {
         name: "Raha Akhavan-Tabatabaei",
         affiliation: "North Carolina State University Fitts, USA",
+      },
+      {
+        name: "Shaurya Sengar",
+        affiliation: "Senior Staff Software Engineer (IC7), Meta, USA",
+      },
+      {
+        name: "Diksha Rangwani",
+        affiliation: "National Institute of Technology, Sikkim, India",
       },
     ],
   },
