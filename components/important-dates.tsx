@@ -10,15 +10,17 @@ export function ImportantDates() {
     date: string;
     cssClass?: string;
     oldDate?: string;
+    message?: string; // Optional message for special cases
   }
 
   const dates: DateItem[] = [
     {
       title: "Paper Submission Deadline",
       description: "Full papers",
-      date: "June 15, 2025",
-      oldDate: "May 30, 2025",
-      cssClass: "line-through text-red-500 mr-2", // Example of a special class
+      date: "June 30, 2025",
+      oldDate: "June 15, 2025",
+      cssClass: "line-through text-red-500 mr-2", 
+      message: "(No more extension)",
     },
     {
       title: "Notification of Acceptance",
@@ -80,6 +82,7 @@ export function ImportantDates() {
                 <div className="flex items-center mt-2">
                 <div className="mt-2 text-base font-semibold text-accent-foreground line-through text-red-500 mr-2">{item.oldDate}</div>
                   <div className="mt-2 text-base font-semibold text-accent-foreground">{item.date}</div>
+                  <div className="mt-2 text-base font-semibold text-accent-foreground ml-2">{item.message}</div>
                 </div>
               </div>
             </motion.div>
