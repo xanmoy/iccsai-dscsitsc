@@ -25,7 +25,9 @@ export function ImportantDates() {
     {
       title: "Notification of Acceptance",
       description: "Decision notifications sent to authors",
-      date: "July 15, 2025",
+      oldDate: "July 15, 2025",
+      date: "July 25, 2025",
+      cssClass: "line-through text-red-500 mr-2",
     },
     {
       title: "Camera-Ready Submission",
