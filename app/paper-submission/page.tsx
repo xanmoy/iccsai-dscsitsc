@@ -7,6 +7,7 @@ import {
   Calendar,
   Send,
   Mail,
+  Camera,
 } from "lucide-react";
 
 export default function PaperSubmissionPage() {
@@ -48,7 +49,8 @@ export default function PaperSubmissionPage() {
     },
     importantDates: [
       { label: "Paper Submission Deadline", date: "June 30, 2025", oldDate: "June 15, 2025" },
-      { label: "Notification of Acceptance", date: "July 15, 2025" },
+      { label: "Notification of Acceptance", date: "July 25, 2025", oldDate: "July 15, 2025" },
+      { label: "Notification of Acceptance", date: "July 25, 2025", oldDate: "July 15, 2025" },
       { label: "Camera-Ready Submission", date: "August 10, 2025" },
       { label: "Registration Deadline", date: "August 16, 2025" },
       { label: "Conference Dates", date: "August 28-29, 2025" },
@@ -298,6 +300,49 @@ export default function PaperSubmissionPage() {
               <li>Add all authors and their affiliations.</li>
               <li>Review your submission and submit.</li>
             </ol>
+          </div>
+        </section>
+
+        {/* Submission Instructions Section */}
+        <section id="submission-instructions" className="mb-20">
+          <div className="flex items-center mb-8">
+            <div className="bg-primary/10 p-3 rounded-full mr-4">
+              <Camera className="h-6 w-6 text-primary" />
+            </div>
+            <h2 className="text-3xl font-bold text-primary">
+              Camera Ready Submission:
+
+            </h2>
+          </div>
+
+          <div className="bg-muted/30 rounded-xl p-8 mb-10">
+            {/* <p className="text-lg mb-8">
+              Papers should be submitted electronically through the Microsoft
+              CMT conference management system. The submission site will be open
+              from <strong>April 1, 2025</strong>.
+            </p> */}
+
+            <h3 className="text-xl font-bold mb-4">Submission Instructions</h3>
+            <ol className="list-decimal pl-5 space-y-3">
+              <li>
+                Log in to the CMT portal and select <strong>"ICCSAI 2025"</strong>.
+              </li>
+              <li>
+                Click on <strong>"Create Camera Ready Submission"</strong> and follow the instructions.
+              </li>
+              <li>
+                Upload your revised paper in editable <strong>(.Docx)</strong> format.
+              </li>
+              <li>
+                Upload Review Response Report <strong>(.pdf format)</strong> by addressing all reviewers' comments
+              </li>
+              <li>
+                Upload Plagiarism Report <strong>(.pdf format)</strong> of the revised paper
+              </li>
+              <li>Review your submission and submit.</li>
+            
+            </ol>
+           
           </div>
 
           <div className="flex justify-center mb-10">

@@ -2,7 +2,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Download } from "lucide-react"
+import { Download, Handshake } from "lucide-react"
 import { motion } from "framer-motion"
 
 export default function SponsorsPage() {
@@ -29,7 +29,13 @@ export default function SponsorsPage() {
       </div>
 
 
-    <div className="container px-4 py-12 md:px-6 md:py-24">
+      <div className="container px-4 py-12 md:px-6 md:py-24">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold mb-4">
+            Be the sponsor of ICCSAI 2025
+            <Handshake className="inline-block ml-2 w-8 h-8 text-primary" />
+          </h2>
+        </div>
       {/* <div className="flex flex-col items-center justify-center space-y-4 text-center">
         <div className="space-y-2">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Sponsors</h1>
@@ -40,7 +46,7 @@ export default function SponsorsPage() {
       </div> */}
 
       {/* Platinum Sponsors */}
-      <section className="mt-16" id="platinum">
+      {/* <section className="mt-16" id="platinum">
         <h2 className="text-2xl font-bold mb-8 text-center">Platinum Sponsors</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {[1, 2].map((i) => (
@@ -55,10 +61,10 @@ export default function SponsorsPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Gold Sponsors */}
-      <section className="mt-16" id="gold">
+      {/* <section className="mt-16" id="gold">
         <h2 className="text-2xl font-bold mb-8 text-center">Gold Sponsors</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[1, 2, 3].map((i) => (
@@ -73,10 +79,10 @@ export default function SponsorsPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Silver Sponsors */}
-      <section className="mt-16" id="silver">
+      {/* <section className="mt-16" id="silver">
         <h2 className="text-2xl font-bold mb-8 text-center">Silver Sponsors</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {[1, 2, 3, 4].map((i) => (
@@ -91,10 +97,10 @@ export default function SponsorsPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Bronze Sponsors */}
-      <section className="mt-16" id="bronze">
+      {/* <section className="mt-16" id="bronze">
         <h2 className="text-2xl font-bold mb-8 text-center">Bronze Sponsors</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {[1, 2, 3, 4].map((i) => (
@@ -109,9 +115,9 @@ export default function SponsorsPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
       {/* Other Sponsors */}
-      <section className="mt-16" id="bronze">
+      {/* <section className="mt-16" id="bronze">
         <h2 className="text-2xl font-bold mb-8 text-center">Other Sponsors</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {[1, 2, 3, 4].map((i) => (
@@ -126,7 +132,7 @@ export default function SponsorsPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Sponsorship Opportunities */}
       <section className="mt-16">
