@@ -15,18 +15,18 @@ export function ConferenceTracks() {
     {
       icon: <Lock className="h-6 w-6 text-primary" />,
       title: "Cyber Security for Emerging Technologies",
-      description: "Blockchain, Digital Forensics,Sensor Network, E-health, Web Service, 5G, IoT & Cloud Forensics, Embedded & Digital Twin",
+      description: "Blockchain, Digital Forensics, E-health, Web Service, Embedded & Digital Twin",
     },
     {
       icon: <ShieldCheck className="h-6 w-6 text-primary" />,
       title: "Cyber Security in IoT Applications",
-      description: "Security, IoT, Cloud, Forensics, AI, Automation, Encryption, Privacy",
+      description: "Security, IoT, Cloud, Forensics, Automation, Encryption, Privacy, IOT and Cloud Forensic",
     },
     
     {
       icon: <AudioLines className="h-6 w-6 text-primary" />,
       title: "Cyber Security in Wireless Communication Network",
-      description: "5G, 6G, Cybersecurity, WSN, Edge, VANETs, UAV, Wireless, Network, Threats",
+      description: "5G/6G in Cybersecurity, WSN, Edge, VANETs, UAV, Wireless Network, Threats",
     },
   ]
 
