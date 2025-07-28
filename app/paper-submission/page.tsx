@@ -40,6 +40,12 @@ export default function PaperSubmissionPage() {
         "E-health Security",
         "Digital Twins and Cyber Security",
       ],
+      "Cyber Security in IoT Applications": [
+        "IoT and Cloud Forensic",
+        "Embedded System Security",
+        "Data Privacy and Encryption",
+        "AI-driven Security in Automation",
+      ],
       "Cyber Security in Wireless Communication Network": [
         "5G/6G Cyber Security",
         "Wireless Sensor Networks Security",

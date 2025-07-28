@@ -1,4 +1,4 @@
-import { Shield, Brain, Lock, Cloud, CheckSquare, Cpu } from "lucide-react"
+import { Shield, Brain, Lock, Cloud, CheckSquare, Cpu, AudioLines, ShieldCheck, } from "lucide-react"
 
 export function ConferenceTracks() {
   const tracks = [
@@ -16,6 +16,17 @@ export function ConferenceTracks() {
       icon: <Lock className="h-6 w-6 text-primary" />,
       title: "Cyber Security for Emerging Technologies",
       description: "Blockchain, Digital Forensics,Sensor Network, E-health, Web Service, 5G, IoT & Cloud Forensics, Embedded & Digital Twin",
+    },
+    {
+      icon: <ShieldCheck className="h-6 w-6 text-primary" />,
+      title: "Cyber Security in IoT Applications",
+      description: "Security, IoT, Cloud, Forensics, AI, Automation, Encryption, Privacy",
+    },
+    
+    {
+      icon: <AudioLines className="h-6 w-6 text-primary" />,
+      title: "Cyber Security in Wireless Communication Network",
+      description: "5G, 6G, Cybersecurity, WSN, Edge, VANETs, UAV, Wireless, Network, Threats",
     },
   ]
 
