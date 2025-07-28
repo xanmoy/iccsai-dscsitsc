@@ -24,11 +24,9 @@ export default function PaperSubmissionPage() {
         "Post-quantum Security",
         "Distributed System Security",
         "Zero Trust Architecture",
-        "Embedded System Security",
       ],
       "AI-driven Cyber Security": [
         "Gamification in Cyber Security",
-        "AI-driven Security in Automation",
         "Smart-grid Security",
         "Big Data Security and AI",
         "AI Governance and Cyber Security",
@@ -38,18 +36,28 @@ export default function PaperSubmissionPage() {
       "Cyber Security for Emerging Technologies": [
         "Security in Block Chain",
         "Digital Forensics",
-        "Sensor Network Security",
         "Security in Web Services",
         "E-health Security",
-        "5G Cyber Security",
-        "Zero Trust Architecture",
-        "IoT and Cloud Forensic",
         "Digital Twins and Cyber Security",
+      ],
+      "Cyber Security in Wireless Communication Network": [
+        "5G/6G Cyber Security",
+        "Wireless Sensor Networks Security",
+        "Edge Network Security",
+        "Vehicular Ad-hoc Networks (VANETs) and UAV Security",
       ],
     },
     importantDates: [
-      { label: "Paper Submission Deadline", date: "June 30, 2025", oldDate: "June 15, 2025" },
-      { label: "Notification of Acceptance", date: "July 25, 2025", oldDate: "July 15, 2025" },
+      {
+        label: "Paper Submission Deadline",
+        date: "June 30, 2025",
+        oldDate: "June 15, 2025",
+      },
+      {
+        label: "Notification of Acceptance",
+        date: "July 25, 2025",
+        oldDate: "July 15, 2025",
+      },
       { label: "Camera-Ready Submission", date: "August 10, 2025" },
       { label: "Registration Deadline", date: "August 16, 2025" },
       { label: "Conference Dates", date: "August 28-29, 2025" },
@@ -150,7 +158,7 @@ export default function PaperSubmissionPage() {
             )}
           </div>
 
-          <div className="flex justify-center text-white">
+          {/* <div className="flex justify-center text-white">
             <a
               href="https://drive.google.com/file/d/1w4sTzNbJNm0A5Ku9xe1ZpyDswGPzAM4e/view?usp=sharing"
               className="bg-primary rounded-md flex items-center gap-2 px-6 py-2.5 text-base"
@@ -159,7 +167,7 @@ export default function PaperSubmissionPage() {
               <Download className="h-5 w-5 text-white" />
               Download Call for Papers (PDF)
             </a>
-          </div>
+          </div> */}
         </section>
 
         {/* Important Dates Section */}
@@ -184,7 +192,7 @@ export default function PaperSubmissionPage() {
                       {dateItem.oldDate}
                     </span>
                   ) : null}
-                  </p>
+                </p>
                 <p className="text-primary font-bold text-xl">
                   {dateItem.date}
                 </p>
@@ -199,17 +207,22 @@ export default function PaperSubmissionPage() {
             <div className="bg-primary/10 p-3 rounded-full mr-4">
               <FileText className="h-6 w-6 text-primary" />
             </div>
-            <h2 className="text-3xl font-bold text-primary">Author Guidelines</h2>
+            <h2 className="text-3xl font-bold text-primary">
+              Author Guidelines
+            </h2>
           </div>
 
           <div className="border rounded-xl overflow-hidden">
             <div className="bg-muted/30 p-6 border-b">
-              <h3 className="text-xl font-semibold">Manuscript Preparation Guidelines</h3>
+              <h3 className="text-xl font-semibold">
+                Manuscript Preparation Guidelines
+              </h3>
             </div>
 
             <div className="p-6 md:p-8">
               <p className="mb-6 text-lg">
-                Authors must strictly adhere to the conference proceeding template when preparing their manuscripts.
+                Authors must strictly adhere to the conference proceeding
+                template when preparing their manuscripts.
               </p>
 
               <div className="bg-card border rounded-lg p-6 mb-6">
@@ -218,7 +231,7 @@ export default function PaperSubmissionPage() {
                     "The abstract word limit is 150 to 250 words.",
                     "Include 4 to 6 keywords.",
                     "Submit the manuscript without author affiliation for the blind review process.",
-                    "The article must not exceed 8 pages, including the references section."
+                    "The article must not exceed 8 pages, including the references section.",
                   ].map((item, index) => (
                     <li key={index} className="flex items-start">
                       <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/10 text-primary text-sm font-medium mr-3 flex-shrink-0">
@@ -230,15 +243,16 @@ export default function PaperSubmissionPage() {
                 </ul>
               </div>
 
-             
-
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="https://drive.google.com/file/d/1OLOLSuG0_QZsHck1CWRZ9FIpC9S-IR01/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button variant="default" className="w-full sm:w-auto flex items-center gap-2 px-6 py-2.5">
+                  <Button
+                    variant="default"
+                    className="w-full sm:w-auto flex items-center gap-2 px-6 py-2.5"
+                  >
                     <Download className="h-5 w-5" />
                     Word Template
                   </Button>
@@ -248,7 +262,10 @@ export default function PaperSubmissionPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button variant="default" className="w-full sm:w-auto flex items-center gap-2 px-6 py-2.5">
+                  <Button
+                    variant="default"
+                    className="w-full sm:w-auto flex items-center gap-2 px-6 py-2.5"
+                  >
                     <Download className="h-5 w-5" />
                     LaTeX Template
                   </Button>
@@ -257,7 +274,6 @@ export default function PaperSubmissionPage() {
             </div>
           </div>
         </section>
-
 
         {/* Submission Instructions Section */}
         <section id="submission-instructions" className="mb-20">
@@ -310,7 +326,6 @@ export default function PaperSubmissionPage() {
             </div>
             <h2 className="text-3xl font-bold text-primary">
               Camera Ready Submission:
-
             </h2>
           </div>
 
@@ -324,24 +339,27 @@ export default function PaperSubmissionPage() {
             <h3 className="text-xl font-bold mb-4">Submission Instructions</h3>
             <ol className="list-decimal pl-5 space-y-3">
               <li>
-                Log in to the CMT portal and select <strong>"ICCSAI 2025"</strong>.
+                Log in to the CMT portal and select{" "}
+                <strong>"ICCSAI 2025"</strong>.
               </li>
               <li>
-                Click on <strong>"Create Camera Ready Submission"</strong> and follow the instructions.
+                Click on <strong>"Create Camera Ready Submission"</strong> and
+                follow the instructions.
               </li>
               <li>
-                Upload your revised paper in editable <strong>(.Docx)</strong> format.
+                Upload your revised paper in editable <strong>(.Docx)</strong>{" "}
+                format.
               </li>
               <li>
-                Upload Review Response Report <strong>(.pdf format)</strong> by addressing all reviewers' comments
+                Upload Review Response Report <strong>(.pdf format)</strong> by
+                addressing all reviewers' comments
               </li>
               <li>
-                Upload Plagiarism Report <strong>(.pdf format)</strong> of the revised paper
+                Upload Plagiarism Report <strong>(.pdf format)</strong> of the
+                revised paper
               </li>
               <li>Review your submission and submit.</li>
-            
             </ol>
-           
           </div>
 
           <div className="flex justify-center mb-10">

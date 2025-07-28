@@ -43,12 +43,12 @@ export function AboutConference() {
           </div>
         </div>
       </div>
-      <div className="flex lg:pt-36 pt-10 justify-center">
+      {/* <div className="flex lg:pt-36 pt-10 justify-center">
         <a href="https://drive.google.com/file/d/1w4sTzNbJNm0A5Ku9xe1ZpyDswGPzAM4e/view?usp=sharing" className="bg-primary text-white rounded-md flex items-center gap-2 px-6 py-2.5 text-base" target="_blank">
           <Download className="h-5 w-5" />
           Download Call for Papers (PDF)
         </a>
-      </div>
+      </div> */}
     </section>
   )
 }
