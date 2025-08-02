@@ -46,7 +46,7 @@ export function Footer() {
                     rel="noopener noreferrer"
                     className="inline-block mt-1 text-indigo-600 font-medium"
                 >
-                    Designed & Developed by SplitMate Technologies
+                    Designed & Developed by SplitMate Software
                 </Link>
             </div>
         </footer>
