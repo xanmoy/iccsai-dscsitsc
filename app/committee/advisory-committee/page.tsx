@@ -206,6 +206,58 @@ const committeeData = [
       {
         name: "Amit Dhiman",
         affiliation: "Hcl America",
+      },
+      {
+        name: "Anurag Awasthi",
+        affiliation: "Google, USA",
+      },
+      {
+        name: "Bhaskardeep Khaund",
+        affiliation: "Microsoft, USA",
+      },
+      {
+        name: "Chaitanya Manani",
+        affiliation: "Amazon, USA",
+      },
+      {
+        name: "GOPICHAND BANDARUPALLI",
+        affiliation: "campbellsville University, USA",
+      },
+      {
+        name: "Harshil Champaneria",
+        affiliation: "University of Phoenix, USA",
+      },
+      {
+        name: "Indraneel Madabhushini",
+        affiliation: "CRICO RMF HARVARD",
+      },
+      {
+        name: "Omkar Bhalekar",
+        affiliation: "RIT, USA",
+      },
+      {
+        name: "Priyadarshni Shanmugavadivelun",
+        affiliation: "Microsoft",
+      },
+      {
+        name: "Ramesh Somayajula",
+        affiliation: "T-Mobile USA Inc",
+      },
+      {
+        name: "Sai Harish Yenduri",
+        affiliation: "University of Cincinnati, USA",
+      },
+      {
+        name: "Santhosh Kumar Jayachandran",
+        affiliation: "Apple",
+      },
+      {
+        name: "Shaurya Sengar",
+        affiliation: "Meta",
+      },
+      {
+        name: "Vasavi Lankipalle",
+        affiliation: "Microsoft",
       }
     ],
   },
@@ -227,6 +279,21 @@ const committeeData = [
       {
         name: "Prof. (Dr.) Sudeep Tanwar",
         affiliation: "Nirma University, India",
+      },
+      {
+        name: "Prof. Smruti Ranjan Sarangi",
+        affiliation:
+          "Indian Institute of Technology, Delhi",
+      },
+      {
+        name: "Prof. Sugata Gangopadhyay",
+        affiliation:
+          "Indian Institute of Technology, Roorkee",
+      },
+      {
+        name: "Prof. Arijit Sur",
+        affiliation:
+          "Indian Institute of Technology, Guwahati",
       },
 
       {

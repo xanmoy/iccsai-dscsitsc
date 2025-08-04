@@ -575,6 +575,463 @@ const committeeData = [
       {
         name: "Aniket Gharpure",
         affiliation: "Wellington Management Company, USA",
+      },
+      {
+        name: "Amala Arul Malar Umakanth",
+        affiliation: "McKinsey & Company, USA",
+      },
+      {
+        name: "Anish Alex",
+        affiliation: "Microsoft Corporation, USA",
+      },
+      {
+        name: "Ankur Bansal",
+        affiliation: "World Wide Technology",
+      },
+      {name: "Arpit Garg",
+        affiliation: "CGI",
+      },
+      {name: "Arun Shankar singh",
+        affiliation: "Tubi, USA",
+      },
+      {name: "Barinder Pal Singh",
+        affiliation: "Deloitte, USA",
+      },
+      {
+        name: "Bhargav Trivedi",
+        affiliation: "Bloomreach Inc.",
+      },
+      {
+        name: "Bhushan Chavan",
+        affiliation: "MGM Resorts International",
+      },
+      {
+        name: "Bujjibabu Katta",
+        affiliation: "Fidelity investments, USA",
+      },
+      {
+        name: "Chakra Gadige",
+        affiliation: "CISCO, USA",
+      },
+      {
+        name: "Chandrababu Nallapareddy",
+        affiliation: "Capital One",
+      },
+      {
+        name: "Charanpreet Singh Hora",
+        affiliation: "Cognizant Technologies Us Corp",
+      },
+      {
+        name: "Chiranjeevi Dubaguntla",
+        affiliation: "Lorsiv Tehnologies inc.Walmart Global Tech, USA",
+      },
+      {
+        name: "Deepak Jaiswal",
+        affiliation: "T-Mobile Inc",
+      },
+      {
+        name: "Deepayan Chakraborty",
+        affiliation: "Indian Institute of Technology, Kharagpur",
+      },
+      {
+        name: "Deepika Annam",
+        affiliation: "Nike Inc",
+      },
+      {
+        name: "Derek Asir Muthurajan Caleb",
+        affiliation: "Broadcom Inc",
+      },
+      {
+        name: "Dhrubajyoti Kalita",
+        affiliation: "J P Morgan Chase",
+      },
+      {
+        name: "Dileep Kumar Somajohassula",
+        affiliation: "DST Health Solutions LLC",
+      },
+      {
+        name: "Divyadharshini Karhtikeyan",
+        affiliation: "Amazon",
+      },
+      {
+        name: "Gaurav Rathor",
+        affiliation: "Omnissa",
+      },
+      {
+        name: "GOPICHAND BANDARUPALLI",
+        affiliation: "campbellsville University, USA",
+      },
+      {
+        name: "Gurpreet Singh Walia",
+        affiliation: "Netapp",
+      },
+      {
+        name: "Gurucharan Visagamurthy",
+        affiliation: "Aetna",
+      },
+      {
+        name: "Hari Suresh Babu Gummadi",
+        affiliation: "FRONTIER COMMUNICATIONS",
+      },
+      {
+        name: "Hitesh Pahuja",
+        affiliation: "Intuit",
+      },
+      {
+        name: "Janakiram Meka",
+        affiliation: "SAP labs",
+      },
+      {
+        name: "Jayavardhan Raju",
+        affiliation: "Deloitte Consulting LLP",
+      },
+      {
+        name: "Jithendra Babu Punugubati",
+        affiliation: "Cisco Systems",
+      },
+      {
+        name: "Juby Nedumthakidiyil Zacharias",
+        affiliation: "Sams Club (Walmart)",
+      },
+      {
+        name: "Justin Davis",
+        affiliation: "Castlight Health (An apree health company)",
+      },
+      {
+        name: "Manali Roy",
+        affiliation: "Indian Institute of Technology, Kharagpur, India",
+      },
+      {
+        name: "Maneesh Singh",
+        affiliation: "Hexaware Technologies",
+      },
+      {
+        name: "Mohan Krishna Bellamkonda",
+        affiliation: "Tata Consultancy Services",
+      },
+      {
+        name: "Mounika Lakka",
+        affiliation: "UnitedHealth Group",
+      },
+      {
+        name: "Murali Krishna Santhuluri Venkata",
+        affiliation: "Platinum Consulting Services, Inc",
+      },
+      {
+        name: "Nagabhushana Gargeshwari Mahadevaswamy",
+        affiliation: "microsoft corp",
+      },
+      {
+        name: "Nagamalleswararao Bellamkonda",
+        affiliation: "Gartner",
+      },
+      {
+        name: "Nageswara Rao Vudathala",
+        affiliation: "JP Morgan Chase",
+      },
+      {
+        name: "Natarajan Ravikumar",
+        affiliation: "Honeywell International, Inc",
+      },
+      {
+        name: "Naveen Parameshwarappa",
+        affiliation: "Deloitte Consulting LLP",
+      },
+      {
+        name: "Nikhilesh Pandey",
+        affiliation: "Meta Platforms",
+      },
+      {
+        name: "Nirup Baer",
+        affiliation: "Goldline Technologies",
+      },
+      {
+        name: "Pallav Laskar",
+        affiliation: "Zscaler",
+      },
+      {
+        name: "Pardhiva Janardhana Krishna Munnaluru",
+        affiliation: "Oracle",
+      },
+      {
+        name: "Pavani Chada",
+        affiliation: "Paypal",
+      },
+      {
+        name: "Piyush Dhar Diwan",
+        affiliation: "Eigen Labs",
+      },
+      {
+        name: "Prakash Reddy Putta",
+        affiliation: "Instacart",
+      },
+      {
+        name: "Pramod Appa Babar",
+        affiliation: "Amazon",
+      },
+      {
+        name: "Pramod Dattarao Gawande",
+        affiliation: "Cognizant US Corp",
+      },
+      {
+        name: "Pranavkumar Parekh",
+        affiliation: "Adobe",
+      },
+      {
+        name: "Praveen Kumar Latchupatula",
+        affiliation: "MGM Resorts International",
+      },
+      {
+        name: "Praveen Kumar Surabhi",
+        affiliation: "KPK Technologies Inc",
+      },
+      {
+        name: "Preetham Sunilkumar",
+        affiliation: "LPL Financial",
+      },
+      {
+        name: "PUNEET PAHUJA",
+        affiliation: "Accelitas Corporation",
+      },
+      {
+        name: "Raghavendra Reddy Kapu",
+        affiliation: "Akshaya Inc",
+      },
+      {
+        name: "Rahul Joshi",
+        affiliation: "Capital One",
+      },
+      {
+        name: "Rahul Kiran Talaseela",
+        affiliation: "SourceAmerica",
+      },
+      {
+        name: "Rajesh Anne",
+        affiliation: "Independent Researcher",
+      },
+      {
+        name: "Rakesh Chowdary Ganta",
+        affiliation: "Docusign",
+      },
+      {
+        name: "Rakesh Reddy Charla",
+        affiliation: "Microsoft",
+      },
+      {
+        name: "Raman Sharma",
+        affiliation: "Dell Inc",
+      },
+      {
+        name: "Ravi Anumakonda",
+        affiliation: "JPMorgan Chase",
+      },
+      {
+        name: "Ravi Babu Vellanki",
+        affiliation: "Tek Dallas Inc",
+      },
+      {
+        name: "Ravi Teja Medempudi",
+        affiliation: "Fidelity Investments",
+      },
+      {
+        name: "Ravinder Katla",
+        affiliation: "General Motors Inc",
+      },
+      {
+        name: "Reddappa Naidu Gorantla",
+        affiliation: "Amazon",
+      },
+      {
+        name: "Rishabh Gupta",
+        affiliation: "Palo Alto Networks",
+      },
+      {
+        name: "Rohith Narasimhamurthy",
+        affiliation: "Amazon",
+      },
+      {
+        name: "Sai Sharan Reddy Mittapelly",
+        affiliation: "Henry Ford Health System",
+      },
+      {
+        name: "Sai Teja Battula",
+        affiliation: "Citi Bank",
+      },
+      {
+        name: "Saideepak Kandibanda",
+        affiliation: "DISH NETWORK LLC",
+      },
+      {
+        name: "Sandeep Ravichandra Gourneni",
+        affiliation: "Hitachi Digital Services LLC",
+      },
+      {
+        name: "Sanjeevani Bhardwaj",
+        affiliation: "Salesforce Inc",
+      },
+      {
+        name: "Santhosh Veldi",
+        affiliation: "cgi technologies and solutions inc",
+      },
+      {
+        name: "Saradha Nagarajan",
+        affiliation: "Agilent Technologies Inc",
+      },
+      {
+        name: "SATHEESH KUMAR NENDRAMBAKA",
+        affiliation: "NIKE Inc",
+      },
+      {
+        name: "Sathish Kuppan Pandurangan",
+        affiliation: "Zurich North America",
+      },
+      {
+        name: "Sathvik Kanam",
+        affiliation: "Prudential",
+      },
+      {
+        name: "Sharath Reddy Polu",
+        affiliation: "Walmart Inc.",
+      },
+      { 
+        name: "Shashank Menon",
+        affiliation: "Xometry",
+      },
+      {
+        name: "Shikha Duttyal",
+        affiliation: "Meta Platforms",
+      },
+      {
+        name: "Shireesh Kumar Singh",
+        affiliation: "IBM Cloud",
+      },
+      {
+        name: "Shrikant Thakare",
+        affiliation: "Salesforce",
+      },
+      {
+        name: "Shrikanth Mahale",
+        affiliation: "Navy Federal",
+      },
+      {
+        name: "Sidhanta Panigrahy",
+        affiliation: "Okta Inc",
+      },
+      {
+        name: "Silpa Potluri",
+        affiliation: "Sriven Systems INC",
+      },
+      {
+        name: "Sitlesh Patle",
+        affiliation: "Victoria Secrete",
+      },
+      {
+        name: "Siva Reddy Pulluru",
+        affiliation: "Orora Packaging Solutions",
+      },
+      {
+        name: "Soma Kiran Kumar Nellipudi",
+        affiliation: "Interactive Communications International, Inc (inComm Payments)",
+      },
+      {
+        name: "Somesh Nagamadan Nagalla",
+        affiliation: "7 Eleven",
+      },
+      {
+        name: "Sreejith Kaimal",
+        affiliation: "C3.AI",
+      },
+      {
+        name: "Sridhar Nelloru",
+        affiliation: "Cisco",
+      },
+      {
+        name: "Srihari Babu Godleti",
+        affiliation: "ROKU Inc",
+      },
+      {
+        name: "Srikanth Puram",
+        affiliation: "General Motors",
+      },
+      {
+        name: "Srikanth Dandolu",
+        affiliation: "JP Morgan Chase & Co",
+      },
+      {
+        name: "Sunny Kesireddy",
+        affiliation: "BMO Bank",
+      },
+      {
+        name: "Suresh Padala",
+        affiliation: "Centene Corporation",
+      },
+      {
+        name: "Swetha Garaga",
+        affiliation: "Flooid Inc", 
+      },
+      {
+        name: "Ujjwala Priya Modepalli",
+        affiliation: "Wells Fargo Bank",
+      },
+      {
+        name: "Vamshi Ramagiri",
+        affiliation: "Trusit Financial",
+      },
+      {
+        name: "Venkat Gogineni",
+        affiliation: "HCL Global Systems",
+      },
+      {
+        name: "Venkata Babu Mogili",
+        affiliation: "Northwestern Memorial Healthcare",
+      },
+      {
+        name: "Venkata Karunakar Uppalapati",
+        affiliation: "Hire Intellects",
+      },
+      {
+        name: "Venkata Reddy Pasam",
+        affiliation: "Cornerstone consulting",
+      },
+      {
+        name: "Venkata Sampath Kumar Mutharaju",
+        affiliation: "Carrier Global Corporation",
+      },
+      {
+        name: "Venkatesan Kannan",
+        affiliation: "Cognizant Technology Solutions, USA",
+      },
+      {
+        name: "Venkateswaran Petchiappan",
+        affiliation: "NEA Consulting, Inc",
+      },
+      {
+        name: "Vidhan Shah",
+        affiliation: "Intuit",
+      },
+      {
+        name: "Vinod Nagarahalli Mohan",
+        affiliation: "Illumina",
+      },
+      {
+        name: "Vinod Manwatkar",
+        affiliation: "TopBuild Support Services Inc.",
+      },
+      {
+        name: "Vivek Aby Pothen",
+        affiliation: "Infosys Limited",
+      },
+      {
+        name: "Vivek Saiprasad Karnam",
+        affiliation: "Surge Technology Solutions Inc",
+      },
+      {
+        name: "Yogesh kumar Pandey",
+        affiliation: "Capital Group Companies Global",
+      },
+      {
+        name: "Yuvakumar Kuramannagari",
+        affiliation: "JPMorgan Chase & Co",
       }
     ],
   },
