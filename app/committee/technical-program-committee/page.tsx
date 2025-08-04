@@ -572,6 +572,10 @@ const committeeData = [
         name: "Diksha Rangwani",
         affiliation: "National Institute of Technology, Sikkim, India",
       },
+      {
+        name: "Aniket Gharpure",
+        affiliation: "Wellington Management Company, USA",
+      }
     ],
   },
 ];
