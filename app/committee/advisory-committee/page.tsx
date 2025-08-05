@@ -202,6 +202,10 @@ const committeeData = [
       {
         name: "Mass Soldal Lund",
         affiliation: "Norwegian Defence University College, Norway",
+      },
+      {
+        name: "Amit Dhiman",
+        affiliation: "Hcl America",
       }
     ],
   },
@@ -246,7 +250,11 @@ const committeeData = [
         affiliation:
           "Chaitanya Bharathi Institute of Technology, Proddatur, India",
       },
-    
+      {
+        name: "Aishwarya Natarajan",
+        affiliation:
+          "Amazon Webservices",
+      }
     ],
   },
 ];
