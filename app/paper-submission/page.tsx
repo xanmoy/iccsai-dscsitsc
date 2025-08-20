@@ -322,7 +322,20 @@ export default function PaperSubmissionPage() {
               <li>Review your submission and submit.</li>
             </ol>
           </div>
+          <div className="flex justify-center mb-5 text-white">
+            <a
+              href="https://drive.google.com/file/d/1UEX9hhxUWfVi3U7m7kzoi-mvGqYzTmQu/view?usp=sharing"
+              className="bg-primary rounded-md flex items-center gap-2 px-6 py-2.5 text-base"
+              target="_blank"
+            >
+              Accepted Papers
+              <Download className="h-5 w-5 text-white" />
+
+            </a>
+          </div>
         </section>
+
+        
 
         {/* Submission Instructions Section */}
         <section id="submission-instructions" className="mb-20">
