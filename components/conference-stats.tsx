@@ -5,7 +5,7 @@ export function ConferenceStats() {
   const highlights = [
     {
       icon: <Calendar className="h-10 w-10 text-primary" />,
-      title: "Aug 28-29",
+      title: "Sep 24-25",
       subtitle: "Conference Dates",
     },
     {

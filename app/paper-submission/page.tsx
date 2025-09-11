@@ -66,7 +66,7 @@ export default function PaperSubmissionPage() {
       },
       { label: "Camera-Ready Submission", date: "August 10, 2025" },
       { label: "Registration Deadline", date: "August 16, 2025" },
-      { label: "Conference Dates", date: "August 28-29, 2025" },
+      { label: "Conference Dates", date: "September 24-25, 2025" },
     ],
   };
 
