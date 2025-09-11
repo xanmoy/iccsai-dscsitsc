@@ -42,7 +42,7 @@ export function ImportantDates() {
     {
       title: "Conference Dates",
       description: "Main conference program",
-      date: "August 28-29, 2025",
+      date: "September 24-25, 2025",
     },
   ];
 
