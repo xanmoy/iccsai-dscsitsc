@@ -37,13 +37,14 @@ export function Header() {
     ];
 
     return (
-        <header className="sticky top-0 z-50 w-full shadow-sm bg-background">
+        <header className="sticky top-0 z-50 w-full  shadow-sm bg-background">
             <div className="container flex h-16 items-center">
                 {/* Logo */}
                 <Link href="/" className="flex items-center space-x-2">
                     <span className="hidden font-bold sm:inline-block">ICCSAI 2025</span>
                     <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1743176971/ICCSAI_final_pqjqxw.png" alt="ICCSAI 2025" width={40} height={40} />
                     <Image src="https://res.cloudinary.com/dg6vdv82c/image/upload/v1743178517/Sur_Logos-04_pkljtx.png" alt="Surtech" width={50} height={50} />
+                    <Image src="Springer_Logo.png" alt="Surtech" width={50} height={50} />
                 </Link>
 
                 <div className="hidden md:flex items-center gap-3 flex-wrap justify-start w-fit">

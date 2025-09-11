@@ -41,12 +41,12 @@ export function Footer() {
                 &copy; {new Date().getFullYear()} ICCSAI DSCSITSC 2025. All rights reserved.
                 <br />
                 <Link
-                    href="https://splitmate.cloud"
+                    href="https://www.cenvexa.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block mt-1 text-indigo-600 font-medium"
                 >
-                    Designed & Developed by SplitMate Software
+                    Designed & Developed by Cenvexa
                 </Link>
             </div>
         </footer>
