@@ -15,8 +15,8 @@ export default function Home() {
         <div className="bg-gradient-to-r from-blue-500 to-blue-700 dark:from-blue-600 dark:to-blue-800 text-white text-center border-l-8 border-yellow-400 shadow-lg p-6 my-6 rounded-lg">
           <p className="text-2xl font-extrabold uppercase tracking-wide">📢 Publication Note</p>
           <p className="mt-3 text-lg font-semibold">
-            All the accepted papers will be published in SPRINGER proceedings 
-            <span className="mt-1 text-base text-gray-200 italic">(Confirmation awaited)</span>
+            It is planned to publish the peer reviewed and selected papers of conference as proceedings with Springer in their prestigious “IoT and Wireless Communication Networks” series <a className="underline" href="https://link.springer.com/series/17387">https://link.springer.com/series/17387</a>. For detailed instructions for author and editors of conference proceedings, kindly visit the following link: <a className="underline" href="https://www.springer.com/us/authors-editors/conference-proceedings">https://www.springer.com/us/authors-editors/conference-proceedings</a>. Select papers from the conference will be published by Springer as a proceedings book volume. Springer will conduct quality checks on the accepted papers and only papers that pass these checks will be published. Springer Nature does not charge any money for publication of Non-Open Access content. Abstracts/extended abstracts and short papers (less than 4 pages) are not considered for publication.
+
           </p>
         </div>
 
